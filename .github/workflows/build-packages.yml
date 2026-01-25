@@ -20,13 +20,13 @@ jobs:
             path: |
               dist/app/*.zip
               dist/app/*.exe
-          - os: macos-13
+          - os: macos-15
             env:
               SDKROOT: /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk
             cmd: npm run buildMacIntel
             artifact: darwin-x86-package
             path: dist/app/*.zip
-          - os: macos-13
+          - os: macos-15
             env:
               SDKROOT: /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk
             cmd: npm run buildMacArm
@@ -38,7 +38,7 @@ jobs:
     - uses: actions/checkout@v4
     - uses: actions/setup-node@v4
       with:
-        node-version: 20
+        node-version: 25
     - run: npm install --omit=optional
     - name: build package
       run: ${{ matrix.cmd }}
