@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ouro | Experience the Web</title>
+    <style>
+        :root {
+            --primary: #6366f1; /* Indigo */
+            --secondary: #a855f7; /* Purple */
+            --accent: #22d3ee; /* Cyan */
+            --bg: #030712;
+            --card-bg: rgba(255, 255, 255, 0.03);
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background-color: var(--bg);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        /* Animated Background Glows */
+        .blob {
+            position: absolute;
+            width: 500px;
+            height: 500px;
+            background: radial-gradient(circle, rgba(99, 102, 241, 0.15) 0%, transparent 70%);
+            border-radius: 50%;
+            z-index: -1;
+            filter: blur(40px);
+            animation: move 20s infinite alternate;
+        }
+
+        @keyframes move {
+            from { transform: translate(-20%, -20%); }
+            to { transform: translate(20%, 20%); }
+        }
+
+        .container {
+            text-align: center;
+            background: var(--card-bg);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 60px 40px;
+            border-radius: 32px;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+            max-width: 500px;
+            width: 90%;
+        }
+
+        h1 {
+            font-size: 4rem;
+            margin: 0;
+            font-weight: 800;
+            background: linear-gradient(to bottom right, #fff, #6366f1);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            letter-spacing: -2px;
+        }
+
+        p {
+            color: #94a3b8;
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin: 20px 0 40px 0;
+        }
+
+        .download-btn {
+            display: inline-block;
+            background: white;
+            color: #000;
+            padding: 16px 40px;
+            border-radius: 14px;
+            font-weight: 700;
+            text-decoration: none;
+            font-size: 1.1rem;
+            transition: all 0.2s ease;
+            box-shadow: 0 0 20px rgba(99, 102, 241, 0.4);
+        }
+
+        .download-btn:hover {
+            transform: translateY(-3px) scale(1.02);
+            box-shadow: 0 0 30px rgba(99, 102, 241, 0.6);
+            background: #f8fafc;
+        }
+
+        .footer-info {
+            margin-top: 30px;
+            font-size: 0.8rem;
+            color: #475569;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .badge {
+            background: rgba(99, 102, 241, 0.1);
+            color: #818cf8;
+            padding: 4px 12px;
+            border-radius: 99px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="blob"></div>
+
+    <div class="container">
+        <span class="badge">Windows Version Now Live</span>
+        <h1>Ouro</h1>
+        <p>A minimalist browser built for speed and privacy. Designed by <b>neogamerz1216</b> to change how you surf.</p>
+        
+        <a href="https://github.com/neogamerz1216/Ouro/releases/download/v1.0.0/Ouro.Setup.1.0.0.exe" class="download-btn">
+            Download for Windows
+        </a>
+
+        <div class="footer-info">
+            v1.0.0 • Open Source • Built on GitHub
+        </div>
+    </div>
+
+</body>
+</html>
