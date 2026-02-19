@@ -107,15 +107,15 @@
     "crashErrorSubtitle": "Виникла проблема при відображенні цієї сторінки.",
     "errorPagePrimaryAction": "Спробувати знову",
     "serverNotFoundTitle": "Сервер не знайдений",
-    "serverNotFoundSubtitle": "Min не зміг знайти цей веб-сайт.",
+    "serverNotFoundSubtitle": "Ouro не зміг знайти цей веб-сайт.",
     "archiveSearchAction": "Пошук на archive.org",
     "sslErrorTitle": "Сайт недоступний",
-    "sslErrorMessage": "Min не зміг безпечно з'єднатися з цим сайтом.",
+    "sslErrorMessage": "Ouro не зміг безпечно з'єднатися з цим сайтом.",
     "dnsErrorTitle": "Сайт не знайдено",
     "dnsErrorMessage": "Сталася помилка DNS.",
     "offlineErrorTitle": "Не вдалося встановити з'єднання з Інтернетом",
     "offlineErrorMessage": "Підключіться до Інтернету та повторіть спробу.",
-    "genericConnectionFail": "Min не вдалося підключитися до веб-сайту.",
+    "genericConnectionFail": "Ouro не вдалося підключитися до веб-сайту.",
     "sslTimeErrorMessage": "Мін не може надійно підключитися до цього веб-сайту. Переконайтеся, що годинник комп'ютера встановлено правильно.",
     "addressInvalidTitle": "Недійсна адреса.",
     "genericError": "Виникла помилка",
@@ -125,7 +125,7 @@
     "phishingErrorVisitAnyway": "Все одно відвідати сайт",
     "phishingErrorLeave": "Залишити цей сайт",
     /* multiple instances alert */
-    "multipleInstancesErrorMessage": "Виникла помилка. Закрийте інші відкриті екземпляри та перезапустіть Min.",
+    "multipleInstancesErrorMessage": "Виникла помилка. Закрийте інші відкриті екземпляри та перезапустіть Ouro.",
     /* pages/sessionRestoreError/index.html */
     "sessionRestoreErrorTitle": "Виникла помилка",
     "sessionRestoreErrorExplanation": "Ваші збережені вкладки не можуть бути відновлені правильно.",
@@ -144,7 +144,7 @@
     "settingsBlockScriptsToggle": "Блокувати скрипти",
     "settingsBlockImagesToggle": "Блокувати зображення",
     "settingsBlockedRequestCount": {
-      "unsafeHTML": "Наразі Min заблокував <strong></strong> реклам і трекерів."
+      "unsafeHTML": "Наразі Ouro заблокував <strong></strong> реклам і трекерів."
     },
     "settingsCustomBangs": null, // Missing translation
     "settingsCustomBangsAdd": null, // Missing translation
@@ -176,7 +176,7 @@
     "settingsUsageStatisticsToggle": {
       "unsafeHTML": "Надсилати статистику використання (<a href=\"https://github.com/minbrowser/min/blob/master/docs/statistics.md\">Детальніше</a>)"
     },
-    "settingsStartupOptions": "При запуску Min: ",
+    "settingsStartupOptions": "При запуску Ouro: ",
     "settingsStartupCreateTask": "Відкрити попередні вкладки",
     "settingsStartupNewTaskandBackground": "Перемістити попередні вкладки до фонового завдання",
     "settingsStartupNewTaskOnly": "Відкрити нове порожнє завдання",
@@ -233,7 +233,7 @@
     "appMenuHelp": "Допомога",
     "appMenuKeyboardShortcuts": "Сполучення клавіш",
     "appMenuReportBug": "Повідомити про помилку",
-    "appMenuTakeTour": "Знайомство з Min",
+    "appMenuTakeTour": "Знайомство з Ouro",
     "appMenuViewGithub": "Переглянути на GitHub",
     "appMenuAbout": "Про %n", //%n is replaced with app name
     "appMenuPreferences": "Налаштування",
@@ -266,7 +266,7 @@
     "downloadStateCompleted": "Завершено",
     "downloadStateFailed": "Невдача",
     /* Update Notifications */
-    "updateNotificationTitle": "Доступна нова версія Min",
+    "updateNotificationTitle": "Доступна нова версія Ouro",
     /* Autofill settings */
     "settingsPasswordAutoFillHeadline": "Автозаповнення пароля",
     "settingsSelectPasswordManager": "Виберіть один із підтримуваних менеджерів паролів:",
@@ -285,7 +285,7 @@
     "passwordManagerSetupDragBox": "Перетягніть інструмент сюди",
     "passwordManagerSetupInstalling": "Встановлення...",
     "passwordManagerBitwardenSignIn": "Щоб підключити свій обліковий запис Bitwarden, перейдіть на сторінку vault.bitwarden.com/#/settings/account, прокрутіть униз і виберіть \"Переглянути ключ API\". Потім вставте значення в поля нижче.",
-    "passwordManagerSetupSignIn": "Увійдіть до менеджера паролів, щоб почати використовувати автозаповнення. Ваші облікові дані не зберігатимуться ніде в межах Min.",
+    "passwordManagerSetupSignIn": "Увійдіть до менеджера паролів, щоб почати використовувати автозаповнення. Ваші облікові дані не зберігатимуться ніде в межах Ouro.",
     "disableAutofill": "Вимкнути автозаповнення",
     "passwordManagerSetupUnlockError": "Не вдалося розблокувати сховище паролів: ",
     "passwordManagerSetupRetry": "Переконайтеся, що використовуєте правильний файл та ввели правильний пароль. Ви можете повторити спробу, перетягнувши сюди інструмент ще раз.",

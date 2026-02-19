@@ -381,7 +381,7 @@ fetch(articleURL, {
     /*
     response.text() assumes the response is always UTF-8
     (https://schneide.blog/2018/08/08/decoding-non-utf8-server-responses-using-the-fetch-api/)
-    But sometimes it's not - example https://github.com/minbrowser/min/issues/1197
+    But sometimes it's not - example https://github.com/ouro-browser/min/issues/1197
     So manually parse the content-type header and then decode based on that
      */
     var charset = 'utf-8'

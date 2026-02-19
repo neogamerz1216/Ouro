@@ -107,16 +107,16 @@
     "crashErrorSubtitle": "Il y a eu un problème en affichant cette page.",
     "errorPagePrimaryAction": "Essayer encore",
     "serverNotFoundTitle": "Serveur non trouvé",
-    "serverNotFoundSubtitle": "Min ne peut pas trouver ce site internet.",
+    "serverNotFoundSubtitle": "Ouro ne peut pas trouver ce site internet.",
     "archiveSearchAction": "Rechercher sur archive.org",
     "sslErrorTitle": "Ce site n'est pas disponible",
-    "sslErrorMessage": "Min ne peut pas établir une connexion sécurisée avec ce site.",
+    "sslErrorMessage": "Ouro ne peut pas établir une connexion sécurisée avec ce site.",
     "dnsErrorTitle": "Site non trouvé",
     "dnsErrorMessage": "Il y a eu un problème DNS avec ce site.",
     "offlineErrorTitle": "Vous êtes hors-ligne",
     "offlineErrorMessage": "Reconnectez-vous à internet et réessayez.",
-    "genericConnectionFail": "Min ne peut pas se connecter à ce site internet.",
-    "sslTimeErrorMessage": "Min ne peux pas établir une connexion sécurisée avec ce site. Merci de vérifier que votre horloge est bien réglée.",
+    "genericConnectionFail": "Ouro ne peut pas se connecter à ce site internet.",
+    "sslTimeErrorMessage": "Ouro ne peux pas établir une connexion sécurisée avec ce site. Merci de vérifier que votre horloge est bien réglée.",
     "addressInvalidTitle": "Cette adresse est invalide.",
     "genericError": "Il y a une erreur",
     /* pages/phishing/index.html */
@@ -125,7 +125,7 @@
     "phishingErrorVisitAnyway": "Visiter quand même",
     "phishingErrorLeave": "Quitter ce site",
     /* multiple instances alert */
-    "multipleInstancesErrorMessage": "Une erreur a été rencontrée. Veuillez fermer les autres fenêtres et relancer Min.",
+    "multipleInstancesErrorMessage": "Une erreur a été rencontrée. Veuillez fermer les autres fenêtres et relancer Ouro.",
     /* pages/sessionRestoreError/index.html */
     "sessionRestoreErrorTitle": "Il y a eu une erreur",
     "sessionRestoreErrorExplanation": "Vos onglets sauvegardés n'ont pas pu être restaurés correctement.",
@@ -144,7 +144,7 @@
     "settingsBlockScriptsToggle": "Scripts bloqués",
     "settingsBlockImagesToggle": "Images bloquées",
     "settingsBlockedRequestCount": {
-      "unsafeHTML": "À ce jour, Min a bloqué <strong></strong> publicités et pisteurs"
+      "unsafeHTML": "À ce jour, Ouro a bloqué <strong></strong> publicités et pisteurs"
     },
     "settingsCustomBangs": null, // Missing translation
     "settingsCustomBangsAdd": null, // Missing translation
@@ -175,7 +175,7 @@
     "settingsUsageStatisticsToggle": {
       "unsafeHTML": "Envoyer des statistiques d'utilisation - <a href=\"https://github.com/minbrowser/min/blob/master/docs/statistics.md\">En savoir plus sur les statistiques envoyées (en anglais)</a>"
     },
-    "settingsStartupOptions": "Les paramétres de démarrage de Min", 
+    "settingsStartupOptions": "Les paramétres de démarrage de Ouro", 
     "settingsStartupCreateTask": "Ré-ouverture des onglets précédents", 
     "settingsStartupNewTaskandBackground": "Déplacer les onglets précédents en arrière plan", 
     "settingsStartupNewTaskOnly": "Ouvrir une nouvelle tâche", 
@@ -265,7 +265,7 @@
     "downloadStateCompleted": "Complété",
     "downloadStateFailed": "Échoué",
     /* Update Notifications */
-    "updateNotificationTitle": "Une nouvelle version de Min est disponible",
+    "updateNotificationTitle": "Une nouvelle version de Ouro est disponible",
     /* Autofill settings */
     "settingsPasswordAutoFillHeadline": "Remplissage automatique des mots de passe",
     "settingsSelectPasswordManager": "Choisissez l'un des gestionnaires de mots de passe acceptés :",
@@ -284,7 +284,7 @@
     "passwordManagerSetupDragBox": "Déposer l'outil ici",
     "passwordManagerSetupInstalling": "En cours d'installation...",
     "passwordManagerBitwardenSignIn": "Pour connecter votre compte Bitwarden, accédez à vault.bitwarden.com/#/settings/account, faites défiler vers le bas et choisissez «View API Key». Collez ensuite les valeurs dans les champs ci-dessous.", 
-    "passwordManagerSetupSignIn": "Connectez-vous à votre gestionnaire de mots de pass pour commencer à utiliser le remplissage automatique. Vos informations de connexion ne seront jamais stockées par Min.",
+    "passwordManagerSetupSignIn": "Connectez-vous à votre gestionnaire de mots de pass pour commencer à utiliser le remplissage automatique. Vos informations de connexion ne seront jamais stockées par Ouro.",
     "disableAutofill": "Désactiver le remplissage automatique",
     "passwordManagerSetupUnlockError": "Échec d'ouverture de la bibliothèque de mots passe : ",
     "passwordManagerSetupRetry": "Assurez-vous d'utiliser le bon fichier et d'entrer le bon mot de passe. Vous pouvez réessayer en déposant à nouveau l'outil ici.",

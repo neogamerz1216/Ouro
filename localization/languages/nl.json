@@ -107,16 +107,16 @@
     "crashErrorSubtitle": "Er was een probleem tijdens het laten zien van deze pagina.",
     "errorPagePrimaryAction": "Probeer opnieuw",
     "serverNotFoundTitle": "Server niet gevonden",
-    "serverNotFoundSubtitle": "Min kon deze website niet vinden.",
+    "serverNotFoundSubtitle": "Ouro kon deze website niet vinden.",
     "archiveSearchAction": "Zoek op archive.org",
     "sslErrorTitle": "Deze website is niet beschikbaar.",
-    "sslErrorMessage": "Min kon geen beveiligde verbinding maken met deze website.",
+    "sslErrorMessage": "Ouro kon geen beveiligde verbinding maken met deze website.",
     "dnsErrorTitle": "Website niet gevonden",
     "dnsErrorMessage": "Een DNS error heeft plaats gevonden.",
     "offlineErrorTitle": "Je bent offline",
     "offlineErrorMessage": "Verbind met het internet en probeer het opnieuw.",
-    "genericConnectionFail": "Min kon niet verbinden met deze website.",
-    "sslTimeErrorMessage": "Min kon geen beveiligde verbinding maken met deze website. Zorg ervoor dat de tijd van de computer correct is.",
+    "genericConnectionFail": "Ouro kon niet verbinden met deze website.",
+    "sslTimeErrorMessage": "Ouro kon geen beveiligde verbinding maken met deze website. Zorg ervoor dat de tijd van de computer correct is.",
     "addressInvalidTitle": "Dit adres is niet geldig.",
     "genericError": "Er is een fout opgetreden",
     /* pages/phishing/index.html */
@@ -125,7 +125,7 @@
     "phishingErrorVisitAnyway": "Toch de site bezoeken",
     "phishingErrorLeave": "De site verlaten",
     /* multiple instances alert */
-    "multipleInstancesErrorMessage": "Er is iets fout gegaan. Sluit alle vensters en herstart Min.",
+    "multipleInstancesErrorMessage": "Er is iets fout gegaan. Sluit alle vensters en herstart Ouro.",
     /* pages/sessionRestoreError/index.html */
     "sessionRestoreErrorTitle": "Er is iets fout gegaan",
     "sessionRestoreErrorExplanation": "Uw opgeslagen tabbladen konden niet correct worden hersteld.",
@@ -144,7 +144,7 @@
     "settingsBlockScriptsToggle": "Blokkeer scripten",
     "settingsBlockImagesToggle": "Blokkeer afbeeldingen",
     "settingsBlockedRequestCount": {
-      "unsafeHTML": "Tot nu toe heeft Min <strong></strong> advertenties en trackers geblokkeerd."
+      "unsafeHTML": "Tot nu toe heeft Ouro <strong></strong> advertenties en trackers geblokkeerd."
     },
     "settingsCustomBangs": null, // Missing translation
     "settingsCustomBangsAdd": null, // Missing translation
@@ -175,7 +175,7 @@
     "settingsUsageStatisticsToggle": {
       "unsafeHTML": "Verzend gebruikersstatistieken (<a href=\"https://github.com/minbrowser/min/blob/master/docs/statistics.md\">meer informatie</a>)"
     },
-    "settingsStartupOptions": "Als Min opstart: ",
+    "settingsStartupOptions": "Als Ouro opstart: ",
     "settingsStartupCreateTask": "Her-open vorige tabbladen",
     "settingsStartupNewTaskandBackground": "Verplaats vorige tabbladen naar een taak op de achtergrond",
     "settingsStartupNewTaskOnly": "Open een lege taak",
@@ -264,7 +264,7 @@
     "downloadStateCompleted": "Compleet",
     "downloadStateFailed": "Mislukt",
     /* Update Notifications */
-    "updateNotificationTitle": "Een nieuwe versie van Min is beschikbaar",
+    "updateNotificationTitle": "Een nieuwe versie van Ouro is beschikbaar",
     /* Autofill settings */
     "settingsPasswordAutoFillHeadline": "Wachtwoord Auto-Fill",
     "settingsSelectPasswordManager": "Kies een van de ondersteunde password managers:",
@@ -283,7 +283,7 @@
     "passwordManagerSetupDragBox": "Versleep de tool naar hier",
     "passwordManagerSetupInstalling": "Installeren...",
     "passwordManagerBitwardenSignIn": "Om te verbinden met uw Bitwarden account, ga naar vault.bitwarden.com/#/settings/account, scroll naar benenden, en kies \"View API Key\". Plak vervolgens de waarden in de onderstaande velden.",
-    "passwordManagerSetupSignIn": "Log in bij uw password manager om Auto-Fill te gebruiken. Uw inloggegevens worden nergens opgeslagen door Min.",
+    "passwordManagerSetupSignIn": "Log in bij uw password manager om Auto-Fill te gebruiken. Uw inloggegevens worden nergens opgeslagen door Ouro.",
     "disableAutofill": "Auto-Fill uitzetten",
     "passwordManagerSetupUnlockError": "Mislukt om de opslag van de password manager te openen: ",
     "passwordManagerSetupRetry": "Controleer of u het juiste bestand gebruikt en een correct wachtwoord invoert. U kunt het opnieuw proberen door de tool hierheen te slepen.",

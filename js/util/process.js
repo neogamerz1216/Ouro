@@ -10,7 +10,7 @@ const worker = new Worker('js/util/processWorker.js')
 
 let processPath = process.env.PATH
 
-// we need to locate the op binary in this directory on macOS - see https://github.com/minbrowser/min/issues/1028
+// we need to locate the op binary in this directory on macOS - see https://github.com/ouro-browser/min/issues/1028
 // normally, it is present in the path when running in development, but not when the app is launched after being packaged
 if (platformType === 'mac' && !processPath.includes('/usr/local/bin')) {
   processPath += ':/usr/local/bin'
@@ -18,7 +18,7 @@ if (platformType === 'mac' && !processPath.includes('/usr/local/bin')) {
 
 const customEnv = Object.assign({}, process.env, { PATH: processPath })
 
-// see https://github.com/minbrowser/min/issues/1028#issuecomment-647235653
+// see https://github.com/ouro-browser/min/issues/1028#issuecomment-647235653
 const maxBufferSize = 25 * 1024 * 1024
 
 class ProcessSpawner {

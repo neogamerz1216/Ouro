@@ -1,10 +1,23 @@
+:root {
+  --ouro-ink: #0f172a;
+  --ouro-ink-soft: #1f2937;
+  --ouro-gold: #e0b108;
+  --ouro-amber: #f3d06b;
+  --ouro-sand: #f7f3e9;
+  --ouro-muted: #7c7c86;
+  --ouro-card-shadow: 0 12px 32px rgba(15, 23, 42, 0.18);
+  --ouro-radius: 12px;
+  --ouro-font: "Manrope", "Avenir Next", "Segoe UI", "Noto Sans", sans-serif;
+  --ouro-display-font: "Iowan Old Style", "Palatino Linotype", "Book Antiqua",
+    "Times New Roman", serif;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-size: 16px;
-  font-family: ".SFNSText-Regular", "BlinkMacSystemFont", "Helvetica Neue",
-    "Segoe UI", "Arial", sans-serif;
+  font-family: var(--ouro-font);
 }
 /* TODO figure out why the default focus color in Electron is orange */
 *:focus {
@@ -30,8 +43,8 @@ button {
 }
 body,
 html {
-  background-color: #fff;
-  color: #000;
+  background-color: var(--ouro-sand);
+  color: var(--ouro-ink);
   height: 100%;
   overflow: hidden;
   -webkit-user-select: none;
@@ -78,12 +91,15 @@ h1 + h2 {
 }
 
 a {
-  color: royalblue;
+  color: var(--ouro-ink);
   text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  transition: color 0.15s ease;
 }
 
 .dark-mode a {
-  color: dodgerblue;
+  color: var(--ouro-amber);
 }
 
 .dark-mode input,

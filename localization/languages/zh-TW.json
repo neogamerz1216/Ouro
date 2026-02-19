@@ -107,16 +107,16 @@
     "crashErrorSubtitle": "顯示此頁面時發生了一些問題",
     "errorPagePrimaryAction": "重試",
     "serverNotFoundTitle": "找不到伺服器",
-    "serverNotFoundSubtitle": "Min 找不到這個網站",
+    "serverNotFoundSubtitle": "Ouro 找不到這個網站",
     "archiveSearchAction": "在 archive.org 上搜尋",
     "sslErrorTitle": "這個網站不存在",
-    "sslErrorMessage": "Min 無法與此網站建立安全連線",
+    "sslErrorMessage": "Ouro 無法與此網站建立安全連線",
     "dnsErrorTitle": "找不到這個網站",
     "dnsErrorMessage": "發生 DNS 錯誤",
     "offlineErrorTitle": "沒有網際網路連線",
     "offlineErrorMessage": "重新連線至網路再試一次",
-    "genericConnectionFail": "Min 無法連線至這個網站",
-    "sslTimeErrorMessage": "Min 無法安全地連線到此網站，請確認時間是否設定正確",
+    "genericConnectionFail": "Ouro 無法連線至這個網站",
+    "sslTimeErrorMessage": "Ouro 無法安全地連線到此網站，請確認時間是否設定正確",
     "addressInvalidTitle": "網址錯誤",
     "genericError": "發生了一些問題",
     /* pages/phishing/index.html */
@@ -125,7 +125,7 @@
     "phishingErrorVisitAnyway": "還是繼續",
     "phishingErrorLeave": "離開",
     /* multiple instances alert */
-    "multipleInstancesErrorMessage": "發生了一些問題，請關閉其他分頁然後重新啟動 Min",
+    "multipleInstancesErrorMessage": "發生了一些問題，請關閉其他分頁然後重新啟動 Ouro",
     /* pages/sessionRestoreError/index.html */
     "sessionRestoreErrorTitle": "發生錯誤",
     "sessionRestoreErrorExplanation": "上次瀏覽的分頁無法回復",
@@ -144,7 +144,7 @@
     "settingsBlockScriptsToggle": "阻擋 JavaScript 腳本運行",
     "settingsBlockImagesToggle": "阻擋圖片",
     "settingsBlockedRequestCount": {
-      "unsafeHTML": "到目前為止，Min 已經封鎖了 <strong></strong> 個廣告和追蹤器"
+      "unsafeHTML": "到目前為止，Ouro 已經封鎖了 <strong></strong> 個廣告和追蹤器"
     },
     "settingsCustomBangs": null, // Missing translation
     "settingsCustomBangsAdd": null, // Missing translation
@@ -284,7 +284,7 @@
     "passwordManagerSetupDragBox": "將檔案拖至此處",
     "passwordManagerSetupInstalling": "正在安裝...",
     "passwordManagerBitwardenSignIn": null, //missing translation
-    "passwordManagerSetupSignIn": "登入你的密碼管理器並開始使用自動填入。您的資訊不會被存入 Min。",
+    "passwordManagerSetupSignIn": "登入你的密碼管理器並開始使用自動填入。您的資訊不會被存入 Ouro。",
     "disableAutofill": "取消",
     "passwordManagerSetupUnlockError": "無法登入密碼儲存庫。",
     "passwordManagerSetupRetry": "請確認您拖入正確的檔案並輸入正確的密碼。您可以將檔案拖入以重試。",

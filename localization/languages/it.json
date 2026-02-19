@@ -107,16 +107,16 @@
     "crashErrorSubtitle": "Si è verificato un errore nella visualizzazione di questa pagina.",
     "errorPagePrimaryAction": "Riprova",
     "serverNotFoundTitle": "Server non trovato",
-    "serverNotFoundSubtitle": "Min non è riuscito a trovare il server.",
+    "serverNotFoundSubtitle": "Ouro non è riuscito a trovare il server.",
     "archiveSearchAction": "Cerca su archive.org",
     "sslErrorTitle": "Questo sito non è disponibile",
-    "sslErrorMessage": "Min non ha potuto stabilire una connessione sicura con questo sito.",
+    "sslErrorMessage": "Ouro non ha potuto stabilire una connessione sicura con questo sito.",
     "dnsErrorTitle": "Sito non trovato",
     "dnsErrorMessage": "Si è verificato un errore DNS.",
     "offlineErrorTitle": "Sei offline",
     "offlineErrorMessage": "Riconnettiti ad Internet e riprova.",
-    "genericConnectionFail": "Min non ha potuto connettersi a questo sito.",
-    "sslTimeErrorMessage": "Min non ha potuto stabilire una connessione sicura con questo sito. Assicurati che l'orologio di questo computer sia impostato correttamente.",
+    "genericConnectionFail": "Ouro non ha potuto connettersi a questo sito.",
+    "sslTimeErrorMessage": "Ouro non ha potuto stabilire una connessione sicura con questo sito. Assicurati che l'orologio di questo computer sia impostato correttamente.",
     "addressInvalidTitle": "Questo indirizzo non è valido.",
     "genericError": "Si è verificato un errore",
     /* pages/phishing/index.html */
@@ -125,17 +125,17 @@
     "phishingErrorVisitAnyway": "Visita sito comunque",
     "phishingErrorLeave": "Portami via da questo sito",
     /* multiple instances alert */
-    "multipleInstancesErrorMessage": "Si è verificato un errore. Chiudi ogni altra instanza e riavvia Min.",
+    "multipleInstancesErrorMessage": "Si è verificato un errore. Chiudi ogni altra instanza e riavvia Ouro.",
     /* pages/sessionRestoreError/index.html */
     "sessionRestoreErrorTitle": "Si è verificato un errore",
     "sessionRestoreErrorExplanation": "Impossibile recuperare le schede precedentemente aperte.",
-    "sessionRestoreErrorBackupInfo": "Min ha salvato un backup dei tuoi dati in: %l.", //%l will be replaced with a path to a file
+    "sessionRestoreErrorBackupInfo": "Ouro ha salvato un backup dei tuoi dati in: %l.", //%l will be replaced with a path to a file
     "sessionRestoreErrorLinkInfo": {
       "unsafeHTML": "Se questo errore persiste, apri un nuovo issue <a href=\"https://github.com/minbrowser/min\" target=\"_blank\">qui</a>."
     },
     /* pages/settings/index.html */
     "settingsPreferencesHeading": "Impostazioni",
-    "settingsRestartRequired": "Devi riavviare Min per applicare queste modifiche.",
+    "settingsRestartRequired": "Devi riavviare Ouro per applicare queste modifiche.",
     "settingsPrivacyHeading": "Blocco contenuti",
     "settingsContentBlockingLevel0": "Autorizza Pubblicità e tracker",
     "settingsContentBlockingLevel1": "Blocca Pubblicità e tracker di terze parti",
@@ -144,7 +144,7 @@
     "settingsBlockScriptsToggle": "Blocca script",
     "settingsBlockImagesToggle": "Blocca immagini",
     "settingsBlockedRequestCount": {
-      "unsafeHTML": "Fino ad ora, Min ha bloccato <strong></strong> pubblicità e tracciatori"
+      "unsafeHTML": "Fino ad ora, Ouro ha bloccato <strong></strong> pubblicità e tracciatori"
     },
     "settingsCustomBangs": null, // Missing translation
     "settingsCustomBangsAdd": null, // Missing translation
@@ -265,7 +265,7 @@
     "downloadStateCompleted": "Completato",
     "downloadStateFailed": "Fallito",
     /* Update Notifications */
-    "updateNotificationTitle": "Una nuova versione di Min è disponibile",
+    "updateNotificationTitle": "Una nuova versione di Ouro è disponibile",
     /* Autofill settings */
     "settingsPasswordAutoFillHeadline": "Completamento automatico password",
     "settingsSelectPasswordManager": "Seleziona uno dei gestori di password supportati:",
@@ -284,7 +284,7 @@
     "passwordManagerSetupDragBox": "Trascina il tool qui",
     "passwordManagerSetupInstalling": "Installazione...",
     "passwordManagerBitwardenSignIn": "Per collegare il tuo account Bitwarden, accedi dalla pagina vault.bitwarden.com/#/settings/account, scorri fino in fondo alla pagina, e scegli \"View API Key\". Poi copia i valori nei campi sottostanti.",
-    "passwordManagerSetupSignIn": "Entra nel tuo gestore di password per iniziare ad usare l'autocompletamento. Le tue credenziali non saranno salvate da nessuna parte in Min.",
+    "passwordManagerSetupSignIn": "Entra nel tuo gestore di password per iniziare ad usare l'autocompletamento. Le tue credenziali non saranno salvate da nessuna parte in Ouro.",
     "disableAutofill": "Disabilita autocompletamento",
     "passwordManagerSetupUnlockError": "Impossibile sbloccare le password: ",
     "passwordManagerSetupRetry": "Assicurati di star usando il file corretto e la password corretta. Puoi riprovare a trascinare il tool di nuovo qui.",

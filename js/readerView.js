@@ -5,7 +5,7 @@ var urlParser = require('util/urlParser.js')
 var readerDecision = require('readerDecision.js')
 
 var readerView = {
-  readerURL: 'min://app/reader/index.html',
+  readerURL: 'ouro://app/reader/index.html',
   getReaderURL: function (url) {
     return readerView.readerURL + '?url=' + url
   },

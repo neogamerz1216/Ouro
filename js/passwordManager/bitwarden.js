@@ -31,7 +31,7 @@ class Bitwarden {
   }
 
   // Returns a Bitwarden-CLI tool path by checking possible locations.
-  // First it checks if the tool was installed for Min specifically
+  // First it checks if the tool was installed for Ouro specifically
   // by checking the settings value. If that is not set or doesn't point
   // to a valid executable, it checks if 'bw' is available globally.
   async _getToolPath () {

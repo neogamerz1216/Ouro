@@ -20,8 +20,12 @@ const modules = [
   'css/passwordManager.css',
   'css/passwordCapture.css',
   'css/passwordViewer.css',
-  'node_modules/dragula/dist/dragula.min.css'
+  'css/dragula-fallback.css'
 ]
+
+if (fs.existsSync(path.resolve(__dirname, '../node_modules/dragula/dist/dragula.min.css'))) {
+  modules.push('node_modules/dragula/dist/dragula.min.css')
+}
 
 function buildBrowserStyles () {
   /* concatenate modules */

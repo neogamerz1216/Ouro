@@ -173,9 +173,9 @@
     "settingsUserAgentToggle": "사용자 정의 에이전트(UserAgent) 사용",
     "settingsUpdateNotificationsToggle": "업데이트 자동 확인",
     "settingsUsageStatisticsToggle": {
-      "unsafeHTML": "민(Min)의 개선을 위해 사용 데이터 공유 (<a href=\"https://github.com/minbrowser/min/blob/master/docs/statistics.md\">자세히 보기</a>)"
+      "unsafeHTML": "민(Ouro)의 개선을 위해 사용 데이터 공유 (<a href=\"https://github.com/minbrowser/min/blob/master/docs/statistics.md\">자세히 보기</a>)"
     },
-    "settingsStartupOptions": "민(Min)을 실행할 때: ",
+    "settingsStartupOptions": "민(Ouro)을 실행할 때: ",
     "settingsStartupCreateTask": "종료한 세션에서 계속하기",
     "settingsStartupNewTaskandBackground": "마지막 세션을 그룹으로 보관",
     "settingsStartupNewTaskOnly": "세션을 새롭게 시작",
@@ -265,7 +265,7 @@
     "downloadStateCompleted": "완료",
     "downloadStateFailed": "실패",
     /* Update Notifications */
-    "updateNotificationTitle": "새 버전의 민(Min)이 존재합니다.",
+    "updateNotificationTitle": "새 버전의 민(Ouro)이 존재합니다.",
     /* Autofill settings */
     "settingsPasswordAutoFillHeadline": "비밀번호 자동완성",
     "settingsSelectPasswordManager": "지원하는 비밀번호 관리자 중에서 하나를 선택하세요:",
@@ -284,7 +284,7 @@
     "passwordManagerSetupDragBox": "도구를 여기에 끌어다 놓으세요.",
     "passwordManagerSetupInstalling": "설치 중...",
     "passwordManagerBitwardenSignIn": "당신의 비트워든(Bitwarden) 계정에 연결하려면 vault.bitwarden.com/#/settings/account URL에 접속해 스크롤을 아래로 내려 \"View API Key\"를 선택한 후 아래 필드에 값을 붙여넣으세요.",
-    "passwordManagerSetupSignIn": "자동완성을 사용하려면 비밀번호 관리자에 로그인하세요. 귀하의 자격증명은 민(Min)의 그 어디에도 저장되지 않습니다.",
+    "passwordManagerSetupSignIn": "자동완성을 사용하려면 비밀번호 관리자에 로그인하세요. 귀하의 자격증명은 민(Ouro)의 그 어디에도 저장되지 않습니다.",
     "disableAutofill": "자동완성 비활성화",
     "passwordManagerSetupUnlockError": "비밀번호 저장소를 여는데 실패했습니다: ",
     "passwordManagerSetupRetry": "올바른 파일과 비밀번호를 사용하세요. 도구를 여기로 다시 끌어다 놓고 재시도할 수 있습니다.",

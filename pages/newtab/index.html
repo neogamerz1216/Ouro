@@ -1,5 +1,345 @@
 <!DOCTYPE html>
-<html>
-  <head> </head>
-  <body></body>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ouro Home</title>
+    <style>
+      :root {
+        --bg-deep: #061522;
+        --bg-mid: #0a2236;
+        --bg-glow: #2ca9ff;
+        --bg-warm: #ffbe55;
+        --text-main: #f6fbff;
+        --text-muted: rgba(228, 240, 249, 0.84);
+        --panel-bg: rgba(6, 26, 41, 0.52);
+        --panel-border: rgba(255, 255, 255, 0.2);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+      }
+
+      body {
+        font-family: "Avenir Next", "Trebuchet MS", "Segoe UI", sans-serif;
+        color: var(--text-main);
+        overflow: auto;
+        background:
+          radial-gradient(circle at 18% 8%, rgba(44, 169, 255, 0.3) 0, rgba(44, 169, 255, 0) 28%),
+          radial-gradient(circle at 84% 12%, rgba(255, 190, 85, 0.2) 0, rgba(255, 190, 85, 0) 34%),
+          linear-gradient(130deg, var(--bg-deep) 0%, var(--bg-mid) 62%, #081629 100%);
+      }
+
+      body::before,
+      body::after {
+        content: "";
+        position: fixed;
+        border-radius: 50%;
+        filter: blur(44px);
+        pointer-events: none;
+        z-index: 0;
+        animation: float 8s ease-in-out infinite;
+      }
+
+      body::before {
+        width: 34vw;
+        height: 34vw;
+        min-width: 240px;
+        min-height: 240px;
+        top: -13vw;
+        right: -10vw;
+        background: rgba(44, 169, 255, 0.34);
+      }
+
+      body::after {
+        width: 30vw;
+        height: 30vw;
+        min-width: 220px;
+        min-height: 220px;
+        bottom: -13vw;
+        left: -10vw;
+        background: rgba(255, 190, 85, 0.28);
+        animation-delay: 0.8s;
+      }
+
+      main {
+        min-height: 100%;
+        padding: clamp(28px, 5vw, 68px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        z-index: 1;
+      }
+
+      .dashboard {
+        width: min(1080px, 100%);
+        display: grid;
+        gap: clamp(14px, 2.2vw, 24px);
+      }
+
+      .hero,
+      .feature-card {
+        border: 1px solid var(--panel-border);
+        background: var(--panel-bg);
+        box-shadow: 0 26px 48px rgba(2, 13, 22, 0.33);
+        backdrop-filter: blur(10px);
+        border-radius: 22px;
+      }
+
+      .hero {
+        padding: clamp(24px, 3.8vw, 48px);
+        animation: rise-in 0.75s cubic-bezier(0.2, 0.9, 0.25, 1) both;
+      }
+
+      .eyebrow {
+        margin: 0;
+        text-transform: uppercase;
+        letter-spacing: 0.14em;
+        font-size: 0.74rem;
+        color: var(--text-muted);
+        font-weight: 600;
+      }
+
+      h1 {
+        margin: 0.25rem 0 0.8rem;
+        font-size: clamp(2rem, 5.1vw, 4.25rem);
+        line-height: 0.98;
+        letter-spacing: 0.02em;
+      }
+
+      .subhead {
+        margin: 0;
+        max-width: 35ch;
+        font-size: clamp(1rem, 1.75vw, 1.25rem);
+        line-height: 1.45;
+        color: var(--text-muted);
+      }
+
+      .meta-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.6rem;
+        margin-top: 1.45rem;
+      }
+
+      .meta-pill {
+        display: inline-flex;
+        align-items: center;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        background: rgba(255, 255, 255, 0.11);
+        color: #f8fbff;
+        border-radius: 999px;
+        padding: 0.43rem 0.8rem;
+        font-size: 0.87rem;
+        font-weight: 600;
+        white-space: nowrap;
+      }
+
+      .shortcut-row {
+        margin-top: 1.15rem;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.85rem;
+        color: var(--text-muted);
+        font-size: 0.89rem;
+      }
+
+      kbd {
+        font-family: "Avenir Next", "Trebuchet MS", "Segoe UI", sans-serif;
+        display: inline-block;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        background: rgba(255, 255, 255, 0.14);
+        border-radius: 7px;
+        padding: 0.14rem 0.42rem;
+        margin: 0 0.16rem;
+        font-size: 0.86em;
+      }
+
+      .feature-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+        gap: clamp(10px, 1.6vw, 16px);
+      }
+
+      .feature-card {
+        padding: 1.05rem 1.1rem 1.2rem;
+        animation: rise-in 0.7s cubic-bezier(0.2, 0.9, 0.25, 1) both;
+      }
+
+      .feature-card:nth-child(1) {
+        animation-delay: 0.06s;
+      }
+
+      .feature-card:nth-child(2) {
+        animation-delay: 0.14s;
+      }
+
+      .feature-card:nth-child(3) {
+        animation-delay: 0.22s;
+      }
+
+      .feature-card:nth-child(4) {
+        animation-delay: 0.3s;
+      }
+
+      .feature-tag {
+        font-size: 0.73rem;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        color: rgba(247, 249, 251, 0.78);
+        font-weight: 600;
+      }
+
+      .feature-card h2 {
+        margin: 0.42rem 0 0.45rem;
+        font-size: 1.1rem;
+        line-height: 1.3;
+      }
+
+      .feature-card p {
+        margin: 0;
+        color: var(--text-muted);
+        font-size: 0.94rem;
+        line-height: 1.42;
+      }
+
+      .footer-note {
+        margin-top: 0.25rem;
+        font-size: 0.88rem;
+        color: rgba(236, 245, 252, 0.85);
+      }
+
+      .footer-note strong {
+        color: white;
+      }
+
+      @keyframes rise-in {
+        from {
+          opacity: 0;
+          transform: translateY(18px) scale(0.98);
+        }
+
+        to {
+          opacity: 1;
+          transform: translateY(0) scale(1);
+        }
+      }
+
+      @keyframes float {
+        0%,
+        100% {
+          transform: translate3d(0, 0, 0);
+        }
+
+        50% {
+          transform: translate3d(0, 16px, 0);
+        }
+      }
+
+      @media (max-width: 720px) {
+        main {
+          align-items: flex-start;
+          padding-top: 22px;
+        }
+
+        .hero,
+        .feature-card {
+          border-radius: 16px;
+        }
+
+        .shortcut-row {
+          gap: 0.55rem;
+          font-size: 0.85rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main aria-label="Ouro Home">
+      <section class="dashboard">
+        <article class="hero">
+          <p id="greeting" class="eyebrow">Welcome back</p>
+          <h1>Ouro Home</h1>
+          <p class="subhead">Search, browse, and manage tabs from one clean workspace.</p>
+          <div class="meta-row">
+            <span id="time-pill" class="meta-pill">--:--</span>
+            <span id="date-pill" class="meta-pill">Loading date...</span>
+            <span class="meta-pill">Type in the top bar to open a URL or run a search</span>
+          </div>
+          <div class="shortcut-row" aria-label="Keyboard shortcuts">
+            <span><kbd>Ctrl</kbd>/<kbd>Cmd</kbd> + <kbd>L</kbd> focus address bar</span>
+            <span><kbd>Ctrl</kbd>/<kbd>Cmd</kbd> + <kbd>T</kbd> new tab</span>
+            <span><kbd>Ctrl</kbd>/<kbd>Cmd</kbd> + <kbd>K</kbd> search from keyboard</span>
+          </div>
+          <p class="footer-note">Use the task button to group work and keep context <strong>visible and organized</strong>.</p>
+        </article>
+
+        <section class="feature-grid" aria-label="Ouro features">
+          <article class="feature-card">
+            <p class="feature-tag">Fast Start</p>
+            <h2>Search instantly</h2>
+            <p>Type anything in the address bar and get web suggestions, history, and quick actions in one panel.</p>
+          </article>
+          <article class="feature-card">
+            <p class="feature-tag">Clear Tabs</p>
+            <h2>See what is active</h2>
+            <p>Tab titles, icons, and loading states stay readable so it is easy to track where you are.</p>
+          </article>
+          <article class="feature-card">
+            <p class="feature-tag">Task Flow</p>
+            <h2>Switch contexts quickly</h2>
+            <p>Use task view to separate projects, then jump back in without losing your tab arrangement.</p>
+          </article>
+          <article class="feature-card">
+            <p class="feature-tag">Privacy</p>
+            <h2>Use private tabs when needed</h2>
+            <p>Open a private tab for sensitive browsing while keeping your regular session untouched.</p>
+          </article>
+        </section>
+      </section>
+    </main>
+
+    <script>
+      ;(() => {
+        const greetingElement = document.getElementById('greeting')
+        const timeElement = document.getElementById('time-pill')
+        const dateElement = document.getElementById('date-pill')
+
+        function updateDateTime () {
+          const now = new Date()
+          const hour = now.getHours()
+
+          if (hour < 12) {
+            greetingElement.textContent = 'Good morning'
+          } else if (hour < 18) {
+            greetingElement.textContent = 'Good afternoon'
+          } else {
+            greetingElement.textContent = 'Good evening'
+          }
+
+          timeElement.textContent = now.toLocaleTimeString([], {
+            hour: 'numeric',
+            minute: '2-digit'
+          })
+
+          dateElement.textContent = now.toLocaleDateString([], {
+            weekday: 'long',
+            month: 'long',
+            day: 'numeric'
+          })
+        }
+
+        updateDateTime()
+        setInterval(updateDateTime, 60000)
+      })()
+    </script>
+  </body>
 </html>

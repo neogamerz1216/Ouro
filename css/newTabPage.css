@@ -1,58 +1,307 @@
 #ntp-content {
-    width: 100%;
-    height: 100%;
-    position: relative;
-    opacity: 1;
-    transition: 0.15s opacity;
-    overflow: hidden;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  opacity: 1;
+  transition: 0.15s opacity;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background:
+    radial-gradient(circle at 16% 14%, rgba(153, 114, 57, 0.24), rgba(153, 114, 57, 0) 30%),
+    radial-gradient(circle at 85% 8%, rgba(89, 117, 146, 0.2), rgba(89, 117, 146, 0) 34%),
+    linear-gradient(160deg, #f2ead9 0%, #e6dac3 56%, #d6c2a1 100%);
+}
+
+#ntp-content::before {
+  content: "";
+  position: absolute;
+  inset: 26px;
+  border-radius: 24px;
+  border: 1px solid rgba(91, 66, 35, 0.24);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.48);
+  pointer-events: none;
+}
+
+#ntp-content::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    repeating-linear-gradient(
+      0deg,
+      rgba(103, 76, 42, 0.02) 0px,
+      rgba(103, 76, 42, 0.02) 1px,
+      transparent 1px,
+      transparent 5px
+    );
 }
 
 body:not(.is-ntp) #ntp-content {
-    opacity: 0;
+  opacity: 0;
+  pointer-events: none;
 }
 
 #ntp-background {
-    /*max-height: max(100%, 72vw);*/
-    width: 100%;
-    height: 100%;
-    margin: auto;
-    object-fit: cover;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  filter: saturate(0.95) contrast(1.04);
+}
+
+#ntp-classic-card {
+  position: relative;
+  z-index: 1;
+  pointer-events: none;
+  width: min(720px, calc(100vw - 88px));
+  padding: clamp(1.6rem, 3.8vw, 3rem) clamp(1.6rem, 4.8vw, 3.8rem);
+  border-radius: 20px;
+  border: 1px solid rgba(93, 67, 37, 0.3);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 251, 242, 0.86),
+    rgba(247, 238, 221, 0.78)
+  );
+  color: #2b1f12;
+  text-align: center;
+  box-shadow: 0 22px 54px rgba(65, 45, 19, 0.22),
+    inset 0 1px 0 rgba(255, 255, 255, 0.84);
+  backdrop-filter: blur(8px);
+  animation: ntp-card-rise 700ms ease;
+}
+
+#ntp-classic-card::before,
+#ntp-classic-card::after {
+  content: "";
+  position: absolute;
+  width: clamp(64px, 9vw, 104px);
+  height: 1px;
+  background: rgba(95, 68, 35, 0.35);
+  top: clamp(2.1rem, 4vw, 2.7rem);
+}
+
+#ntp-classic-card::before {
+  left: clamp(1rem, 2.6vw, 1.8rem);
+}
+
+#ntp-classic-card::after {
+  right: clamp(1rem, 2.6vw, 1.8rem);
+}
+
+#ntp-classic-card .ntp-signature {
+  font-size: 12px;
+  letter-spacing: 0.28em;
+  font-weight: 700;
+  text-transform: uppercase;
+  opacity: 0.74;
+  margin-bottom: 0.9rem;
+}
+
+#ntp-classic-card .ntp-wordmark {
+  font-family: var(--ouro-display-font);
+  font-size: clamp(2.8rem, 9vw, 5.2rem);
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: 0.01em;
+  margin-bottom: 0.75rem;
+}
+
+#ntp-classic-card .ntp-tagline {
+  font-size: clamp(0.95rem, 2.2vw, 1.12rem);
+  letter-spacing: 0.02em;
+  opacity: 0.84;
+  margin-bottom: 1.1rem;
+}
+
+#ntp-classic-card .ntp-divider {
+  width: min(320px, 68%);
+  height: 1px;
+  margin: 0 auto 1.1rem;
+  background: linear-gradient(
+    90deg,
+    rgba(96, 69, 36, 0),
+    rgba(96, 69, 36, 0.44),
+    rgba(96, 69, 36, 0)
+  );
+}
+
+#ntp-classic-card .ntp-motto {
+  font-family: var(--ouro-display-font);
+  font-size: clamp(0.98rem, 2vw, 1.2rem);
+  font-style: italic;
+  letter-spacing: 0.04em;
+  opacity: 0.76;
+}
+
+body.ntp-has-background #ntp-content::before {
+  border-color: rgba(255, 255, 255, 0.34);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.2);
+}
+
+body.ntp-has-background #ntp-content::after {
+  background:
+    linear-gradient(180deg, rgba(7, 12, 20, 0.12), rgba(7, 12, 20, 0.45)),
+    repeating-linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.03) 0px,
+      rgba(255, 255, 255, 0.03) 1px,
+      transparent 1px,
+      transparent 5px
+    );
+}
+
+body.ntp-has-background #ntp-classic-card {
+  background: linear-gradient(
+    180deg,
+    rgba(18, 24, 34, 0.6),
+    rgba(13, 20, 31, 0.54)
+  );
+  border-color: rgba(255, 255, 255, 0.3);
+  color: #f9f1df;
+  box-shadow: 0 24px 54px rgba(0, 0, 0, 0.45),
+    inset 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+
+body.ntp-has-background #ntp-classic-card::before,
+body.ntp-has-background #ntp-classic-card::after {
+  background: rgba(248, 237, 216, 0.4);
+}
+
+body.ntp-has-background #ntp-classic-card .ntp-tagline,
+body.ntp-has-background #ntp-classic-card .ntp-motto,
+body.ntp-has-background #ntp-classic-card .ntp-signature {
+  opacity: 0.9;
+}
+
+body.dark-mode:not(.ntp-has-background) #ntp-content {
+  background:
+    radial-gradient(circle at 16% 14%, rgba(163, 126, 73, 0.12), rgba(163, 126, 73, 0) 30%),
+    radial-gradient(circle at 85% 8%, rgba(124, 151, 179, 0.15), rgba(124, 151, 179, 0) 34%),
+    linear-gradient(160deg, #252f3c 0%, #1c2532 52%, #131a25 100%);
+}
+
+body.dark-mode:not(.ntp-has-background) #ntp-content::before {
+  border-color: rgba(255, 255, 255, 0.2);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode:not(.ntp-has-background) #ntp-content::after {
+  background:
+    repeating-linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.025) 0px,
+      rgba(255, 255, 255, 0.025) 1px,
+      transparent 1px,
+      transparent 5px
+    );
+}
+
+body.dark-mode:not(.ntp-has-background) #ntp-classic-card {
+  background: linear-gradient(
+    180deg,
+    rgba(32, 40, 52, 0.86),
+    rgba(20, 27, 38, 0.78)
+  );
+  border-color: rgba(255, 255, 255, 0.24);
+  color: #f6eede;
+  box-shadow: 0 22px 54px rgba(0, 0, 0, 0.4),
+    inset 0 1px 0 rgba(255, 255, 255, 0.14);
+}
+
+body.dark-mode:not(.ntp-has-background) #ntp-classic-card::before,
+body.dark-mode:not(.ntp-has-background) #ntp-classic-card::after {
+  background: rgba(255, 255, 255, 0.25);
 }
 
 #ntp-background-controls {
-    position: absolute;
-    bottom: 1em;
-    right: 1.25em;
+  position: absolute;
+  bottom: 1rem;
+  right: 1.25rem;
+  display: flex;
+  gap: 0.45rem;
+  z-index: 2;
 }
 
 #ntp-background-controls button {
-    background: white;
-    border: 1px #aaa solid;
-    color: #444;
-    font-size: 1.15em;
-    width: 2em;
-    height: 2em;
-    line-height: 2em;
-    border-radius: 50%;
-    opacity: 0.7;
-    transition: 0.15s;
+  background: linear-gradient(180deg, rgba(255, 251, 243, 0.98), rgba(238, 224, 196, 0.98));
+  border: 1px rgba(97, 70, 38, 0.27) solid;
+  color: #3d2a15;
+  font-size: 1.1em;
+  width: 2.05em;
+  height: 2.05em;
+  line-height: 2.05em;
+  border-radius: 0.65em;
+  opacity: 0.76;
+  transition: 0.15s;
+  box-shadow: 0 10px 22px rgba(49, 33, 15, 0.2);
 }
 
-.dark-mode #ntp-background-controls button {
-    background: rgb(33, 37, 43);
-    border-color: #aaa;
-    color: white;
+body.dark-mode #ntp-background-controls button,
+body.ntp-has-background #ntp-background-controls button {
+  background: linear-gradient(180deg, rgba(23, 31, 42, 0.84), rgba(12, 18, 28, 0.84));
+  border-color: rgba(255, 255, 255, 0.28);
+  color: #f5f1e8;
 }
 
 #ntp-background-controls:hover button {
-    opacity: 0.9;
-    box-shadow: 0px 3px 6px rgb(0, 0, 0, 0.25);
+  opacity: 1;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
 }
 
 #ntp-background-controls:hover #ntp-image-remove {
-    color: rgb(248, 73, 73) !important;
+  color: rgb(232, 84, 84) !important;
 }
 
 #ntp-background-controls:not(:hover) #ntp-image-remove {
+  opacity: 0;
+}
+
+@media (max-width: 760px) {
+  #ntp-content::before {
+    inset: 14px;
+    border-radius: 16px;
+  }
+
+  #ntp-classic-card {
+    width: calc(100vw - 36px);
+    border-radius: 16px;
+    padding: 1.45rem 1.2rem;
+  }
+
+  #ntp-classic-card::before,
+  #ntp-classic-card::after {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  #ntp-background-controls {
+    right: 0.8rem;
+    bottom: 0.8rem;
+  }
+
+  #ntp-background-controls button {
+    width: 1.95em;
+    height: 1.95em;
+    line-height: 1.95em;
+  }
+}
+
+@keyframes ntp-card-rise {
+  0% {
+    transform: translateY(16px);
     opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }

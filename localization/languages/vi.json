@@ -100,16 +100,16 @@
         "crashErrorSubtitle": "Đã xảy ra sự cố khi hiển thị trang web này.",
         "errorPagePrimaryAction": "Thử lại",
         "serverNotFoundTitle": "Không tìm thấy máy chủ",
-        "serverNotFoundSubtitle": "Min không thể tìm trang web này.",
+        "serverNotFoundSubtitle": "Ouro không thể tìm trang web này.",
         "archiveSearchAction": "Tìm kiếm trên archive.org",
         "sslErrorTitle": "Trang web này không có sẵn",
-        "sslErrorMessage": "Min không thể kết nối an toàn đến trang web này.",
+        "sslErrorMessage": "Ouro không thể kết nối an toàn đến trang web này.",
         "dnsErrorTitle": "Không tìm thấy trang web",
         "dnsErrorMessage": "Đã xảy ra lỗi DNS.",
         "offlineErrorTitle": "Bạn đang ngoại tuyến",
         "offlineErrorMessage": "Kết nối lại với internet và thử lại.",
-        "genericConnectionFail": "Min không thể kết nối với trang web.",
-        "sslTimeErrorMessage": "Min không thể kết nối an toàn đến trang web này. Hãy kiểm tra đồng hồ máy tính của bạn được cài đặt đúng.",
+        "genericConnectionFail": "Ouro không thể kết nối với trang web.",
+        "sslTimeErrorMessage": "Ouro không thể kết nối an toàn đến trang web này. Hãy kiểm tra đồng hồ máy tính của bạn được cài đặt đúng.",
         "addressInvalidTitle": "Địa chỉ này không hợp lệ.",
         "genericError": "Đã xảy ra lỗi",
         /* pages/phishing/index.html */
@@ -118,7 +118,7 @@
         "phishingErrorVisitAnyway": "Vẫn truy cập",
         "phishingErrorLeave": "Rời trang web này",
         /* multiple instances alert */
-        "multipleInstancesErrorMessage": "Đã xảy ra lỗi. Hãy thoát trường hợp khác đang mở và khởi chạy Min lại.",
+        "multipleInstancesErrorMessage": "Đã xảy ra lỗi. Hãy thoát trường hợp khác đang mở và khởi chạy Ouro lại.",
         /* pages/sessionRestoreError/index.html */
         "sessionRestoreErrorTitle": "Đã xảy ra lỗi",
         "sessionRestoreErrorExplanation": "Tab bạn đã lưu không thể khôi phục được.",
@@ -137,7 +137,7 @@
         "settingsBlockScriptsToggle": "Chặn mã script",
         "settingsBlockImagesToggle": "Chặn ảnh",
         "settingsBlockedRequestCount": {
-            "unsafeHTML": "Đến hiện tại, Min đã chặn <strong></strong> quảng cáo và bộ theo dõi"
+            "unsafeHTML": "Đến hiện tại, Ouro đã chặn <strong></strong> quảng cáo và bộ theo dõi"
         },
         "settingsCustomBangs": null, // Missing translation
         "settingsCustomBangsAdd": null, // Missing translation
@@ -258,7 +258,7 @@
         "downloadStateCompleted": "Hoàn tất",
         "downloadStateFailed": "Thất bại",
         /* Update Notifications */
-        "updateNotificationTitle": "Phiên bản mới cho Min có sẵn",
+        "updateNotificationTitle": "Phiên bản mới cho Ouro có sẵn",
         /* Autofill settings */
         "settingsPasswordAutoFillHeadline": "Tự động điền mật khẩu",
         "settingsSelectPasswordManager": "Chọn trình quản lý mật khẩu",
@@ -277,7 +277,7 @@
         "passwordManagerSetupDragBox": "Kéo vào đây",
         "passwordManagerSetupInstalling": "Đang cài đặt...",
         "passwordManagerBitwardenSignIn": "Để liên kết với tài khoản Bitwarden, truy cập vault.bitwarden.com/#/settings/account, cuộn xuống cuối, sau đó chọn \"View API Key\". Sau đó copy và dán giá thông số vào trường bên dưới.",
-        "passwordManagerSetupSignIn": "Đăng nhập vào trình quản lý mật khẩu của bạn để bắt đầu sử dụng tính năng tự động điền. Mật khẩu của bạn sẽ không được lưu trữ trong Min",
+        "passwordManagerSetupSignIn": "Đăng nhập vào trình quản lý mật khẩu của bạn để bắt đầu sử dụng tính năng tự động điền. Mật khẩu của bạn sẽ không được lưu trữ trong Ouro",
         "disableAutofill": "Tắt tính năng tự động điền",
         "passwordManagerSetupUnlockError": "Mở khóa kho mật khẩu thất bại: ",
         "passwordManagerSetupRetry": "Vui lòng xác nhận bạn đã sử dụng đúng file và mật khẩu. Bạn có thể thử lại bằng cách kéo thả công cụ vào đây.",

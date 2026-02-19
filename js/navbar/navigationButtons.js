@@ -44,7 +44,7 @@ var navigationButtons = {
       /*
       Prevent scrollbars from showing up when hovering the navigation buttons, if one isn't already shown
       This also works around a chromium bug where a flickering scrollbar is shown during the expanding animation:
-      https://github.com/minbrowser/min/pull/1665#issuecomment-868551126
+      https://github.com/ouro-browser/min/pull/1665#issuecomment-868551126
       */
       if (navigationButtons.tabsList.scrollWidth <= navigationButtons.tabsList.clientWidth) {
         navigationButtons.tabsList.classList.add('disable-scroll')

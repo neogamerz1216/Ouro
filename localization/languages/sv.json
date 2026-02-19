@@ -107,16 +107,16 @@
     "crashErrorSubtitle": "Ett problem har uppkommit då den här sidan visades.",
     "errorPagePrimaryAction": "Försök igen",
     "serverNotFoundTitle": "Server inte hittad",
-    "serverNotFoundSubtitle": "Min kunde inte hitta denna webbsida.",
+    "serverNotFoundSubtitle": "Ouro kunde inte hitta denna webbsida.",
     "archiveSearchAction": "Sök på archive.org",
     "sslErrorTitle": "Denna webbsida är inte tillgänglig",
-    "sslErrorMessage": "Min kunde inte ansluta säkert till denna webbsidan.",
+    "sslErrorMessage": "Ouro kunde inte ansluta säkert till denna webbsidan.",
     "dnsErrorTitle": "Webbsida ej funnen",
     "dnsErrorMessage": "Ett DNS-fel har uppkommit.",
     "offlineErrorTitle": "Du är offline",
     "offlineErrorMessage": "Återanslut till internet och försök igen.",
-    "genericConnectionFail": "Min kunde inte ansluta till webbsidan.",
-    "sslTimeErrorMessage": "Min kunde inte ansluta säkert till denna webbsida. Var vänlig och säkerställ att din dators klocka är korrekt inställd.",
+    "genericConnectionFail": "Ouro kunde inte ansluta till webbsidan.",
+    "sslTimeErrorMessage": "Ouro kunde inte ansluta säkert till denna webbsida. Var vänlig och säkerställ att din dators klocka är korrekt inställd.",
     "addressInvalidTitle": "Den här adressen är ogiltig.",
     "genericError": "Ett fel har inträffat",
     /* pages/phishing/index.html */
@@ -125,7 +125,7 @@
     "phishingErrorVisitAnyway": "Besök sidan ändå",
     "phishingErrorLeave": "Lämna denna sida",
     /* multiple instances alert */
-    "multipleInstancesErrorMessage": "Ett fel inträffade. Var vänlig stäng alla andra öppna instanser och starta om Min.",
+    "multipleInstancesErrorMessage": "Ett fel inträffade. Var vänlig stäng alla andra öppna instanser och starta om Ouro.",
     /* pages/sessionRestoreError/index.html */
     "sessionRestoreErrorTitle": "Ett fel inträffade",
     "sessionRestoreErrorExplanation": "Dina sparade flikar kunde inte återställas korrekt.",
@@ -144,7 +144,7 @@
     "settingsBlockScriptsToggle": "Blockera script",
     "settingsBlockImagesToggle": "Blockera bilder",
     "settingsBlockedRequestCount": {
-      "unsafeHTML": "Hitills, har Min blockerat <strong></strong> annonser och spårare."
+      "unsafeHTML": "Hitills, har Ouro blockerat <strong></strong> annonser och spårare."
     },
     "settingsCustomBangs": null, // Missing translation
     "settingsCustomBangsAdd": null, // Missing translation
@@ -175,7 +175,7 @@
     "settingsUsageStatisticsToggle": {
       "unsafeHTML": "Skicka användarstatistik (<a href=\"https://github.com/minbrowser/min/blob/master/docs/statistics.md\">Mer information</a>)"
     },
-    "settingsStartupOptions": "När Min startar: ",
+    "settingsStartupOptions": "När Ouro startar: ",
     "settingsStartupCreateTask": "Återöppna föregående flikar",
     "settingsStartupNewTaskandBackground": "Flytta föregående flikar till en bakgrundsuppgift",
     "settingsStartupNewTaskOnly": "Öppna en ny tom uppgift",
@@ -265,7 +265,7 @@
     "downloadStateCompleted": "Färdig",
     "downloadStateFailed": "Misslyckad",
     /* Update Notifications */
-    "updateNotificationTitle": "En ny version av Min är tillgänglig",
+    "updateNotificationTitle": "En ny version av Ouro är tillgänglig",
     /* Autofill settings */
     "settingsPasswordAutoFillHeadline": "Automatisk ifyllning av lösenord",
     "settingsSelectPasswordManager": "Välj en av de stödda lösenordshanterarna:",
@@ -284,7 +284,7 @@
     "passwordManagerSetupDragBox": "Dra verktyget hit",
     "passwordManagerSetupInstalling": "Installerar...",
     "passwordManagerBitwardenSignIn": "För att ansluta ditt Bitwardenkonto, gå till vault.bitwarden.com/#/settings/account, scrolla till botten, och välj \"View API Key\". Klistra sedan in värdena i fältet nedan.",
-    "passwordManagerSetupSignIn": "Logga in i din lösenordshanterar för att börja använda automatisk ifyllning. Dina uppgifter kommer inte att lagras någonstans inom Min.",
+    "passwordManagerSetupSignIn": "Logga in i din lösenordshanterar för att börja använda automatisk ifyllning. Dina uppgifter kommer inte att lagras någonstans inom Ouro.",
     "disableAutofill": "Inaktivera automatisk ifyllning",
     "passwordManagerSetupUnlockError": "Misslydades med att låsa upp lösenordsförvaringen: ",
     "passwordManagerSetupRetry": "Försäkra dig om att du använder rätt fil och skriver in rätt lösenord. Du kan försöka igen igenon att dra verktyget hit på nytt.",

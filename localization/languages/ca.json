@@ -107,16 +107,16 @@
     "crashErrorSubtitle": "S'ha produït un problema en mostrar aquesta pàgina.",
     "errorPagePrimaryAction": "Tornar a intentar",
     "serverNotFoundTitle": "Servidor no trobat",
-    "serverNotFoundSubtitle": "Min no ha pogut trobar aquest lloc web.",
+    "serverNotFoundSubtitle": "Ouro no ha pogut trobar aquest lloc web.",
     "archiveSearchAction": "Cercar a archive.org",
     "sslErrorTitle": "Aquest lloc web no està disponible",
-    "sslErrorMessage": "Min no ha pogut connectar-se de manera segura a aquest lloc web.",
+    "sslErrorMessage": "Ouro no ha pogut connectar-se de manera segura a aquest lloc web.",
     "dnsErrorTitle": "Lloc web no trobat",
     "dnsErrorMessage": "S'ha produït un error DNS.",
     "offlineErrorTitle": "Estàs fora de línia",
     "offlineErrorMessage": "Reconnecta't a Internet i torna a intentar-ho.",
-    "genericConnectionFail": "Min no ha pogut connectar-se al lloc web.",
-    "sslTimeErrorMessage": "Min no ha pogut connectar-se de manera segura a aquest lloc web. Assegura't que l'hora del teu ordinador estigui correcta.",
+    "genericConnectionFail": "Ouro no ha pogut connectar-se al lloc web.",
+    "sslTimeErrorMessage": "Ouro no ha pogut connectar-se de manera segura a aquest lloc web. Assegura't que l'hora del teu ordinador estigui correcta.",
     "addressInvalidTitle": "Aquesta adreça és invàlida.",
     "genericError": "S'ha produït un error",
     /* pages/phishing/index.html */
@@ -125,7 +125,7 @@
     "phishingErrorVisitAnyway": "Visitar el lloc de totes maneres",
     "phishingErrorLeave": "Sortir d'aquest lloc",
     /* multiple instances alert */
-    "multipleInstancesErrorMessage": "S'ha produït un error. Si us plau, tanca qualsevol altra instància oberta i reinicia Min.",
+    "multipleInstancesErrorMessage": "S'ha produït un error. Si us plau, tanca qualsevol altra instància oberta i reinicia Ouro.",
     /* pages/sessionRestoreError/index.html */
     "sessionRestoreErrorTitle": "S'ha produït un error",
     "sessionRestoreErrorExplanation": "Les teves pestanyes desades no s'han pogut restaurar correctament.",
@@ -144,7 +144,7 @@
     "settingsBlockScriptsToggle": "Bloquejar scripts",
     "settingsBlockImagesToggle": "Bloquejar imatges",
     "settingsBlockedRequestCount": {
-      "unsafeHTML": "Fins ara, Min ha bloquejat <strong></strong> anuncis i rastrejadors."
+      "unsafeHTML": "Fins ara, Ouro ha bloquejat <strong></strong> anuncis i rastrejadors."
     },
     "settingsCustomBangs": null, // Missing translation
     "settingsCustomBangsAdd": null, // Missing translation
@@ -175,7 +175,7 @@
     "settingsUsageStatisticsToggle": {
       "unsafeHTML": "Enviar estadístiques d'ús (<a href=\"https://github.com/minbrowser/min/blob/master/docs/statistics.md\">Més informació</a>)"
     },
-    "settingsStartupOptions": "Quan Min s'inicia: ",
+    "settingsStartupOptions": "Quan Ouro s'inicia: ",
     "settingsStartupCreateTask": "Reobrir pestanyes anteriors",
     "settingsStartupNewTaskandBackground": "Moure les pestanyes anteriors a una tasca en segon pla",
     "settingsStartupNewTaskOnly": "Obrir una nova tasca en blanc",
@@ -261,7 +261,7 @@
     "downloadStateCompleted": "Completat",
     "downloadStateFailed": "Fallat",
     /* Update Notifications */
-    "updateNotificationTitle": "Hi ha una nova versió de Min disponible",
+    "updateNotificationTitle": "Hi ha una nova versió de Ouro disponible",
     /* Autofill settings */
     "settingsPasswordAutoFillHeadline": "Autocompletat de contrasenyes",
     "settingsSelectPasswordManager": "Tria un dels gestors de contrasenyes suportats:",
@@ -280,7 +280,7 @@
     "passwordManagerSetupDragBox": "Arrossega l'eina aquí",
     "passwordManagerSetupInstalling": "Instal·lant...",
     "passwordManagerBitwardenSignIn": "Per connectar el teu compte Bitwarden, ves a vault.bitwarden.com/#/settings/account, desplaça't fins al final, i tria \"Veure clau API\". Després, enganxa els valors als camps de sota.",
-    "passwordManagerSetupSignIn": "Inicia sessió al teu gestor de contrasenyes per començar a utilitzar l'autocompletat. Les teves credencials no es desaran enlloc dins de Min.",
+    "passwordManagerSetupSignIn": "Inicia sessió al teu gestor de contrasenyes per començar a utilitzar l'autocompletat. Les teves credencials no es desaran enlloc dins de Ouro.",
     "disableAutofill": "Deshabilitar autocompletat",
     "passwordManagerSetupUnlockError": "No s'ha pogut desbloquejar el magatzem de contrasenyes: ",
     "passwordManagerSetupRetry": "Assegura't d'utilitzar el fitxer correcte i d'introduir una contrasenya correcta. Pots tornar a intentar-ho arrossegant l'eina aquí de nou.",

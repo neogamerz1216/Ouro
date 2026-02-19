@@ -107,16 +107,16 @@
     "crashErrorSubtitle": "Terjadi masalah ketika menampilkan laman ini.",
     "errorPagePrimaryAction": "Coba lagi",
     "serverNotFoundTitle": "Server tidak ditemukan",
-    "serverNotFoundSubtitle": "Min tidak bisa mencari situs web ini.",
+    "serverNotFoundSubtitle": "Ouro tidak bisa mencari situs web ini.",
     "archiveSearchAction": "Cari di archive.org",
     "sslErrorTitle": "Situs web ini tidak tersedia",
-    "sslErrorMessage": "Min tidak dapat terhubung dengan situs web ini dengan aman.",
+    "sslErrorMessage": "Ouro tidak dapat terhubung dengan situs web ini dengan aman.",
     "dnsErrorTitle": "Situs web tidak ditemukan",
     "dnsErrorMessage": "Telah terjadi error DNS.",
     "offlineErrorTitle": "Anda tidak terhubung",
     "offlineErrorMessage": "Sambungkan kembali ke jaringan internet dan coba lagi.",
-    "genericConnectionFail": "Min tidak dapat terhubung dengan situs web ini.",
-    "sslTimeErrorMessage": "Min tidak dapat terhubung dengan situs web ini dengan aman. Pastikan waktu komputer Anda diatur dengan benar.",
+    "genericConnectionFail": "Ouro tidak dapat terhubung dengan situs web ini.",
+    "sslTimeErrorMessage": "Ouro tidak dapat terhubung dengan situs web ini dengan aman. Pastikan waktu komputer Anda diatur dengan benar.",
     "addressInvalidTitle": "Alamat ini tidak sah.",
     "genericError": "Terjadi error",
     /* pages/phishing/index.html */
@@ -125,7 +125,7 @@
     "phishingErrorVisitAnyway": "Tetap kunjungi situs",
     "phishingErrorLeave": "Tinggalkan situs ini",
     /* multiple instances alert */
-    "multipleInstancesErrorMessage": "Terjadi error. Silahkan tutup instance lainnya dan mulai ulang Min.",
+    "multipleInstancesErrorMessage": "Terjadi error. Silahkan tutup instance lainnya dan mulai ulang Ouro.",
     /* pages/sessionRestoreError/index.html */
     "sessionRestoreErrorTitle": "Terjadi error",
     "sessionRestoreErrorExplanation": "Tab tersimpan Anda tidak dapat dipulihkan dengan benar.",
@@ -144,7 +144,7 @@
     "settingsBlockScriptsToggle": "Blokir script",
     "settingsBlockImagesToggle": "Blokir gambar",
     "settingsBlockedRequestCount": {
-      "unsafeHTML": "Sejauh ini, Min telah memblokir <strong></strong> iklan dan pelacak."
+      "unsafeHTML": "Sejauh ini, Ouro telah memblokir <strong></strong> iklan dan pelacak."
     },
     "settingsCustomBangs": null, // Missing translation
     "settingsCustomBangsAdd": null, // Missing translation
@@ -265,7 +265,7 @@
     "downloadStateCompleted": "Selesai",
     "downloadStateFailed": "Gagal",
     /* Update Notifications */
-    "updateNotificationTitle": "Versi baru Min tersedia",
+    "updateNotificationTitle": "Versi baru Ouro tersedia",
     /* Autofill settings */
     "settingsPasswordAutoFillHeadline": "Isi Otomatis Kata Sandi",
     "settingsSelectPasswordManager": "Pilih salah satu pengelola kata sandi yang didukung:",
@@ -284,7 +284,7 @@
     "passwordManagerSetupDragBox": "Tarik alat kesini",
     "passwordManagerSetupInstalling": "Memasang...",
     "passwordManagerBitwardenSignIn": "Untuk menghubungkan akun Bitwarden Anda, kunjungi ke vault.bitwarden.com/#/settings/account, gulir ke bawah, dan pilih \"View API Key\". Lalu salin isinya ke bidang  dibawah.",
-    "passwordManagerSetupSignIn": "Masuk ke pengelola kata sandi Anda untuk mulai menggunakan isi otomatis. Kredensial Anda tidak akan disimpan dimana pun di dalam Min.",
+    "passwordManagerSetupSignIn": "Masuk ke pengelola kata sandi Anda untuk mulai menggunakan isi otomatis. Kredensial Anda tidak akan disimpan dimana pun di dalam Ouro.",
     "disableAutofill": "Nonaktifkan Isi Otomatis",
     "passwordManagerSetupUnlockError": "Gagal membuka penyimpanan kata sandi: ",
     "passwordManagerSetupRetry": "Pastikan Anda menggunakan berkas yang tepat dan memasukkan kata sandi yang benar. Anda bisa coba lagi dengan menarik alat ke sini lagi.",

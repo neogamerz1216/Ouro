@@ -132,7 +132,7 @@ function waitForInstallerComplete () {
   })
 }
 
-// Install the tool into the Min user folder.
+// Install the tool into the Ouro user folder.
 function install (filePath, callback) {
   return new Promise((resolve, reject) => {
     try {

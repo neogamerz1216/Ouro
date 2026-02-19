@@ -107,16 +107,16 @@
     "crashErrorSubtitle": "Bu sayfayı görüntülerken bir sorun oluştu.",
     "errorPagePrimaryAction": "Tekrar deneyin",
     "serverNotFoundTitle": "Sunucu bulunamadı",
-    "serverNotFoundSubtitle": "Min, bu web sitesini bulamadı.",
+    "serverNotFoundSubtitle": "Ouro, bu web sitesini bulamadı.",
     "archiveSearchAction": "archive.org'da ara",
     "sslErrorTitle": "Web sitesi mevcut değil",
-    "sslErrorMessage": "Min, bu siteye güvenli bir şekilde bağlanamadı.",
+    "sslErrorMessage": "Ouro, bu siteye güvenli bir şekilde bağlanamadı.",
     "dnsErrorTitle": "Web sitesi bulunamadı",
     "dnsErrorMessage": "DNS hatası oluştu.",
     "offlineErrorTitle": "Çevrimdışısınız",
     "offlineErrorMessage": "İnternete yeniden bağlanın ve tekrar deneyin.",
-    "genericConnectionFail": "Min, web sitesine bağlanılamadı.",
-    "sslTimeErrorMessage": "Min, siteye güvenli bir şekilde bağlanamadı. Lütfen bilgisayarınızın saat ayarının doğru olduğundan emin olun.",
+    "genericConnectionFail": "Ouro, web sitesine bağlanılamadı.",
+    "sslTimeErrorMessage": "Ouro, siteye güvenli bir şekilde bağlanamadı. Lütfen bilgisayarınızın saat ayarının doğru olduğundan emin olun.",
     "addressInvalidTitle": "Bu adres geçersiz.",
     "genericError": "Bir hata oluştu",
     /* pages/phishing/index.html */
@@ -125,7 +125,7 @@
     "phishingErrorVisitAnyway": "Siteyi yine de ziyaret et",
     "phishingErrorLeave": "Bu siteden ayrıl",
     /* multiple instances alert */
-    "multipleInstancesErrorMessage": "Bir hata oluştu. Açık olan tüm sekmeleri kapatıp, Min'i yeniden başlatın.",
+    "multipleInstancesErrorMessage": "Bir hata oluştu. Açık olan tüm sekmeleri kapatıp, Ouro'i yeniden başlatın.",
     /* pages/sessionRestoreError/index.html */
     "sessionRestoreErrorTitle": "Bir hata oluştu",
     "sessionRestoreErrorExplanation": "Kaydedilen sekmeleriniz doğru bir şekilde geri yüklenemedi.",
@@ -144,7 +144,7 @@
     "settingsBlockScriptsToggle": "Komutları(script) engelle",
     "settingsBlockImagesToggle": "Resimleri engelle",
     "settingsBlockedRequestCount": {
-      "unsafeHTML": "Min şimdiye kadar, <strong></strong> reklam ve takipçi engelledi."
+      "unsafeHTML": "Ouro şimdiye kadar, <strong></strong> reklam ve takipçi engelledi."
     },
     "settingsCustomBangs": "Kişiselleştirilebilir Komutlar",
     "settingsCustomBangsAdd": "Yeni komut ekle",
@@ -175,7 +175,7 @@
     "settingsUsageStatisticsToggle": {
       "unsafeHTML": "Kullanım Bilgilerini Gönder (<a href=\"https://github.com/minbrowser/min/blob/master/docs/statistics.md\">Daha Fazla Bilgi</a>)"
     },
-    "settingsStartupOptions": "Min başladığında: ",
+    "settingsStartupOptions": "Ouro başladığında: ",
     "settingsStartupCreateTask": "Önceki sekmeleri yeniden aç",
     "settingsStartupNewTaskandBackground": "Önceki sekmeleri arka plan görevine taşı",
     "settingsStartupNewTaskOnly": "Yeni bir boş görev aç",
@@ -265,7 +265,7 @@
     "downloadStateCompleted": "Tamamlandı",
     "downloadStateFailed": "İndirilemedi",
     /* Update Notifications */
-    "updateNotificationTitle": "Min'in yeni bir sürümü mevcut",
+    "updateNotificationTitle": "Ouro'in yeni bir sürümü mevcut",
     /* Autofill settings */
     "settingsPasswordAutoFillHeadline": "Parola Otomatik Doldurma",
     "settingsSelectPasswordManager": "Desteklenen parola yöneticilerinden birini seçin:",
@@ -284,7 +284,7 @@
     "passwordManagerSetupDragBox": "Aracı buraya sürükleyin",
     "passwordManagerSetupInstalling": "Yükleniyor...",
     "passwordManagerBitwardenSignIn": "Bitwarden hesabınızı bağlamak için vault.bitwarden.com/#/settings/account adresine gidin, sayfanın altına inin ve \"View API Key\"yi seçin. Ardından değerleri aşağıdaki alanlara yapıştırın.",
-    "passwordManagerSetupSignIn": "Otomatik doldurmayı kullanabilmek için parola yöneticinize giriş yapın. Kimlik bilgileriniz Min içerisinde bir yere kaydedilmeyecektir.",
+    "passwordManagerSetupSignIn": "Otomatik doldurmayı kullanabilmek için parola yöneticinize giriş yapın. Kimlik bilgileriniz Ouro içerisinde bir yere kaydedilmeyecektir.",
     "disableAutofill": "Otomatik doldurmayı Devre Dışı Bırak",
     "passwordManagerSetupUnlockError": "Parola kaydedicisinin kilidi açılamadı: ",
     "passwordManagerSetupRetry": "Doğru dosyayı kullandığınızdan ve geçerli parolayı girdiğinizden emin olun. Dosyayı buraya sürükleyerek tekrar deneyebilirsniz.",

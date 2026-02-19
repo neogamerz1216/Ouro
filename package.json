@@ -1,9 +1,9 @@
 {
-  "name": "min",
-  "productName": "Min",
-  "author": "PalmerAL",
-  "version": "1.35.3",
-  "description": "A fast, minimal browser that protects your privacy",
+  "name": "ouro",
+  "version": "1.0.0",
+  "productName": "Ouro",
+  "executableName": "ouro",
+  "description": "The Ouro Browser",
   "electronVersion": "40.0.0",
   "main": "main.build.js",
   "standard": {
@@ -30,11 +30,10 @@
   },
   "dependencies": {
     "@browsermt/bergamot-translator": "^0.4.9",
-    "@electron/fuses": "^1.7.0",
     "chokidar": "^3.6.0",
     "dexie": "^3.0.3",
-    "dragula": "github:minbrowser/dragula",
-    "electron-squirrel-startup": "^1.0.0",
+    "dragula": "^3.7.3",
+    "electron-squirrel-startup": "^1.0.1",
     "expr-eval": "^2.0.2",
     "node-abi": "^3.8.0",
     "papaparse": "^5.5.1",
@@ -46,12 +45,20 @@
     "write-file-atomic": "^6.0.0"
   },
   "devDependencies": {
+    "@electron-forge/cli": "^7.11.1",
+    "@electron-forge/maker-deb": "^7.11.1",
+    "@electron-forge/maker-rpm": "^7.11.1",
+    "@electron-forge/maker-squirrel": "^7.11.1",
+    "@electron-forge/maker-zip": "^7.11.1",
+    "@electron-forge/plugin-auto-unpack-natives": "^7.11.1",
+    "@electron-forge/plugin-fuses": "^7.11.1",
+    "@electron/fuses": "^1.8.0",
     "archiver": "^4.0.1",
     "browserify": "^16.5.1",
     "concurrently": "^5.2.0",
     "decomment": "^0.9.0",
     "electron": "40.0.0",
-    "electron-builder": "^24.13.3",
+    "electron-builder": "^26.7.0",
     "electron-installer-windows": "^3.0.0",
     "electron-renderify": "0.0.2",
     "prebuild-install": "^7.0.1",
@@ -61,16 +68,16 @@
   },
   "license": "Apache-2.0",
   "scripts": {
+    "build": "npm run buildMain && npm run buildBrowser && npm run buildBrowserStyles && npm run buildPreload",
     "postinstall": "node ./scripts/setupDevEnv.js",
     "test": "standard --verbose js/**/*.js main/*.js",
     "watch": "node ./scripts/watch.js",
     "startElectron": "electron . --development-mode",
-    "start": "npm run build && concurrently \"npm run watch\" \"npm run startElectron\"",
+    "start": "electron-forge start",
     "buildMain": "node ./scripts/buildMain.js",
     "buildBrowser": "node ./scripts/buildBrowser.js",
     "buildBrowserStyles": "node ./scripts/buildBrowserStyles.js",
     "buildPreload": "node ./scripts/buildPreload.js",
-    "build": "npm run buildMain && npm run buildBrowser && npm run buildBrowserStyles && npm run buildPreload",
     "buildWindows": "npm run build && node ./scripts/buildWindows.js",
     "buildMacIntel": "npm run build && node ./scripts/buildMac.js --platform=x86",
     "buildMacArm": "npm run build && node ./scripts/buildMac.js --platform=arm64",
@@ -81,10 +88,12 @@
     "updateFilters": "node ./ext/filterLists/updateEasylist.js",
     "updateHttpsList": "node ./ext/httpsUpgrade/updateHttpsList.js",
     "updateSuffixes": "node ./ext/publicSuffixes/updateSuffixes.js",
-    "lint": "prettier --write **/**/*.css **/**/*.md **/**/*.html **/**/*.json && standard --fix js/**/*.js main/*.js | snazzy"
+    "lint": "prettier --write **/**/*.css **/**/*.md **/**/*.html **/**/*.json && standard --fix js/**/*.js main/*.js | snazzy",
+    "package": "electron-forge package",
+    "make": "electron-forge make"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/minbrowser/min.git"
+    "url": "https://github.com/ouro-browser/ouro.git"
   }
 }

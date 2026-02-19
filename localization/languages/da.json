@@ -107,16 +107,16 @@
     "crashErrorSubtitle": "Der opstod et problem under visning af denne side.",
     "errorPagePrimaryAction": "Prøv igen",
     "serverNotFoundTitle": "Server ikke fundet",
-    "serverNotFoundSubtitle": "Min kunne ikke finde denne hjemmeside.",
+    "serverNotFoundSubtitle": "Ouro kunne ikke finde denne hjemmeside.",
     "archiveSearchAction": "Søg på archive.org",
     "sslErrorTitle": "Denne hjemmeside er ikke tilgængelig",
-    "sslErrorMessage": "Min kunne ikke oprette sikker forbindelse til denne hjemmeside.",
+    "sslErrorMessage": "Ouro kunne ikke oprette sikker forbindelse til denne hjemmeside.",
     "dnsErrorTitle": "Hjemmesiden ikke fundet",
     "dnsErrorMessage": "Der opstod en DNS-fejl.",
     "offlineErrorTitle": "Du er offline",
     "offlineErrorMessage": "Genopret forbindelse til internettet, og prøv igen.",
-    "genericConnectionFail": "Min kunne ikke oprette forbindelse til webstedet.",
-    "sslTimeErrorMessage": "Min kunne ikke oprette sikker forbindelse til denne hjemmeside. Sørg for, at din computers ur er indstillet korrekt.",
+    "genericConnectionFail": "Ouro kunne ikke oprette forbindelse til webstedet.",
+    "sslTimeErrorMessage": "Ouro kunne ikke oprette sikker forbindelse til denne hjemmeside. Sørg for, at din computers ur er indstillet korrekt.",
     "addressInvalidTitle": "Denne adresse er ugyldig.",
     "genericError": "Der opstod en fejl",
     /* pages/phishing/index.html */
@@ -125,7 +125,7 @@
     "phishingErrorVisitAnyway": "Besøg websted alligevel",
     "phishingErrorLeave": "Forlad dette websted",
     /* multiple instances alert */
-    "multipleInstancesErrorMessage": "En fejl opstod. Luk venligst alle andre åbne instanser og genstart Min.",
+    "multipleInstancesErrorMessage": "En fejl opstod. Luk venligst alle andre åbne instanser og genstart Ouro.",
     /* pages/sessionRestoreError/index.html */
     "sessionRestoreErrorTitle": "Der opstod en fejl",
     "sessionRestoreErrorExplanation": "Dine gemte faner kunne ikke gendannes korrekt.",
@@ -144,7 +144,7 @@
     "settingsBlockScriptsToggle": "Bloker scripts",
     "settingsBlockImagesToggle": "Bloker billeder",
     "settingsBlockedRequestCount": {
-      "unsafeHTML": "Indtil videre har Min blokeret <strong></strong> annoncer og trackere."
+      "unsafeHTML": "Indtil videre har Ouro blokeret <strong></strong> annoncer og trackere."
     },
     "settingsCustomBangs": null, // Missing translation
     "settingsCustomBangsAdd": null, // Missing translation
@@ -175,7 +175,7 @@
     "settingsUsageStatisticsToggle": {
       "unsafeHTML": "Send brugsstatistik (<a href=\"https://github.com/minbrowser/min/blob/master/docs/statistics.md\">Flere oplysninger</a>)"
     },
-    "settingsStartupOptions": "Når Min starter: ",
+    "settingsStartupOptions": "Når Ouro starter: ",
     "settingsStartupCreateTask": "Genåbn tidligere faner",
     "settingsStartupNewTaskandBackground": "Flyt tidligere faner til en baggrundsopgave",
     "settingsStartupNewTaskOnly": "Åbn en ny tom Opgave",
@@ -265,7 +265,7 @@
     "downloadStateCompleted": "Gennemført",
     "downloadStateFailed": "Mislykkedet",
     /* Update Notifications */
-    "updateNotificationTitle": "En ny version af Min er tilgængelig",
+    "updateNotificationTitle": "En ny version af Ouro er tilgængelig",
     /* Autofill settings */
     "settingsPasswordAutoFillHeadline": "Automatisk udfyldning af adgangskode",
     "settingsSelectPasswordManager": "Vælg en af de understøttede adgangskodeadministratorer:",
@@ -284,7 +284,7 @@
     "passwordManagerSetupDragBox": "Træk værktøjet hertil",
     "passwordManagerSetupInstalling": "Installerer...",
     "passwordManagerBitwardenSignIn": "For at forbinde din Bitwarden-konto skal du gå til vault.bitwarden.com/#/settings/account, rulle til bunden og vælge \"Se API-nøgle\". Indsæt derefter værdierne i felterne nedenfor.",
-    "passwordManagerSetupSignIn": "Log ind på din adgangskodeadministrator for at begynde at bruge autofyld. Dine oplysninger vil ikke blive gemt nogen steder i Min.",
+    "passwordManagerSetupSignIn": "Log ind på din adgangskodeadministrator for at begynde at bruge autofyld. Dine oplysninger vil ikke blive gemt nogen steder i Ouro.",
     "disableAutofill": "Deaktiver Autofyld",
     "passwordManagerSetupUnlockError": "Kunne ikke låse adgangskodelageret op: ",
     "passwordManagerSetupRetry": "Sørg for, at du bruger den rigtige fil og indtaster en korrekt adgangskode. Du kan prøve igen ved at trække værktøjet hertil igen.",

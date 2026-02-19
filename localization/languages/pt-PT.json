@@ -107,16 +107,16 @@
     "crashErrorSubtitle": "Ocorreu um erro ao tentar mostrar esta página.",
     "errorPagePrimaryAction": "Tentar novamente",
     "serverNotFoundTitle": "Servidor não encontrado",
-    "serverNotFoundSubtitle": "Min não conseguiu encontrar este site.",
+    "serverNotFoundSubtitle": "Ouro não conseguiu encontrar este site.",
     "archiveSearchAction": "Pesquisar em archive.org",
     "sslErrorTitle": "Este site não está disponível",
-    "sslErrorMessage": "Min não conseguiu estabelecer uma ligação segura a este site.",
+    "sslErrorMessage": "Ouro não conseguiu estabelecer uma ligação segura a este site.",
     "dnsErrorTitle": "Site não encontrado",
     "dnsErrorMessage": "Ocorreu um erro de DNS.",
     "offlineErrorTitle": "Está no modo off-line",
     "offlineErrorMessage": "Ative o modo on-line e tente novamente.",
-    "genericConnectionFail": "Min não conseguiu estabelecer ligação ao site.",
-    "sslTimeErrorMessage": "Min não conseguiu estabelecer uma ligação segura a este site. Verifique se a hora do computador está correta.",
+    "genericConnectionFail": "Ouro não conseguiu estabelecer ligação ao site.",
+    "sslTimeErrorMessage": "Ouro não conseguiu estabelecer uma ligação segura a este site. Verifique se a hora do computador está correta.",
     "addressInvalidTitle": "Este endereço não é válido.",
     "genericError": "Ocorreu um erro",
     /* pages/phishing/index.html */
@@ -144,7 +144,7 @@
     "settingsBlockScriptsToggle": "Bloquear scripts",
     "settingsBlockImagesToggle": "Bloquear imagens",
     "settingsBlockedRequestCount": {
-      "unsafeHTML": "Até agora, Min bloqueou <strong></strong> anúncios e 'trackers'."
+      "unsafeHTML": "Até agora, Ouro bloqueou <strong></strong> anúncios e 'trackers'."
     },
     "settingsCustomBangs": null, // Missing translation
     "settingsCustomBangsAdd": null, // Missing translation
@@ -175,7 +175,7 @@
     "settingsUsageStatisticsToggle": {
       "unsafeHTML": "Enviar estatísticas de utilização (<a href=\"https://github.com/minbrowser/min/blob/master/docs/statistics.md\">Mais informação</a>)"
     },
-    "settingsStartupOptions": "Ao iniciar Min: ",
+    "settingsStartupOptions": "Ao iniciar Ouro: ",
     "settingsStartupCreateTask": "Reabrir sessão anterior",
     "settingsStartupNewTaskandBackground": "Mover separadores anteriores para tarefa secundária",
     "settingsStartupNewTaskOnly": "Abrir uma nova tarefa",
@@ -284,7 +284,7 @@
     "passwordManagerSetupDragBox": "Arraste a ferramenta para aqui",
     "passwordManagerSetupInstalling": "A instalar...",
     "passwordManagerBitwardenSignIn": "Para estabelecer ligação à sua conta Bitwarden, aceda a vault.bitwarden.com/#/settings/account e escolha \"View API Key\". Depois, cole os valores nos campos abaixo.",
-    "passwordManagerSetupSignIn": "Inicie sessão no gestor de palavras-passe para utilizar o preenchimento automático. As suas credenciais não serão guardadas no Min.",
+    "passwordManagerSetupSignIn": "Inicie sessão no gestor de palavras-passe para utilizar o preenchimento automático. As suas credenciais não serão guardadas no Ouro.",
     "disableAutofill": "Desativar preenchimento automático",
     "passwordManagerSetupUnlockError": "Falha ao desbloquear: ",
     "passwordManagerSetupRetry": "Certifique-se de que está a utilizar o ficheiro e a palavra-passe corretas. Pode tentar novamente arrastando a ferramenta para aqui.",

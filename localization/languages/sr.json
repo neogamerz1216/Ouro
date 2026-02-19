@@ -107,16 +107,16 @@
     "crashErrorSubtitle": "Дошло је до проблема приликом приказивања ове странице.",
     "errorPagePrimaryAction": "Покушај поново",
     "serverNotFoundTitle": "Сервер није пронађен",
-    "serverNotFoundSubtitle": "Min није могао да пронађе овај сајт.",
+    "serverNotFoundSubtitle": "Ouro није могао да пронађе овај сајт.",
     "archiveSearchAction": "Претражи на archive.org",
     "sslErrorTitle": "Овај сајт није доступан",
-    "sslErrorMessage": "Min није могао сигурно да се повеже на овај сајт.",
+    "sslErrorMessage": "Ouro није могао сигурно да се повеже на овај сајт.",
     "dnsErrorTitle": "Сајт није пронађен",
     "dnsErrorMessage": "Догодила се DNS грешка.",
     "offlineErrorTitle": "Нисте повезани на интернет",
     "offlineErrorMessage": "Поново се повежите на интернет и покушајте поново.",
-    "genericConnectionFail": "Min није могао да се повеже на сајт.",
-    "sslTimeErrorMessage": "Min није могао сигурно да се повеже на овај сајт. Молимо проверите да ли је сат Вашег рачунара правилно подешен.",
+    "genericConnectionFail": "Ouro није могао да се повеже на сајт.",
+    "sslTimeErrorMessage": "Ouro није могао сигурно да се повеже на овај сајт. Молимо проверите да ли је сат Вашег рачунара правилно подешен.",
     "addressInvalidTitle": "Ова адреса није валидна.",
     "genericError": "Дошло је до грешке",
     /* pages/phishing/index.html */
@@ -125,7 +125,7 @@
     "phishingErrorVisitAnyway": "Ипак посети сајт",
     "phishingErrorLeave": "Напусти сајт",
     /* multiple instances alert */
-    "multipleInstancesErrorMessage": "Дошло је до грешке. Затворите све покренуте инстанце и поново покрените Min.",
+    "multipleInstancesErrorMessage": "Дошло је до грешке. Затворите све покренуте инстанце и поново покрените Ouro.",
     /* pages/sessionRestoreError/index.html */
     "sessionRestoreErrorTitle": "Дошло је до грешке",
     "sessionRestoreErrorExplanation": "Сачувани tab-ови нису могли да буду успешно повраћени.",
@@ -144,7 +144,7 @@
     "settingsBlockScriptsToggle": "Блокирај скрипте",
     "settingsBlockImagesToggle": "Блокирај слике",
     "settingsBlockedRequestCount": {
-      "unsafeHTML": "До сада, Min је блокирао <strong></strong> реклама и програма за праћење."
+      "unsafeHTML": "До сада, Ouro је блокирао <strong></strong> реклама и програма за праћење."
     },
     "settingsCustomBangs": "Прилагођене команде",
     "settingsCustomBangsAdd": "Додај команду",
@@ -175,7 +175,7 @@
     "settingsUsageStatisticsToggle": {
       "unsafeHTML": "Шаљи статистику коришћења (<a href=\"https://github.com/minbrowser/min/blob/master/docs/statistics.md\">Више</a>)"
     },
-    "settingsStartupOptions": "Када се Min покрене: ",
+    "settingsStartupOptions": "Када се Ouro покрене: ",
     "settingsStartupCreateTask": "Отвори претходне tab-ове",
     "settingsStartupNewTaskandBackground": "Помери претходне tab-ове у позадински задатак",
     "settingsStartupNewTaskOnly": "Отвори нови празак задатак",
@@ -232,7 +232,7 @@
     "appMenuHelp": "Помоћ",
     "appMenuKeyboardShortcuts": "Пречице на тастатури",
     "appMenuReportBug": "Пријави проблем",
-    "appMenuTakeTour": "Разгледај Min",
+    "appMenuTakeTour": "Разгледај Ouro",
     "appMenuViewGithub": "Погледај на GitHub-у",
     "appMenuAbout": "О %n", //%n is replaced with app name
     "appMenuPreferences": "Преференце",
@@ -265,7 +265,7 @@
     "downloadStateCompleted": "Завршено",
     "downloadStateFailed": "Неуспело",
     /* Update Notifications */
-    "updateNotificationTitle": "Доступна је нова верзија Min-а",
+    "updateNotificationTitle": "Доступна је нова верзија Ouro-а",
     /* Autofill settings */
     "settingsPasswordAutoFillHeadline": "Аутоматско попуњавање лозинке",
     "settingsSelectPasswordManager": "Одабери један од подржаних управљача лозинкама:",
@@ -284,7 +284,7 @@
     "passwordManagerSetupDragBox": "Превуци алат овде",
     "passwordManagerSetupInstalling": "Инсталирање...",
     "passwordManagerBitwardenSignIn": "Да бисте повезали Ваш Bitwarden налог, идите на vault.bitwarden.com/#/settings/account, идите на дно странице и одаберите \"View API Key\". Затим налепите вредност у поље испод.",
-    "passwordManagerSetupSignIn": "Пријавите се на Ваш управљач лозинкама да бисте користили аутоматско попуњавање. Ваши креденцијали неће бити сачувани у Min-у.",
+    "passwordManagerSetupSignIn": "Пријавите се на Ваш управљач лозинкама да бисте користили аутоматско попуњавање. Ваши креденцијали неће бити сачувани у Ouro-у.",
     "disableAutofill": "Онемогући аутоматско попуњавање лозинки",
     "passwordManagerSetupUnlockError": "Неуспешно откључавање складишта лозинки: ",
     "passwordManagerSetupRetry": "Будите сигурни да користите прави фајл и уносите исправну лозинку. Можете покушати поново превлачењем алата овде.",

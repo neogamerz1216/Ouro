@@ -107,16 +107,16 @@
     "crashErrorSubtitle": "Se ha producido un problema al mostrar este sitio web.",
     "errorPagePrimaryAction": "Inténtalo de nuevo",
     "serverNotFoundTitle": "Servidor no encontrado",
-    "serverNotFoundSubtitle": "Min no puede encontrar este sitio web.",
+    "serverNotFoundSubtitle": "Ouro no puede encontrar este sitio web.",
     "archiveSearchAction": "Buscar en archive.org",
     "sslErrorTitle": "Esta página web no está disponible",
-    "sslErrorMessage": "Min no pudo conectarse de forma segura a este sitio web.",
+    "sslErrorMessage": "Ouro no pudo conectarse de forma segura a este sitio web.",
     "dnsErrorTitle": "Sitio web no encontrado",
     "dnsErrorMessage": "Se ha producido un error de DNS.",
     "offlineErrorTitle": "Estás desconectado",
     "offlineErrorMessage": "Vuelva a conectarse a Internet e inténtelo de nuevo.",
-    "genericConnectionFail": "Min no pudo conectarse al sitio web.",
-    "sslTimeErrorMessage": "Min no pudo conectarse de forma segura a este sitio web. Por favor asegúrese de que el reloj de su ordenador está configurado correctamente.",
+    "genericConnectionFail": "Ouro no pudo conectarse al sitio web.",
+    "sslTimeErrorMessage": "Ouro no pudo conectarse de forma segura a este sitio web. Por favor asegúrese de que el reloj de su ordenador está configurado correctamente.",
     "addressInvalidTitle": "Esta dirección no es válida.",
     "genericError": "Ha ocurrido un error",
     /* pages/phishing/index.html */
@@ -125,7 +125,7 @@
     "phishingErrorVisitAnyway": "Visitar este sitio de todos modos",
     "phishingErrorLeave": "Salir de este sitio",
     /* multiple instances alert */
-    "multipleInstancesErrorMessage": "Ha ocurrido un error. Por favor, cierre cualquier otra instancia y reinicie Min.",
+    "multipleInstancesErrorMessage": "Ha ocurrido un error. Por favor, cierre cualquier otra instancia y reinicie Ouro.",
     /* pages/sessionRestoreError/index.html */
     "sessionRestoreErrorTitle": "Ha ocurrido un error",
     "sessionRestoreErrorExplanation": "Tus pestañas guardadas no se pudieron restaurar correctamente.",
@@ -144,7 +144,7 @@
     "settingsBlockScriptsToggle": "Bloquear scripts",
     "settingsBlockImagesToggle": "Bloquear imágenes",
     "settingsBlockedRequestCount": {
-      "unsafeHTML": "Hasta ahora, Min ha bloqueado <strong></strong> anuncios y rastreadores."
+      "unsafeHTML": "Hasta ahora, Ouro ha bloqueado <strong></strong> anuncios y rastreadores."
     },
     "settingsCustomBangs": null, // Missing translation
     "settingsCustomBangsAdd": null, // Missing translation
@@ -175,7 +175,7 @@
     "settingsUsageStatisticsToggle": {
       "unsafeHTML": "Enviar estadísticas de uso (<a href=\"https://github.com/minbrowser/min/blob/master/docs/statistics.md\">Más información</a>)"
     },
-    "settingsStartupOptions": "Cuando inicie Min:", 
+    "settingsStartupOptions": "Cuando inicie Ouro:", 
     "settingsStartupCreateTask": "Restaurar pestañas anteriores", 
     "settingsStartupNewTaskandBackground": "Mover pestañas anteriores a tarea en segundo plano", 
     "settingsStartupNewTaskOnly": "Abrir nueva pestaña", 
@@ -265,7 +265,7 @@
     "downloadStateCompleted": "Completado",
     "downloadStateFailed": "Fallido",
     /* Update Notifications */
-    "updateNotificationTitle": "Una nueva versión de Min se encuentra disponible.",
+    "updateNotificationTitle": "Una nueva versión de Ouro se encuentra disponible.",
     /* Autofill settings */
     "settingsPasswordAutoFillHeadline": "Auto-llenado de contraseña", //Autofill is not the same as autocomplete (autocompletar)
     "settingsSelectPasswordManager": "Elije uno de los gestores de contraseñas soportados:",
@@ -284,7 +284,7 @@
     "passwordManagerSetupDragBox": "Arrastra la herramienta hasta aquí",
     "passwordManagerSetupInstalling": "Instalando...",
     "passwordManagerBitwardenSignIn": "Para conectar su cuenta de Bitwarden, vaya a vault.bitwarden.com/#/settings/account, desplácese hacia abajo y seleccione \"View API Key\". Luego pegue los valores en los campos a continuación.",
-    "passwordManagerSetupSignIn": "Inicia sesión en tu gestor de contraseñas para empezar a usar el Auto-llenado. Tus credenciales no serán almacenadas en ningún lugar dentro de Min.",
+    "passwordManagerSetupSignIn": "Inicia sesión en tu gestor de contraseñas para empezar a usar el Auto-llenado. Tus credenciales no serán almacenadas en ningún lugar dentro de Ouro.",
     "disableAutofill": "Desactivar Auto-llenado",
     "passwordManagerSetupUnlockError": "No se pudo desbloquear el almacén de contraseñas:",
     "passwordManagerSetupRetry": "Asegúrate de estar usando el archivo correcto e ingresando una contraseña correcta. Puedes reintentar arrastrando nuevamente la herramienta hasta aquí.",

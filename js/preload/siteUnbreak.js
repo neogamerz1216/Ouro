@@ -28,7 +28,7 @@ if ((window.location.hostname === 'google.com' || window.location.hostname.endsW
      (https://github.com/electron/electron/issues/16587)
 
      However, if window.chrome exists, hangouts will attempt to connect to an extension and break
-     (https://github.com/minbrowser/min/issues/1051)
+     (https://github.com/ouro-browser/min/issues/1051)
      so don't enable it there
 
      As of 2/7/22, this also breaks drive, so disable it there also

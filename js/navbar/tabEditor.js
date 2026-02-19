@@ -28,7 +28,7 @@ const tabEditor = {
     document.body.classList.add('is-edit-mode')
 
     var currentURL = urlParser.getSourceURL(tabs.get(tabId).url)
-    if (currentURL === 'min://newtab') {
+    if (currentURL === 'ouro://newtab') {
       currentURL = ''
     }
 
@@ -37,7 +37,7 @@ const tabEditor = {
     if (!editingValue) {
       tabEditor.input.select()
     }
-    // https://github.com/minbrowser/min/discussions/1506
+    // https://github.com/ouro-browser/min/discussions/1506
     tabEditor.input.scrollLeft = 0
 
     searchbar.show(tabEditor.input)
@@ -104,7 +104,7 @@ const tabEditor = {
       if (e.keyCode === 13) { // return key pressed; update the url
         if (this.getAttribute('data-autocomplete') && this.getAttribute('data-autocomplete').toLowerCase() === this.value.toLowerCase()) {
           // special case: if the typed input is capitalized differently from the actual URL that was autocompleted (but is otherwise the same), then we want to open the actual URL instead of what was typed.
-          // see https://github.com/minbrowser/min/issues/314#issuecomment-276678613
+          // see https://github.com/ouro-browser/min/issues/314#issuecomment-276678613
           searchbar.openURL(this.getAttribute('data-autocomplete'), e)
         } else {
           searchbar.openURL(this.value, e)

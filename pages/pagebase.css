@@ -1,13 +1,36 @@
+:root {
+  --ouro-ink: #0f172a;
+  --ouro-ink-soft: #1f2937;
+  --ouro-gold: #e0b108;
+  --ouro-amber: #f3d06b;
+  --ouro-sand: #f6f4ef;
+  --ouro-card: #ffffff;
+  --ouro-muted: #6b7280;
+  --ouro-radius: 14px;
+  --ouro-shadow: 0 18px 44px rgba(15, 23, 42, 0.18);
+  --ouro-font: "Manrope", "Inter", "Segoe UI", system-ui, -apple-system,
+    sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body,
 html {
   width: 100%;
   height: 100%;
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
-  font-family: ".SFNSText-Regular", "Helvetica Neue", "Arial", sans-serif;
-  background-color: #eee;
+  font-family: var(--ouro-font);
+  background: radial-gradient(circle at 20% 20%, #f9f0d2 0%, transparent 25%),
+    radial-gradient(circle at 80% 10%, #e5e9ff 0%, transparent 22%),
+    linear-gradient(135deg, #fefefe 0%, #f2f1eb 100%);
+  color: var(--ouro-ink);
 }
+
 /* TODO figure out why the default focus color in Electron is orange */
 *:focus {
   outline-color: rgb(0, 117, 255);
@@ -17,62 +40,62 @@ html {
 }
 
 body.dark-mode {
-  background-color: rgb(33, 37, 43);
-  color: lightgrey;
+  background: radial-gradient(circle at 25% 20%, #1f2937 0%, transparent 28%),
+    radial-gradient(circle at 75% 10%, #374151 0%, transparent 22%),
+    linear-gradient(135deg, #0b1020 0%, #161d2d 100%);
+  color: #e5e7eb;
 }
 
 #page-wrapper {
-  width: auto;
-  height: auto;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  max-width: 600px;
+  width: 100%;
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 56px 48px 72px;
 }
+
 h1 {
-  font-size: 2.75em;
-  font-family: ".SFNSDisplay-Light", "Helvetica Neue", "Arial", sans-serif;
-  font-weight: normal;
-  margin-bottom: 0.25em;
-  margin-top: 0;
+  font-size: clamp(32px, 5vw, 44px);
+  font-weight: 800;
+  margin: 0;
+  letter-spacing: -0.01em;
 }
+
 h2 {
-  font-size: 1.15em;
-  font-weight: normal;
-  margin-top: 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-top: 0.35em;
+  color: var(--ouro-muted);
 }
+
 button {
   -webkit-appearance: none;
-  color: inherit;
-  font-size: 1.1em;
-  padding: 0.5em 1em;
+  color: var(--ouro-ink);
+  font-size: 1rem;
+  padding: 0.8em 1.3em;
   border: 0;
-  background-color: rgba(0, 0, 0, 0.1);
-  margin-top: 0.5em;
-}
-button.secondary-button {
-  padding: 0.5em;
-  margin-left: -0.5em;
-  margin-right: 2em;
-  transition: 0.1s;
-  background: none;
-  opacity: 0.6;
-  text-decoration: underline;
-}
-button.secondary-button:hover {
-  opacity: 0.8;
-  background: rgba(0, 0, 0, 0.05);
+  background: linear-gradient(135deg, #ffe26b, #e0b108);
+  border-radius: var(--ouro-radius);
+  box-shadow: var(--ouro-shadow);
   cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 24px 48px rgba(15, 23, 42, 0.2);
 }
 button.secondary-button {
-  float: left;
+  background: transparent;
+  color: var(--ouro-muted);
+  box-shadow: none;
+  text-decoration: underline;
+  padding: 0.5em 0.75em;
 }
 button.primary-button {
   float: right;
 }
 
 a {
-  color: royalblue;
+  color: var(--ouro-ink);
   text-decoration: none;
+  font-weight: 600;
 }

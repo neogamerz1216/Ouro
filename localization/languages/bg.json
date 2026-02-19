@@ -107,16 +107,16 @@
     "crashErrorSubtitle": "Възникна проблем при показването на тази страница.",
     "errorPagePrimaryAction": "Опитайте отново",
     "serverNotFoundTitle": "Сървърът не е намерен",
-    "serverNotFoundSubtitle": "Min не успя да намери този уеб сайт.",
+    "serverNotFoundSubtitle": "Ouro не успя да намери този уеб сайт.",
     "archiveSearchAction": "Търсене в archive.org",
     "sslErrorTitle": "Този уеб сайт не е наличен",
-    "sslErrorMessage": "Min не успя да се свърже сигурно с този уеб сайт.",
+    "sslErrorMessage": "Ouro не успя да се свърже сигурно с този уеб сайт.",
     "dnsErrorTitle": "Уеб сайтът не е намерен",
     "dnsErrorMessage": "Възникна DNS грешка.",
     "offlineErrorTitle": "Вие сте офлайн",
     "offlineErrorMessage": "Свържете се отново с интернет и опитайте пак.",
-    "genericConnectionFail": "Min не успя да се свърже към уеб сайта.",
-    "sslTimeErrorMessage": "Min не успя да се свърже сигурно с този уеб сайт. Моля уверете се, че часовникът на Вашият компютър е настроен правилно.",
+    "genericConnectionFail": "Ouro не успя да се свърже към уеб сайта.",
+    "sslTimeErrorMessage": "Ouro не успя да се свърже сигурно с този уеб сайт. Моля уверете се, че часовникът на Вашият компютър е настроен правилно.",
     "addressInvalidTitle": "Този адрес е невалиден.",
     "genericError": "Възникна грешка",
     /* pages/phishing/index.html */
@@ -125,7 +125,7 @@
     "phishingErrorVisitAnyway": "Продължаване въпреки риска",
     "phishingErrorLeave": "Напускане на сайта",
     /* multiple instances alert */
-    "multipleInstancesErrorMessage": "Възникна грешка. Моля затворете всякакви други инстанции и рестартирайте Min.",
+    "multipleInstancesErrorMessage": "Възникна грешка. Моля затворете всякакви други инстанции и рестартирайте Ouro.",
     /* pages/sessionRestoreError/index.html */
     "sessionRestoreErrorTitle": "Възникна грешка",
     "sessionRestoreErrorExplanation": "Вашите запазени раздели не можаха да бъдат възстановени правилно.",
@@ -144,7 +144,7 @@
     "settingsBlockScriptsToggle": "Блокиране на скриптове",
     "settingsBlockImagesToggle": "Блокиране на изображения",
     "settingsBlockedRequestCount": {
-      "unsafeHTML": "Досега Min е блокирал <strong></strong> реклами и тракери."
+      "unsafeHTML": "Досега Ouro е блокирал <strong></strong> реклами и тракери."
     },
     "settingsCustomBangs": null, // Missing translation
     "settingsCustomBangsAdd": null, // Missing translation
@@ -262,7 +262,7 @@
     "downloadStateCompleted": "Завършено",
     "downloadStateFailed": "Провалено",
     /* Update Notifications */
-    "updateNotificationTitle": "Налична е нова версия на Min",
+    "updateNotificationTitle": "Налична е нова версия на Ouro",
     /* Autofill settings */
     "settingsPasswordAutoFillHeadline": "Автоматично попълване на пароли",
     "settingsSelectPasswordManager": "Изберете един от поддържаните мениджъри на пароли:",
@@ -281,7 +281,7 @@
     "passwordManagerSetupDragBox": "Плъзнете уреда тук",
     "passwordManagerSetupInstalling": "Инсталиране...",
     "passwordManagerBitwardenSignIn": null, //missing translation
-    "passwordManagerSetupSignIn": "Впишете се във Вашия мениджър на пароли, за да започнете употребата на автоматично попълване. Вашите пълномощия няма да се съхраняват никъде в Min.",
+    "passwordManagerSetupSignIn": "Впишете се във Вашия мениджър на пароли, за да започнете употребата на автоматично попълване. Вашите пълномощия няма да се съхраняват никъде в Ouro.",
     "disableAutofill": "Деактивиране на автоматично попълване на пароли",
     "passwordManagerSetupUnlockError": "Неуспешно отключване на хранилището за пароли: ",
     "passwordManagerSetupRetry": "Уверете се, че използвате правилния файл и въвеждате правилна парола. Може да пробвате отново, като пак плъзнете уреда тук.",

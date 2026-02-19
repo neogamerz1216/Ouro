@@ -1,18 +1,20 @@
+const ouroPath = require('path')
 const { pathToFileURL } = require('url')
+const { protocol: ouroProtocol, net: ouroNet, app: ouroApp, session: ouroSession } = require('electron')
 
-protocol.registerSchemesAsPrivileged([
+ouroProtocol.registerSchemesAsPrivileged([
   {
-    scheme: 'min',
+    scheme: 'ouro',
     privileges: {
       standard: true,
       secure: true,
-      supportFetchAPI: true,
+      supportFetchAPI: true
     }
   }
 ])
 
 function registerBundleProtocol (ses) {
-  ses.protocol.handle('min', (req) => {
+  ses.protocol.handle('ouro', (req) => {
     let { host, pathname } = new URL(req.url)
 
     if (pathname.charAt(0) === '/') {
@@ -28,9 +30,9 @@ function registerBundleProtocol (ses) {
 
     // NB, this checks for paths that escape the bundle, e.g.
     // app://bundle/../../secret_file.txt
-    const pathToServe = path.resolve(__dirname, pathname)
-    const relativePath = path.relative(__dirname, pathToServe)
-    const isSafe = relativePath && !relativePath.startsWith('..') && !path.isAbsolute(relativePath)
+    const pathToServe = ouroPath.resolve(__dirname, pathname)
+    const relativePath = ouroPath.relative(__dirname, pathToServe)
+    const isSafe = relativePath && !relativePath.startsWith('..') && !ouroPath.isAbsolute(relativePath)
 
     if (!isSafe) {
       return new Response('bad', {
@@ -39,12 +41,12 @@ function registerBundleProtocol (ses) {
       })
     }
 
-    return net.fetch(pathToFileURL(pathToServe).toString())
+    return ouroNet.fetch(pathToFileURL(pathToServe).toString())
   })
 }
 
-app.on('session-created', (ses) => {
-  if (ses !== session.defaultSession) {
+ouroApp.on('session-created', (ses) => {
+  if (ses !== ouroSession.defaultSession) {
     registerBundleProtocol(ses)
   }
 })

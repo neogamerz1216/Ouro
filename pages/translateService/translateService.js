@@ -3,8 +3,8 @@ import { LatencyOptimisedTranslator, TranslatorBacking } from '../../node_module
 import { franc } from '../../ext/franc/franc-6.2.0.bundle.mjs'
 import iso6393To1Mapping from './iso3To1Mapping.mjs'
 
-const registryUrl = 'https://services.minbrowser.org/bergamot-models-v1/registry.json'
-const modelBaseUrl = 'https://services.minbrowser.org/bergamot-models-v1'
+const registryUrl = 'https://services.ouro-browser.org/bergamot-models-v1/registry.json'
+const modelBaseUrl = 'https://services.ouro-browser.org/bergamot-models-v1'
 
 class CustomBacking extends TranslatorBacking {
   // Based on https://github.com/browsermt/bergamot-translator/blob/9271618ebbdc5d21ac4dc4df9e72beb7ce644774/wasm/module/translator.js#L207
@@ -34,7 +34,7 @@ let sessionEndTimeout = null
 window.addEventListener('message', async function (e) {
   if (e.source === window && e.data === 'page-translation-session-create') {
     const options = {
-      registryUrl: 'https://services.minbrowser.org/bergamot-models-v1/registry.json',
+      registryUrl: 'https://services.ouro-browser.org/bergamot-models-v1/registry.json',
       cacheSize: 0, // This is a cache of translations, not models
       downloadTimeout: null // Disable timeout
     }

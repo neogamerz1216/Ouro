@@ -1,7 +1,7 @@
 #navbar {
   display: flex;
   height: calc(36px + var(--control-space-top));
-  transition: 0.2s background-color;
+  transition: 0.2s background-color, 0.2s box-shadow;
   width: 100%;
   -webkit-user-select: none;
   position: relative;
@@ -10,6 +10,19 @@
   padding-top: var(--control-space-top);
   padding-left: var(--control-space-left);
   padding-right: var(--control-space-right);
+  background: linear-gradient(180deg, #f6efdf 0%, #eadfc9 100%);
+  color: #342616;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.85),
+    0 10px 26px rgba(67, 45, 17, 0.16);
+  border-bottom: 1px solid rgba(87, 63, 31, 0.24);
+}
+
+.dark-theme #navbar {
+  background: linear-gradient(180deg, #2b3442 0%, #1b222d 100%);
+  color: #f4ead6;
+  border-bottom-color: rgba(255, 255, 255, 0.16);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.08),
+    0 10px 26px rgba(0, 0, 0, 0.32);
 }
 
 /* when the tab-group is white, we need a line to separate it from the webviews */
@@ -21,13 +34,13 @@
   position: absolute;
   bottom: 0;
   left: 0;
-  background: rgba(0, 0, 0, 0.075);
+  background: rgba(56, 39, 19, 0.12);
 }
 
 /* dark colors don't need to be darkened as much for contrast */
 
 .dark-theme #navbar:before {
-  background: rgba(255, 255, 255, 0.15);
+  background: rgba(255, 255, 255, 0.12);
 }
 
 /* navbar buttons */
@@ -56,7 +69,7 @@ body.is-edit-mode #toolbar-navigation-buttons {
 }
 #back-button:disabled,
 #forward-button:disabled {
-  opacity: 0.2;
+  opacity: 0.32;
 }
 
 /* Remove default space from being inline-block */
@@ -91,6 +104,9 @@ body.linux #menu-button {
   flex: 1;
   overflow-x: auto;
   overflow-y: hidden;
+  align-items: stretch;
+  gap: 0.34rem;
+  padding: 2px 0.3rem 0.28rem;
 }
 
 #tabs #tabs-inner.disable-scroll {
@@ -99,32 +115,77 @@ body.linux #menu-button {
 
 .tab-item {
   flex: 1;
-  min-width: 125px;
-  transition: 0.2s transform;
-  line-height: 36px;
-  height: 36px;
+  min-width: 132px;
+  transition: 0.2s transform, 0.2s background-color, 0.2s color, 0.2s box-shadow,
+    0.2s border-color;
+  line-height: 34px;
+  height: 34px;
+  margin-top: 2px;
   overflow: hidden;
   word-break: break-all;
   position: relative;
   display: flex;
   align-items: stretch;
-  gap: 0.5rem;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
+  gap: 0.45rem;
+  padding-left: 0.6rem;
+  padding-right: 0.6rem;
+  border-radius: 10px 10px 8px 8px;
+  border: 1px solid rgba(104, 77, 44, 0.2);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.4),
+    rgba(233, 220, 196, 0.42)
+  );
+  color: #3f2d18;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.66);
 }
+
+.dark-theme .tab-item {
+  border-color: rgba(255, 255, 255, 0.16);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.09),
+    rgba(255, 255, 255, 0.04)
+  );
+  color: rgba(246, 239, 224, 0.9);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.08);
+}
+
 .tab-item.active {
-  min-width: 168px;
+  min-width: 172px;
+  height: 36px;
+  line-height: 36px;
+  margin-top: 0;
+  background: linear-gradient(180deg, #fffdfa 0%, #f7ecd7 100%);
+  color: #2c2013;
+  border-color: rgba(101, 70, 36, 0.34);
+  box-shadow: 0 10px 20px rgba(76, 51, 20, 0.22),
+    inset 0 1px 0 rgba(255, 255, 255, 0.92);
+  z-index: 1;
 }
+
+.dark-theme .tab-item.active {
+  background: linear-gradient(
+    180deg,
+    rgba(72, 83, 102, 0.98),
+    rgba(54, 64, 82, 0.98)
+  );
+  color: #ffffff;
+  border-color: rgba(255, 255, 255, 0.26);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.34),
+    inset 0 1px 0 rgba(255, 255, 255, 0.14);
+}
+
 .tab-item.gu-mirror {
   top: var(--control-space-top) !important;
   height: 32px !important;
   line-height: 32px !important;
   margin-top: 2px !important;
   opacity: 1;
-  box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.22);
   background-color: #fff !important;
   color: var(--theme-foreground-color);
-  border-radius: 3px;
+  border-radius: 10px;
 }
 .tab-item.gu-mirror:before {
   position: absolute;
@@ -133,7 +194,7 @@ body.linux #menu-button {
   width: 100%;
   height: 100%;
   z-index: -1;
-  content: '';
+  content: "";
   background-color: var(--theme-background-color);
   opacity: 0.7;
 }
@@ -149,24 +210,37 @@ body.linux #menu-button {
 }
 
 #navbar.show-dividers .tab-item:not(:last-child) {
-  border-right: 1px solid rgba(0, 0, 0, 0.15);
+  border-right: 1px solid rgba(0, 0, 0, 0.12);
 }
 .dark-theme #navbar.show-dividers .tab-item:not(:last-child) {
-  border-right-color: rgba(255, 255, 255, 0.4);
+  border-right-color: rgba(255, 255, 255, 0.28);
 }
 
 #navbar.show-dividers:before {
-  background: rgba(182, 182, 182, 0.5);
+  background: rgba(111, 89, 59, 0.35);
 }
 
 .tab-item:not(.active):hover {
-  background-color: rgba(0, 0, 0, 0.03);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.62),
+    rgba(236, 224, 199, 0.52)
+  );
+  border-color: rgba(95, 68, 35, 0.3);
+  color: #241608;
+  transform: translateY(-1px);
 }
 .dark-theme .tab-item:not(.active):hover {
-  background-color: rgba(255, 255, 255, 0.1);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.16),
+    rgba(255, 255, 255, 0.08)
+  );
+  border-color: rgba(255, 255, 255, 0.24);
+  color: #ffffff;
 }
 .dark-theme.theme-background-low-contrast .tab-item:not(.active):hover {
-  background-color: rgba(255, 255, 255, 0.15);
+  background-color: rgba(255, 255, 255, 0.14);
 }
 
 /* icons */
@@ -174,7 +248,7 @@ body.linux #menu-button {
 .tab-item .tab-icon-area {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: 0.45rem;
   order: 1;
 }
 body:not(.touch)
@@ -197,7 +271,7 @@ body:not(.touch)
   width: 24px;
   height: 24px;
   border-radius: 50%;
-  background: rgba(0, 0, 0, 0.075);
+  background: rgba(89, 62, 28, 0.16);
   position: absolute;
   top: 50%;
   left: 50%;
@@ -205,17 +279,9 @@ body:not(.touch)
   z-index: -1;
 }
 .dark-theme .tab-item .tab-icon:hover:after {
-  background: rgba(255, 255, 255, 0.15);
+  background: rgba(255, 255, 255, 0.17);
 }
-.tab-item.active:not(:only-child) {
-  background: rgba(0, 0, 0, 0.06);
-}
-.dark-theme .tab-item.active:not(:only-child) {
-  background: rgba(255, 255, 255, 0.2);
-}
-.dark-theme.theme-background-low-contrast .tab-item.active:not(:only-child) {
-  background: rgba(255, 255, 255, 0.25);
-}
+
 .tab-item.fade {
   opacity: 0.55;
 }
@@ -253,7 +319,9 @@ body:not(.touch)
   display: block;
   position: absolute;
   top: 0;
-  font-size: 15px;
+  font-size: 14px;
+  font-weight: 650;
+  letter-spacing: 0.005em;
   transform-origin: left 10%;
   transition: 0.15s transform;
   white-space: nowrap;
@@ -261,13 +329,20 @@ body:not(.touch)
 .tab-item .url-element {
   display: block;
   position: absolute;
-  top: 5px;
+  top: 4px;
   transform-origin: left 90%;
   transform: translateY(15%);
   opacity: 0;
   transition: 0.15s all;
-  font-size: 13px;
+  font-size: 12px;
+  color: rgba(71, 48, 20, 0.74);
   white-space: nowrap;
+}
+.tab-item.active .url-element {
+  color: rgba(68, 47, 23, 0.76);
+}
+.dark-theme .tab-item.active .url-element {
+  color: rgba(240, 248, 255, 0.84);
 }
 .tab-item.active.has-url:hover .url-element {
   transform: none;
@@ -288,13 +363,17 @@ body:not(.touch)
   height: 36px;
   margin-top: -0.5px;
   font-size: 1.4em !important;
+  border-radius: 10px;
+  transition: background-color 0.15s, box-shadow 0.15s, color 0.15s;
 }
-body.windows .navbar-action-button:not(:disabled):hover {
-  background-color: rgba(0, 0, 0, 0.075);
+
+#navbar .navbar-action-button:not(:disabled):hover {
+  background-color: rgba(79, 56, 26, 0.13);
 }
-body.windows.dark-theme .navbar-action-button:not(:disabled):hover {
-  background: rgba(255, 255, 255, 0.075);
+.dark-theme #navbar .navbar-action-button:not(:disabled):hover {
+  background: rgba(255, 255, 255, 0.12);
 }
+
 .navbar-action-button.invisible {
   visibility: hidden;
 }
@@ -309,6 +388,24 @@ body.windows.dark-theme .navbar-action-button:not(:disabled):hover {
   padding: 0;
   width: 36px;
   font-size: 1.6em !important;
+  border-radius: 11px;
+  border: 1px solid rgba(102, 74, 41, 0.32);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.42),
+    rgba(231, 217, 192, 0.48)
+  );
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.75);
+}
+
+.dark-theme .navbar-right-actions #add-tab-button {
+  border-color: rgba(255, 255, 255, 0.28);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.14),
+    rgba(255, 255, 255, 0.07)
+  );
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.14);
 }
 
 /* audio button */
@@ -336,7 +433,7 @@ body.windows.dark-theme .navbar-action-button:not(:disabled):hover {
 /* permission request buttons */
 
 .tab-item .tab-icon.permission-request-icon {
-  border: 1px rgba(0, 0, 0, 0.3) solid;
+  border: 1px rgba(76, 54, 27, 0.38) solid;
   border-radius: 0.75rem;
   height: 70%;
   margin: auto 0;
@@ -348,16 +445,16 @@ body.windows.dark-theme .navbar-action-button:not(:disabled):hover {
   display: inline-block;
 }
 .dark-theme .tab-item .tab-icon.permission-request-icon {
-  border-color: rgba(255, 255, 255, 0.5);
+  border-color: rgba(255, 255, 255, 0.44);
 }
 .tab-item .tab-icon.permission-request-icon:hover {
-  background-color: rgba(0, 0, 0, 0.075);
+  background-color: rgba(88, 62, 30, 0.12);
 }
 .dark-theme .tab-item .tab-icon.permission-request-icon:hover {
-  background-color: rgba(255, 255, 255, 0.15);
+  background-color: rgba(255, 255, 255, 0.16);
 }
 .tab-item .tab-icon.permission-request-icon.active {
-  background-color: rgba(0, 0, 0, 0.66);
+  background-color: rgba(58, 41, 20, 0.82);
   border-color: transparent;
   color: white;
 }
@@ -405,7 +502,6 @@ body.is-focus-mode .navbar-action-button:not(#menu-button) {
   position: absolute;
   top: 0;
   left: 0;
-  /* margin: 0 0.8em; */
   overflow: hidden;
 }
 

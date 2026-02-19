@@ -81,7 +81,7 @@ function listenForDownloadHeaders (ses) {
       }
 
       // whether this is a file being viewed in-browser or a page
-      // Needed to save files correctly: https://github.com/minbrowser/min/issues/1717
+      // Needed to save files correctly: https://github.com/ouro-browser/min/issues/1717
       // It doesn't make much sense to have this here, but only one onHeadersReceived instance can be created per session
       const isFileView = typeHeader instanceof Array && !typeHeader.some(t => t.includes('text/html'))
 
@@ -96,7 +96,7 @@ function listenForDownloadHeaders (ses) {
     reader and PDF internal pages get universal access to web resources
     Note: we can't limit to the URL in the query string, because there could be redirects
     */
-    if (details.webContents && (details.webContents.getURL().startsWith('min://app/pages/pdfViewer') || details.webContents.getURL().startsWith('min://app/reader/') || details.webContents.getURL() === 'min://app/index.html')) {
+    if (details.webContents && (details.webContents.getURL().startsWith('ouro://app/pages/pdfViewer') || details.webContents.getURL().startsWith('ouro://app/reader/') || details.webContents.getURL() === 'ouro://app/index.html')) {
       const filteredHeaders = Object.fromEntries(
         Object.entries(details.responseHeaders).filter(([key, val]) => key.toLowerCase() !== 'access-control-allow-origin' && key.toLowerCase() !== 'access-control-allow-credentials')
       )
@@ -104,7 +104,7 @@ function listenForDownloadHeaders (ses) {
       callback({
         responseHeaders: {
           ...filteredHeaders,
-          'Access-Control-Allow-Origin': 'min://app',
+          'Access-Control-Allow-Origin': 'ouro://app',
           'Access-Control-Allow-Credentials': 'true'
         }
       })

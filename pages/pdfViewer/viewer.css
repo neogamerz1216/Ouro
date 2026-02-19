@@ -9,7 +9,7 @@
     background-color: rgb(200, 200, 200);
     margin-top: 25px;
     padding: 0;
-    /* disables scroll anchoring to prevent https://github.com/minbrowser/min/issues/1209 */
+    /* disables scroll anchoring to prevent https://github.com/ouro-browser/min/issues/1209 */
     overflow-anchor: none;
   }
   body.theme-loaded {

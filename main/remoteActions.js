@@ -78,19 +78,19 @@ ipc.handle('clearStorageData', function () {
 
 ipc.handle('minimize', function (e) {
   windows.windowFromContents(e.sender).win.minimize()
-  // workaround for https://github.com/minbrowser/min/issues/1662
+  // workaround for https://github.com/ouro-browser/min/issues/1662
   e.sender.send('minimize')
 })
 
 ipc.handle('maximize', function (e) {
   windows.windowFromContents(e.sender).win.maximize()
-  // workaround for https://github.com/minbrowser/min/issues/1662
+  // workaround for https://github.com/ouro-browser/min/issues/1662
   e.sender.send('maximize')
 })
 
 ipc.handle('unmaximize', function (e) {
   windows.windowFromContents(e.sender).win.unmaximize()
-  // workaround for https://github.com/minbrowser/min/issues/1662
+  // workaround for https://github.com/ouro-browser/min/issues/1662
   e.sender.send('unmaximize')
 })
 

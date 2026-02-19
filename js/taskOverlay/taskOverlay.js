@@ -364,7 +364,7 @@ var taskOverlay = {
     // swipe down on the tabstrip to show the task overlay
     document.getElementById('navbar').addEventListener('wheel', function (e) {
       if (e.altKey || e.ctrlKey || e.metaKey || e.shiftKey) {
-        // https://github.com/minbrowser/min/issues/698
+        // https://github.com/ouro-browser/min/issues/698
         return
       }
       if (e.deltaY < -30 && e.deltaX < 10) {

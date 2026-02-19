@@ -10,7 +10,7 @@ var settings = {
       Writing to the settings file from multiple places simultaneously causes data corruption, so to avoid that:
       * We forward data from the renderer process to the main process, and only write from there
       * In the main process, we put multiple save requests in a queue (by chaining them to a promise) so they execute individually
-      * https://github.com/minbrowser/min/issues/1520
+      * https://github.com/ouro-browser/min/issues/1520
       */
 
     /* eslint-disable no-inner-declarations */

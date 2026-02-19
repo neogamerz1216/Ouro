@@ -107,16 +107,16 @@
     "crashErrorSubtitle": "При попытке отобразить эту страницу возникла ошибка.",
     "errorPagePrimaryAction": "Попробовать снова",
     "serverNotFoundTitle": "Сервер не найден",
-    "serverNotFoundSubtitle": "Min не смог найти этот сайт.",
+    "serverNotFoundSubtitle": "Ouro не смог найти этот сайт.",
     "archiveSearchAction": "Искать в archive.org",
     "sslErrorTitle": "Сайт недоступен",
-    "sslErrorMessage": "Min не смог безопасно соединиться с этим сайтом.",
+    "sslErrorMessage": "Ouro не смог безопасно соединиться с этим сайтом.",
     "dnsErrorTitle": "Сайт не найден",
     "dnsErrorMessage": "Произошла ошибка DNS.",
     "offlineErrorTitle": "Отсутствует соединение с Интернетом",
     "offlineErrorMessage": "Восстановите соединение и попробуйте снова.",
-    "genericConnectionFail": "Min не смог соединиться с сайтом.",
-    "sslTimeErrorMessage": "Min не смог безопасно соединиться с этим сайтом. Убедитесь, что ваши системные часы настроены правильно.",
+    "genericConnectionFail": "Ouro не смог соединиться с сайтом.",
+    "sslTimeErrorMessage": "Ouro не смог безопасно соединиться с этим сайтом. Убедитесь, что ваши системные часы настроены правильно.",
     "addressInvalidTitle": "Некорректный адрес.",
     "genericError": "Произошла ошибка",
     /* pages/phishing/index.html */
@@ -125,7 +125,7 @@
     "phishingErrorVisitAnyway": "Все равно посетить сайт",
     "phishingErrorLeave": "Уйти с сайта",
     /* multiple instances alert */
-    "multipleInstancesErrorMessage": "Произошла ошибка. Пожалуйста, закройте все другие открытые экземпляры и перезапустите Min.",
+    "multipleInstancesErrorMessage": "Произошла ошибка. Пожалуйста, закройте все другие открытые экземпляры и перезапустите Ouro.",
     /* pages/sessionRestoreError/index.html */
     "sessionRestoreErrorTitle": "Произошла ошибка",
     "sessionRestoreErrorExplanation": "Ваши сохранённые вкладки не могут быть корректно восстановлены.",
@@ -144,7 +144,7 @@
     "settingsBlockScriptsToggle": "Блокировать скрипты",
     "settingsBlockImagesToggle": "Блокировать изображения",
     "settingsBlockedRequestCount": {
-      "unsafeHTML": "На данный момент Min заблокировал <strong></strong> объявлений и трекеров"
+      "unsafeHTML": "На данный момент Ouro заблокировал <strong></strong> объявлений и трекеров"
     },
     "settingsCustomBangs": null, // Missing translation
     "settingsCustomBangsAdd": null, // Missing translation
@@ -175,7 +175,7 @@
     "settingsUsageStatisticsToggle": {
       "unsafeHTML": "Отправлять статистику использования (<a href=\"https://github.com/minbrowser/min/blob/master/docs/statistics.md\">Подробнее</a>)"
     },
-    "settingsStartupOptions": "При запуске Min: ",
+    "settingsStartupOptions": "При запуске Ouro: ",
     "settingsStartupCreateTask": "Открыть предыдущие вкладки",
     "settingsStartupNewTaskandBackground": "Переместить предыдущие вкладки в фоновую задачу",
     "settingsStartupNewTaskOnly": "Открыть новую пустую задачу",
@@ -265,7 +265,7 @@
     "downloadStateCompleted": "Завершено",
     "downloadStateFailed": "Не удалось",
     /* Update Notifications */
-    "updateNotificationTitle": "Доступна новая версия Min",
+    "updateNotificationTitle": "Доступна новая версия Ouro",
     /* Autofill settings */
     "settingsPasswordAutoFillHeadline": "Автоматическое заполнение пароля",
     "settingsSelectPasswordManager": "Выберите один из поддерживаемых менеджеров паролей:",
@@ -284,7 +284,7 @@
     "passwordManagerSetupDragBox": "Перетащите инструмент сюда",
     "passwordManagerSetupInstalling": "Установка...",
     "passwordManagerBitwardenSignIn": "Чтобы подключить свою учетную запись Bitwarden, перейдите на страницу vault.bitwarden.com/#/settings/account, прокрутите вниз и выберите \"Показать ключ API\". Затем вставьте значения в поля ниже.",
-    "passwordManagerSetupSignIn": "Войдите в свой менеджер паролей, чтобы начать использовать автозаполнение. Ваши учетные данные не будут храниться где-либо внутри Min.",
+    "passwordManagerSetupSignIn": "Войдите в свой менеджер паролей, чтобы начать использовать автозаполнение. Ваши учетные данные не будут храниться где-либо внутри Ouro.",
     "disableAutofill": "Отключить автозаполнение",
     "passwordManagerSetupUnlockError": "Не удалось разблокировать хранилище паролей: ",
     "passwordManagerSetupRetry": "Убедитесь, что вы используете правильный файл и вводите правильный пароль. Вы можете повторить попытку, перетащив инструмент сюда еще раз.",

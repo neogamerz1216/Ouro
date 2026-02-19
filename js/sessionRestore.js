@@ -85,7 +85,7 @@ const sessionRestore = {
         tasks.setSelected(tasks.add()) // create a new task
 
         var newTab = tasks.getSelected().tabs.add({
-            url: 'https://minbrowser.github.io/min/tour'
+            url: 'https://ouro-browser.github.io/min/tour'
         })
         browserUI.addTab(newTab, {
          enterEditMode: false
@@ -146,7 +146,7 @@ const sessionRestore = {
       /* Disabled - show user survey
       // if this isn't the first run, and the survey popup hasn't been shown yet, show it
       if (shouldShowSurvey) {
-        fetch('https://minbrowser.org/survey/survey15.json').then(function (response) {
+        fetch('https://ouro-browser.org/survey/survey15.json').then(function (response) {
           return response.json()
         }).then(function (data) {
           setTimeout(function () {
@@ -182,7 +182,7 @@ const sessionRestore = {
       // create a new tab with an explanation of what happened
       var newTask = tasks.add()
       var newSessionErrorTab = tasks.get(newTask).tabs.add({
-        url: 'min://app/pages/sessionRestoreError/index.html?backupLoc=' + encodeURIComponent(backupSavePath)
+        url: 'ouro://app/pages/sessionRestoreError/index.html?backupLoc=' + encodeURIComponent(backupSavePath)
       })
 
       browserUI.switchToTask(newTask)

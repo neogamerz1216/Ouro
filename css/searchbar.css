@@ -4,18 +4,36 @@
   top: calc(var(--control-space-top) + 36px);
   left: 0;
   width: 100%;
-  background: #fff;
-  color: #000;
+  background-color: rgba(255, 255, 255, 0.96);
+  background-image: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.2),
+    rgba(255, 255, 255, 0)
+  );
+  color: var(--ouro-ink);
   padding-left: var(--control-space-left);
   padding-right: calc(82px + var(--control-space-right));
   -webkit-user-select: none;
   max-height: calc(100% - 125px);
   overflow-y: auto;
+  backdrop-filter: blur(9px);
+  border-bottom: 1px solid rgba(15, 23, 42, 0.12);
+  box-shadow: 0 7px 24px rgba(15, 23, 42, 0.12);
 }
 
 body:not(.is-ntp) #searchbar,
 body.ntp-has-background #searchbar {
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 3px 4px -2px;
+  box-shadow: 0 9px 24px rgba(0, 0, 0, 0.2);
+}
+
+.dark-theme #searchbar {
+  border-bottom-color: rgba(255, 255, 255, 0.18);
+  background-image: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.05),
+    rgba(255, 255, 255, 0)
+  );
+  box-shadow: 0 11px 24px rgba(0, 0, 0, 0.35);
 }
 
 /* account for menu button */
@@ -29,9 +47,9 @@ body.linux #searchbar {
 }
 
 .searchbar-heading {
-  font-weight: normal;
+  font-weight: 600;
   padding: 0.9em 0.55em 0.33em 0.55em;
-  opacity: 0.7;
+  opacity: 0.82;
   cursor: default;
 }
 
@@ -39,19 +57,24 @@ body.linux #searchbar {
   position: absolute;
   right: 0;
   top: 0.5em;
-  border: 1px #ccc solid;
-  padding: 0.33em 0.5em;
-  border-radius: 3px;
-  opacity: 0.66;
+  border: 1px rgba(15, 23, 42, 0.12) solid;
+  padding: 0.33em 0.75em;
+  border-radius: var(--ouro-radius);
+  opacity: 0.8;
   z-index: 9;
+  color: var(--ouro-ink);
+  background: linear-gradient(135deg, #fff 0%, #f5f5f0 100%);
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
 }
 
 .searchbar-floating-button:hover {
-  background-color: rgba(0, 0, 0, 0.05)
+  background-color: rgba(255, 255, 255, 0.9)
 }
 
 .dark-theme .searchbar-floating-button {
-  border-color: white;
+  border-color: rgba(255, 255, 255, 0.35);
+  background: linear-gradient(135deg, rgba(33, 37, 43, 0.9), rgba(60, 64, 70, 0.9));
+  color: #fff;
 }
 .dark-theme .searchbar-floating-button:hover {
   background-color: rgba(255, 255, 255, 0.075)
@@ -106,11 +129,13 @@ body:not(.mac) #searchbar .searchbar-item.has-action-button:hover .icon-image {
   font-size: 1.05em !important;
   padding: 0.5em 0.66em;
   margin: 0.175em 0.4em 0.5em 0.4em;
-  border-radius: 5px;
-  border: 1px rgba(0, 0, 0, 0.15) solid;
+  border-radius: var(--ouro-radius);
+  border: 1px rgba(15, 23, 42, 0.12) solid;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(243, 208, 107, 0.15));
 }
 .dark-theme .searchbar-shortcut {
   border-color: rgba(255, 255, 255, 0.4);
+  background: linear-gradient(135deg, rgba(33, 37, 43, 0.7), rgba(243, 208, 107, 0.08));
 }
 
 .searchbar-shortcut:hover,

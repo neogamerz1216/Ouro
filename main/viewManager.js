@@ -89,7 +89,7 @@ function createView (existingViewId, id, webPreferences, boundsString, events) {
       So if there are no features, the event is most likely from clicking on a link, which should open a new tab.
       Clicking a link can still have a "new-window" or "foreground-tab" disposition depending on which keys are pressed
       when it is clicked.
-      (https://github.com/minbrowser/min/issues/1835)
+      (https://github.com/ouro-browser/min/issues/1835)
     */
     if (!details.features) {
       const eventTarget = getWindowFromViewContents(view.webContents) || windows.getCurrent()
@@ -130,7 +130,7 @@ function createView (existingViewId, id, webPreferences, boundsString, events) {
     try {
       senderURL = e.senderFrame.url
     } catch (err) {
-      // https://github.com/minbrowser/min/issues/2052
+      // https://github.com/ouro-browser/min/issues/2052
       console.warn('dropping message because senderFrame is destroyed', channel, data, err)
       return
     }
@@ -216,7 +216,7 @@ function createView (existingViewId, id, webPreferences, boundsString, events) {
   view.webContents.on('did-start-navigation', function (event) {
     if (event.isMainFrame && !event.isSameDocument) {
       const hasJS = viewStateMap[id].hasJS
-      const shouldHaveJS = (!(settings.get('filtering')?.contentTypes?.includes('script'))) || event.url.startsWith('min://')
+      const shouldHaveJS = (!(settings.get('filtering')?.contentTypes?.includes('script'))) || event.url.startsWith('ouro://')
       if (hasJS !== shouldHaveJS) {
         setTimeout(function () {
           view.webContents.stop()
@@ -268,7 +268,7 @@ function setView (id, senderContents) {
   const win = windows.windowFromContents(senderContents).win
 
   // changing views can cause flickering, so we only want to call it if the view is actually changing
-  // see https://github.com/minbrowser/min/issues/1966
+  // see https://github.com/ouro-browser/min/issues/1966
   if (windows.getState(win).selectedView !== viewMap[id]) {
     //remove all prior views
     win.getContentView().children.slice(1).forEach(child => win.getContentView().removeChildView(child))
@@ -288,7 +288,7 @@ function setBounds (id, bounds) {
 }
 
 function focusView (id) {
-  // empty views can't be focused because they won't propogate keyboard events correctly, see https://github.com/minbrowser/min/issues/616
+  // empty views can't be focused because they won't propogate keyboard events correctly, see https://github.com/ouro-browser/min/issues/616
   // also, make sure the view exists, since it might not if the app is shutting down
   if (viewMap[id] && (viewMap[id].webContents.getURL() !== '' || viewMap[id].webContents.isLoading())) {
     viewMap[id].webContents.focus()

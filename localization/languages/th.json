@@ -107,16 +107,16 @@
     "crashErrorSubtitle": "เกิดปัญหาขณะแสดงหน้านี้",
     "errorPagePrimaryAction": "ลองอีกครั้ง",
     "serverNotFoundTitle": "ไม่พบเซิร์ฟเวอร์",
-    "serverNotFoundSubtitle": "Min ไม่พบเว็บไซต์นี้",
+    "serverNotFoundSubtitle": "Ouro ไม่พบเว็บไซต์นี้",
     "archiveSearchAction": "ค้นหาใน archive.org",
     "sslErrorTitle": "เว็บไซต์นี้ไม่พร้อมใช้งาน",
-    "sslErrorMessage": "Min ไม่สามารถเชื่อมต่อกับเว็บไซต์นี้ได้อย่างปลอดภัย",
+    "sslErrorMessage": "Ouro ไม่สามารถเชื่อมต่อกับเว็บไซต์นี้ได้อย่างปลอดภัย",
     "dnsErrorTitle": "ไม่พบเว็บไซต์",
     "dnsErrorMessage": "เกิดข้อผิดพลาด DNS",
     "offlineErrorTitle": "คุณออฟไลน์อยู่",
     "offlineErrorMessage": "เชื่อมต่ออินเทอร์เน็ตอีกครั้งและลองอีกครั้ง",
-    "genericConnectionFail": "Min ไม่สามารถเชื่อมต่อกับเว็บไซต์ได้",
-    "sslTimeErrorMessage": "Min ไม่สามารถเชื่อมต่อกับเว็บไซต์นี้ได้อย่างปลอดภัย โปรดตรวจสอบให้แน่ใจว่านาฬิกาในคอมพิวเตอร์ของคุณถูกตั้งไว้อย่างถูกต้องแล้วหรือไม่",
+    "genericConnectionFail": "Ouro ไม่สามารถเชื่อมต่อกับเว็บไซต์ได้",
+    "sslTimeErrorMessage": "Ouro ไม่สามารถเชื่อมต่อกับเว็บไซต์นี้ได้อย่างปลอดภัย โปรดตรวจสอบให้แน่ใจว่านาฬิกาในคอมพิวเตอร์ของคุณถูกตั้งไว้อย่างถูกต้องแล้วหรือไม่",
     "addressInvalidTitle": "ที่อยู่นี้ไม่ถูกต้อง",
     "genericError": "เกิดข้อผิดพลาด",
     /* pages/phishing/index.html */
@@ -125,7 +125,7 @@
     "phishingErrorVisitAnyway": "เยี่ยมชมเว็บไซต์ต่อไป",
     "phishingErrorLeave": "ออกจากเว็บไซต์นี้",
     /* multiple instances alert */
-    "multipleInstancesErrorMessage": "เกิดข้อผิดพลาด โปรดปิดอินสแตนซ์อื่นๆที่เปิดอยู่และรีสตาร์ท Min",
+    "multipleInstancesErrorMessage": "เกิดข้อผิดพลาด โปรดปิดอินสแตนซ์อื่นๆที่เปิดอยู่และรีสตาร์ท Ouro",
     /* pages/sessionRestoreError/index.html */
     "sessionRestoreErrorTitle": "เกิดข้อผิดพลาด",
     "sessionRestoreErrorExplanation": "ไม่สามารถกู้คืนแท็บที่คุณบันทึกไว้ได้อย่างถูกต้อง",
@@ -265,7 +265,7 @@
     "downloadStateCompleted": "สมบูรณ์",
     "downloadStateFailed": "ล้มเหลว",
     /* Update Notifications */
-    "updateNotificationTitle": "Min เวอร์ชันใหม่พร้อมให้ใช้งานแล้ว",
+    "updateNotificationTitle": "Ouro เวอร์ชันใหม่พร้อมให้ใช้งานแล้ว",
     /* Autofill settings */
     "settingsPasswordAutoFillHeadline": "ป้อนรหัสผ่านอัตโนมัติ",
     "settingsSelectPasswordManager": "เลือกในหนึ่งผู้จัดการรหัสผ่านที่รับรองได้:",
@@ -284,7 +284,7 @@
     "passwordManagerSetupDragBox": "ลากเครื่องมือมาที่นี่",
     "passwordManagerSetupInstalling": "กำลังติดตั้ง...",
     "passwordManagerBitwardenSignIn": "ในการเชื่อมต่อบัญชี Bitwarden ของคุณ ไปที่ vault.bitwarden.com/#/settings/account เลื่อนไปด้านล่างและเลือก \"ดูคีย์ API\" จากนั้นวางค่าลงในฟิลด์ด้านล่าง",
-    "passwordManagerSetupSignIn": "ลงชื่อเข้าใช้ตัวจัดการรหัสผ่านเพื่อเริ่มใช้การป้อนอัตโนมัติ ข้อมูลประจำตัวของคุณจะไม่ถูกเก็บไว้ที่ใดภายใน Min",
+    "passwordManagerSetupSignIn": "ลงชื่อเข้าใช้ตัวจัดการรหัสผ่านเพื่อเริ่มใช้การป้อนอัตโนมัติ ข้อมูลประจำตัวของคุณจะไม่ถูกเก็บไว้ที่ใดภายใน Ouro",
     "disableAutofill": "ปิดใช้งานป้อนอัตโนมัติ",
     "passwordManagerSetupUnlockError": "ไม่สามารถปลดล็อกที่เก็บรหัสผ่าน: ",
     "passwordManagerSetupRetry": "ตรวจสอบให้แน่ใจว่าคุณใช้ไฟล์ที่ถูกต้องและป้อนรหัสผ่านที่ถูกต้อง คุณสามารถลองอีกครั้งโดยลากเครื่องมือมาที่นี่อีกครั้ง",

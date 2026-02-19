@@ -107,16 +107,16 @@
     "crashErrorSubtitle": "Wystąpił problem podczas wyświetlania tej strony.",
     "errorPagePrimaryAction": "Spróbuj ponownie",
     "serverNotFoundTitle": "Nie znaleziono serwera",
-    "serverNotFoundSubtitle": "Min nie może znaleźć tej witryny.",
+    "serverNotFoundSubtitle": "Ouro nie może znaleźć tej witryny.",
     "archiveSearchAction": "Wyszukaj na archive.org",
     "sslErrorTitle": "Ta strona internetowa jest niedostępna",
-    "sslErrorMessage": "Min nie można bezpiecznie połączyć się z tą witryną.",
+    "sslErrorMessage": "Ouro nie można bezpiecznie połączyć się z tą witryną.",
     "dnsErrorTitle": "Nie znaleziono strony",
     "dnsErrorMessage": "Wystąpił błąd DNS.",
     "offlineErrorTitle": "Jesteś poza siecią",
     "offlineErrorMessage": "Połącz się z Internetem i spróbuj ponownie.",
-    "genericConnectionFail": "Min nie może połączyć się z witryną.",
-    "sslTimeErrorMessage": "Min nie może bezpiecznie połączyć się z tą witryną. Upewnij się, że zegar komputera jest ustawiony prawidłowo.",
+    "genericConnectionFail": "Ouro nie może połączyć się z witryną.",
+    "sslTimeErrorMessage": "Ouro nie może bezpiecznie połączyć się z tą witryną. Upewnij się, że zegar komputera jest ustawiony prawidłowo.",
     "addressInvalidTitle": "Ten adres jest nieprawidłowy.",
     "genericError": "Wystąpił błąd",
     /* pages/phishing/index.html */
@@ -125,7 +125,7 @@
     "phishingErrorVisitAnyway": "Odwiedź stronę mimo to",
     "phishingErrorLeave": "Opuść tę stronę",
     /* multiple instances alert */
-    "multipleInstancesErrorMessage": "Wystąpił błąd. Zamknij wszystkie inne otwarte wystąpienia i uruchom ponownie Min.",
+    "multipleInstancesErrorMessage": "Wystąpił błąd. Zamknij wszystkie inne otwarte wystąpienia i uruchom ponownie Ouro.",
     /* pages/sessionRestoreError/index.html */
     "sessionRestoreErrorTitle": "Wystąpił błąd",
     "sessionRestoreErrorExplanation": "Nie można przywrócić poprawnie zapisanych kart.",
@@ -144,7 +144,7 @@
     "settingsBlockScriptsToggle": "Zablokuj skrypty",
     "settingsBlockImagesToggle": "Zablokuj obrazy",
     "settingsBlockedRequestCount": {
-      "unsafeHTML": "Jak dotąd Min zablokował reklamy i moduły śledzące w ilości: <strong></strong>."
+      "unsafeHTML": "Jak dotąd Ouro zablokował reklamy i moduły śledzące w ilości: <strong></strong>."
     },
     "settingsCustomBangs": null, // Missing translation
     "settingsCustomBangsAdd": null, // Missing translation
@@ -175,7 +175,7 @@
     "settingsUsageStatisticsToggle": {
       "unsafeHTML": "Wysyłaj statystyki użytkowania (<a href=\"https://github.com/minbrowser/min/blob/master/docs/statistics.md\">Więcej informacji</a>)"
     },
-    "settingsStartupOptions": "Podczas uruchamiania Min",
+    "settingsStartupOptions": "Podczas uruchamiania Ouro",
     "settingsStartupCreateTask": "Otwieraj ostatnie karty",
     "settingsStartupNewTaskandBackground": "Przenoś poprzednie karty na drugi plan",
     "settingsStartupNewTaskOnly": "Otwieraj nową, pustą kartę",
@@ -265,7 +265,7 @@
     "downloadStateCompleted": "Pobieranie zakończone",
     "downloadStateFailed": "Błąd pobierania",
     /* Update Notifications */
-    "updateNotificationTitle": "Dostępna jest nowa wersja Min",
+    "updateNotificationTitle": "Dostępna jest nowa wersja Ouro",
     /* Autofill settings */
     "settingsPasswordAutoFillHeadline": "Autouzupełnianie hasła",
     "settingsSelectPasswordManager": "Wybierz jeden z obsługiwanych menedżerów haseł:",
@@ -284,7 +284,7 @@
     "passwordManagerSetupDragBox": "Przeciągnij narzędzie tutaj",
     "passwordManagerSetupInstalling": "Instalowanie...",
     "passwordManagerBitwardenSignIn": "Aby połączyć swoje konto Bitwarden, przejdź do vault.bitwarden.com/#/settings/account, przewiń w dół i wybierz „Wyświetl klucz API”. Następnie wklej wartości w poniższe pola.",
-    "passwordManagerSetupSignIn": "Zaloguj się do menedżera haseł, aby rozpocząć korzystanie z autouzupełniania. Twoje dane uwierzytelniające nie będą przechowywane nigdzie w Min.",
+    "passwordManagerSetupSignIn": "Zaloguj się do menedżera haseł, aby rozpocząć korzystanie z autouzupełniania. Twoje dane uwierzytelniające nie będą przechowywane nigdzie w Ouro.",
     "disableAutofill": "Wyłącz autouzupełnianie",
     "passwordManagerSetupUnlockError": "nie udało się odblokować przechowalni haseł: ",
     "passwordManagerSetupRetry": "Upewnij się, że używasz właściwego pliku i wpisujesz poprawne hasło. Możesz spróbować ponownie, przeciągając tutaj narzędzie.",
