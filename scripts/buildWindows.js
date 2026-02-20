@@ -10,8 +10,11 @@ const createPackage = require('./createPackage.js')
 
 async function afterPackageBuilt (packagePath) {
   /* create output directory if it doesn't exist */
-  if (!fs.existsSync('dist/app')) {
-    fs.mkdirSync('dist/app')
+  const outputRoot = 'Dist'
+  const outputDir = outputRoot + '/app'
+
+  if (!fs.existsSync(outputDir)) {
+    fs.mkdirSync(outputDir, { recursive: true })
   }
 
   let archSuffix
@@ -25,7 +28,7 @@ async function afterPackageBuilt (packagePath) {
   }
 
   /* create zip files */
-  var output = fs.createWriteStream('dist/app/' + 'Ouro-v' + version + '-windows' + archSuffix + '.zip')
+  var output = fs.createWriteStream(outputDir + '/' + 'Ouro-v' + version + '-windows' + archSuffix + '.zip')
   var archive = archiver('zip', {
     zlib: { level: 9 }
   })
@@ -38,7 +41,7 @@ async function afterPackageBuilt (packagePath) {
 
   const options = {
     src: packagePath,
-    dest: 'dist/app/min-installer' + archSuffix,
+    dest: outputDir + '/min-installer' + archSuffix,
     icon: 'icons/icon256.ico',
     animation: 'icons/windows-installer.gif',
     licenseUrl: 'https://github.com/minbrowser/min/blob/master/LICENSE.txt',
@@ -51,7 +54,7 @@ async function afterPackageBuilt (packagePath) {
 
   await installer(options)
     .then(function () {
-      fs.renameSync('./dist/app/min-installer' + archSuffix + '/min-' + version + '-setup.exe', './dist/app/min-' + version + archSuffix + '-setup.exe')
+      fs.renameSync(outputDir + '/min-installer' + archSuffix + '/min-' + version + '-setup.exe', outputDir + '/min-' + version + archSuffix + '-setup.exe')
     })
     .catch(err => {
       console.error(err, err.stack)
