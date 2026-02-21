@@ -4,10 +4,10 @@ const Arch = builder.Arch
 
 const createPackage = require('./createPackage.js')
 
-async function afterPackageBuilt (path, arch) {
+async function afterPackageBuilt(path, arch) {
   var installerOptions = {
-    artifactName: 'min-${version}-${arch}.deb',
-    packageName: 'min',
+    artifactName: 'Ouro-${version}-${arch}.deb',
+    packageName: 'ouro',
     icon: 'icons/icon256.png',
     category: 'Network;WebBrowser',
     packageCategory: 'Network',

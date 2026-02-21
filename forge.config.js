@@ -9,6 +9,7 @@ module.exports = {
   packagerConfig: {
     asar: true,
     executableName: 'Ouro',
+    icon: path.join(__dirname, 'icons', 'icon256'),
     electronZipDir: electronCacheDir,
     download: {
       cacheRoot: electronCacheDir,
@@ -20,7 +21,9 @@ module.exports = {
   makers: [
     {
       name: '@electron-forge/maker-squirrel',
-      config: {},
+      config: {
+        setupIcon: path.join(__dirname, 'icons', 'icon256.ico'),
+      },
     },
     {
       name: '@electron-forge/maker-zip',
@@ -48,8 +51,9 @@ module.exports = {
       [FuseV1Options.EnableCookieEncryption]: true,
       [FuseV1Options.EnableNodeOptionsEnvironmentVariable]: false,
       [FuseV1Options.EnableNodeCliInspectArguments]: false,
-      [FuseV1Options.EnableEmbeddedAsarIntegrityValidation]: true,
-      [FuseV1Options.OnlyLoadAppFromAsar]: true,
+      // Keep Windows unsigned builds launchable across environments.
+      [FuseV1Options.EnableEmbeddedAsarIntegrityValidation]: false,
+      [FuseV1Options.OnlyLoadAppFromAsar]: false,
     }),
   ],
 };

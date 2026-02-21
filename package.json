@@ -74,6 +74,7 @@
     "watch": "node ./scripts/watch.js",
     "startElectron": "electron . --development-mode",
     "start": "electron-forge start",
+    "start:linux": "electron-forge start -- --no-sandbox",
     "buildMain": "node ./scripts/buildMain.js",
     "buildBrowser": "node ./scripts/buildBrowser.js",
     "buildBrowserStyles": "node ./scripts/buildBrowserStyles.js",
