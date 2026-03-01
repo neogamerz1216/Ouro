@@ -8,7 +8,7 @@
 * **Privacy First:** Built-in ad and tracker blocking.
 * **Minimalist Design:** Focus on your content, not the browser UI.
 * **Fast & Lightweight:** Optimized for speed and low resource usage.
-* **Open Source:** Built on the solid foundation of the Min browser engine.
+* **Open Source:** Built on the solid foundation of the DucDuckGo Search engine.
 
 ##  Installation
 1. Go to the [Releases] (https://github.com/neogamerz1216/Ouro/releases) page.
