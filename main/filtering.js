@@ -91,7 +91,7 @@ function initFilterList () {
     }
   )
 
-  fs.readFile(path.join(__dirname, 'ext/filterLists/minFilters.txt'),
+  fs.readFile(path.join(__dirname, 'ext/filterLists/ouroFilters.txt'),
     'utf8', function (err, data) {
       if (err) {
         return

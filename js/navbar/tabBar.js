@@ -112,7 +112,7 @@ const tabBar = {
 
     tabEl.addEventListener('wheel', function (e) {
       if (e.altKey || e.ctrlKey || e.metaKey || e.shiftKey) {
-        // https://github.com/minbrowser/min/issues/698
+        // https://github.com/neogamerz1216/Ouro/issues/698
         return
       }
       if (e.deltaY > 65 && e.deltaX < 10 && Date.now() - lastTabDeletion > 900) { // swipe up to delete tabs
@@ -142,7 +142,7 @@ const tabBar = {
     // update tab title
     var tabTitle
 
-    const isNewTab = tabData.url === '' || tabData.url === urlParser.parse('min://newtab')
+    const isNewTab = tabData.url === '' || tabData.url === urlParser.parse('ouro://newtab')
     if (isNewTab) {
       tabTitle = l('newTabLabel')
     } else if (tabData.title) {

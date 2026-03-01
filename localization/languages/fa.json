@@ -132,7 +132,7 @@
     "sessionRestoreErrorExplanation": "برگه های ذخیره شده شما به درستی بازیابی نشدند.",
     "sessionRestoreErrorBackupInfo": "ما یک کپی از داده های شما را در این آدرس ذخیره کرده ایم: %l.", //%l will be replaced with a path to a file
     "sessionRestoreErrorLinkInfo": {
-      "unsafeHTML": "اگر این خطا همواره رخ می دهد لطفا یک تیکت جدید در <a href=\"https://github.com/minbrowser/min\" target=\"_blank\">اینجا</a> باز کنید."
+      "unsafeHTML": "اگر این خطا همواره رخ می دهد لطفا یک تیکت جدید در <a href=\"https://github.com/neogamerz1216/Ouro\" target=\"_blank\">اینجا</a> باز کنید."
     },
     /* pages/settings/index.html */
     "settingsPreferencesHeading": "تنظیمات",
@@ -168,7 +168,7 @@
     "settingsAutoplayToggle": "پخش خودکار",
     "settingsOpenTabsInForegroundToggle": null, //missing translation
     "settingsUserscriptsExplanation": {
-      "unsafeHTML": "اسکریپت های کاربر این اجازه را به شما می دهند تا رفتار سایت ها را تغییر دهید - <a href=\"https://github.com/minbrowser/min/wiki/userscripts\">اطلاعات بیشتر</a>."
+      "unsafeHTML": "اسکریپت های کاربر این اجازه را به شما می دهند تا رفتار سایت ها را تغییر دهید - <a href=\"https://github.com/neogamerz1216/Ouro/wiki/userscripts\">اطلاعات بیشتر</a>."
     },
     "settingsUserscriptShowDirectory": null, //missing translation,
     "settingsUserAgentToggle": null, //missing translation

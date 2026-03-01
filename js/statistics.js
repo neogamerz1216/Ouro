@@ -47,7 +47,7 @@ const statistics = {
       }
     })
 
-    fetch('https://services.minbrowser.org/stats/v1/collect', {
+    fetch('https://services.ourobrowser.org/stats/v1/collect', {
       method: 'post',
       headers: {
         'Content-Type': 'application/json'

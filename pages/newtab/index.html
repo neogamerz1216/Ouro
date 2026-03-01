@@ -1,5 +1,169 @@
 <!DOCTYPE html>
 <html>
-  <head> </head>
-  <body></body>
+<head>
+  <meta charset="utf-8">
+  <title>New Tab | Ouro</title>
+  <style>
+    :root {
+      --bg-a: #f4f8ff;
+      --bg-b: #e3efe7;
+      --bg-c: #fdf8ef;
+      --card-bg: rgba(255, 255, 255, 0.84);
+      --card-border: rgba(27, 51, 80, 0.12);
+      --text-main: #17243a;
+      --text-muted: #4e5d73;
+      --accent: #0f7a8a;
+      --accent-soft: rgba(15, 122, 138, 0.15);
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg-a: #0f1724;
+        --bg-b: #111d20;
+        --bg-c: #1a1426;
+        --card-bg: rgba(11, 16, 24, 0.74);
+        --card-border: rgba(173, 210, 255, 0.12);
+        --text-main: #e8edf6;
+        --text-muted: #a6b3c7;
+        --accent: #63d8e8;
+        --accent-soft: rgba(99, 216, 232, 0.2);
+      }
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+      margin: 0;
+    }
+
+    body {
+      font-family: "Avenir Next", "Segoe UI", sans-serif;
+      color: var(--text-main);
+      background:
+        radial-gradient(1500px 900px at -10% -10%, var(--bg-c), transparent 70%),
+        radial-gradient(1400px 700px at 100% 120%, var(--bg-b), transparent 60%),
+        linear-gradient(130deg, var(--bg-a), #f4f7fb 55%, var(--bg-b));
+      display: grid;
+      place-items: center;
+      overflow: hidden;
+    }
+
+    .orb {
+      position: absolute;
+      width: 36vmin;
+      height: 36vmin;
+      border-radius: 50%;
+      filter: blur(2px);
+      opacity: 0.45;
+      pointer-events: none;
+    }
+
+    .orb.a {
+      background: radial-gradient(circle at 30% 30%, #9ae6ff, transparent 65%);
+      top: -8vmin;
+      left: -6vmin;
+    }
+
+    .orb.b {
+      background: radial-gradient(circle at 60% 40%, #ffe4a3, transparent 65%);
+      bottom: -14vmin;
+      right: -8vmin;
+    }
+
+    .panel {
+      width: min(760px, calc(100vw - 40px));
+      border: 1px solid var(--card-border);
+      background: var(--card-bg);
+      backdrop-filter: blur(12px);
+      border-radius: 22px;
+      box-shadow: 0 18px 48px rgba(10, 17, 27, 0.18);
+      padding: clamp(24px, 4vw, 40px);
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 12px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: var(--accent-soft);
+    }
+
+    .dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--accent);
+    }
+
+    h1 {
+      margin: 16px 0 8px;
+      font-size: clamp(36px, 6vw, 56px);
+      line-height: 1.02;
+      letter-spacing: -0.03em;
+    }
+
+    p {
+      margin: 0;
+      max-width: 56ch;
+      color: var(--text-muted);
+      line-height: 1.55;
+      font-size: 16px;
+    }
+
+    .tip-grid {
+      margin-top: 22px;
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 10px;
+    }
+
+    .tip {
+      border-radius: 12px;
+      border: 1px solid var(--card-border);
+      background: rgba(255, 255, 255, 0.28);
+      padding: 12px 14px;
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+
+    kbd {
+      padding: 1px 6px;
+      border-radius: 6px;
+      border: 1px solid var(--card-border);
+      font-family: ui-monospace, "SF Mono", Menlo, monospace;
+      font-size: 11px;
+    }
+
+    @media (max-width: 640px) {
+      .tip-grid {
+        grid-template-columns: minmax(0, 1fr);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="orb a"></div>
+  <div class="orb b"></div>
+
+  <main class="panel">
+    <div class="badge">
+      <span class="dot"></span>
+      Ouro Browser
+    </div>
+    <h1>New Tab</h1>
+    <p>Start by typing in the address bar above. Search anything, open a URL, or use shortcuts to move faster.</p>
+    <div class="tip-grid">
+      <div class="tip"><strong>Quick focus:</strong> press <kbd>Ctrl</kbd> + <kbd>L</kbd> to jump to the URL bar.</div>
+      <div class="tip"><strong>Stay organized:</strong> use tasks to group tabs by topic.</div>
+    </div>
+  </main>
+</body>
 </html>

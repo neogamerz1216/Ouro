@@ -50,7 +50,7 @@ class OnePassword {
   }
 
   // Returns a 1Password-CLI tool path by checking possible locations.
-  // First it checks if the tool was installed for Min specifically
+  // First it checks if the tool was installed for Ouro specifically
   // by checking the settings value. If that is not set or doesn't point
   // to a valid executable, it checks if 'op' is available globally.
   async _getToolPath () {
@@ -189,7 +189,7 @@ class OnePassword {
   // Tries to unlock the password store with given master password.
   async unlockStore (password) {
     try {
-      const process = new ProcessSpawner(this.path, ['signin', '--raw', '--account', 'min-autofill'], { OP_DEVICE: this.deviceID }, 5000)
+      const process = new ProcessSpawner(this.path, ['signin', '--raw', '--account', 'ouro-autofill'], { OP_DEVICE: this.deviceID }, 5000)
       const result = await process.executeSyncInAsyncContext(password)
       // no session key -> invalid password
       if (!result) {
@@ -246,7 +246,7 @@ class OnePassword {
       }
     }
 
-    const process = new ProcessSpawner(path, ['account', 'add', '--address', 'my.1password.com', '--email', credentials.email, '--secret-key', credentials.secretKey, '--shorthand', 'min-autofill', '--signin', '--raw'], { OP_DEVICE: this.deviceID })
+    const process = new ProcessSpawner(path, ['account', 'add', '--address', 'my.1password.com', '--email', credentials.email, '--secret-key', credentials.secretKey, '--shorthand', 'ouro-autofill', '--signin', '--raw'], { OP_DEVICE: this.deviceID })
 
     const key = await process.executeSyncInAsyncContext(credentials.password)
     if (!key) {

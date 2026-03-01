@@ -2,7 +2,7 @@ const { pathToFileURL } = require('url')
 
 protocol.registerSchemesAsPrivileged([
   {
-    scheme: 'min',
+    scheme: 'ouro',
     privileges: {
       standard: true,
       secure: true,
@@ -12,7 +12,7 @@ protocol.registerSchemesAsPrivileged([
 ])
 
 function registerBundleProtocol (ses) {
-  ses.protocol.handle('min', (req) => {
+  ses.protocol.handle('ouro', (req) => {
     let { host, pathname } = new URL(req.url)
 
     if (pathname.charAt(0) === '/') {

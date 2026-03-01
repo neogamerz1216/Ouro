@@ -3,9 +3,11 @@ var webviews = require('webviews.js')
 var tabEditor = require('navbar/tabEditor.js')
 var tabState = require('tabState.js')
 var settings = require('util/settings/settings.js')
+var urlParser = require('util/urlParser.js')
 var taskOverlay = require('taskOverlay/taskOverlay.js')
 const writeFileAtomic = require('write-file-atomic')
 const statistics = require('js/statistics.js')
+const NEW_TAB_URL = urlParser.parse('ouro://newtab')
 
 const sessionRestore = {
   savePath: window.globalArgs['user-data-path'] + (platformType === 'windows' ? '\\sessionRestore.json' : '/sessionRestore.json'),
@@ -80,12 +82,12 @@ const sessionRestore = {
     */
 
     try {
-      // first run, show the tour
+      // first run, open the default new tab
       if (!savedStringData) {
         tasks.setSelected(tasks.add()) // create a new task
 
         var newTab = tasks.getSelected().tabs.add({
-            url: 'https://minbrowser.github.io/min/tour'
+            url: NEW_TAB_URL
         })
         browserUI.addTab(newTab, {
          enterEditMode: false
@@ -146,7 +148,7 @@ const sessionRestore = {
       /* Disabled - show user survey
       // if this isn't the first run, and the survey popup hasn't been shown yet, show it
       if (shouldShowSurvey) {
-        fetch('https://minbrowser.org/survey/survey15.json').then(function (response) {
+        fetch('https://ourobrowser.org/survey/survey15.json').then(function (response) {
           return response.json()
         }).then(function (data) {
           setTimeout(function () {
@@ -182,7 +184,7 @@ const sessionRestore = {
       // create a new tab with an explanation of what happened
       var newTask = tasks.add()
       var newSessionErrorTab = tasks.get(newTask).tabs.add({
-        url: 'min://app/pages/sessionRestoreError/index.html?backupLoc=' + encodeURIComponent(backupSavePath)
+        url: 'ouro://app/pages/sessionRestoreError/index.html?backupLoc=' + encodeURIComponent(backupSavePath)
       })
 
       browserUI.switchToTask(newTask)

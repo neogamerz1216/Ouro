@@ -3,6 +3,7 @@
 var webviews = require('webviews.js')
 var webviewGestures = require('webviewGestures.js')
 var browserUI = require('browserUI.js')
+var urlParser = require('util/urlParser.js')
 var focusMode = require('focusMode.js')
 var modalMode = require('modalMode.js')
 var findinpage = require('findinpage.js')
@@ -10,6 +11,12 @@ var PDFViewer = require('pdfViewer.js')
 var tabEditor = require('navbar/tabEditor.js')
 var readerView = require('readerView.js')
 var taskOverlay = require('taskOverlay/taskOverlay.js')
+
+const NEW_TAB_URL = urlParser.parse('ouro://newtab')
+
+function isEmptyTabURL (url) {
+  return !url || url === 'ouro://newtab' || url === NEW_TAB_URL
+}
 
 module.exports = {
   initialize: function () {
@@ -74,12 +81,11 @@ module.exports = {
         return
       }
 
-      var newTab = tabs.add({
-        url: data.url || ''
-      })
+      const requestedURL = data && data.url ? data.url : NEW_TAB_URL
+      var newTab = tabs.add({ url: requestedURL })
 
       browserUI.addTab(newTab, {
-        enterEditMode: !data.url // only enter edit mode if the new tab is empty
+        enterEditMode: !(data && data.url) // only enter edit mode if the new tab is empty
       })
     })
 
@@ -87,7 +93,7 @@ module.exports = {
       var currentTab = tabs.get(tabs.getSelected())
 
       // new tabs cannot be saved
-      if (!currentTab.url) {
+      if (isEmptyTabURL(currentTab.url)) {
         return
       }
 

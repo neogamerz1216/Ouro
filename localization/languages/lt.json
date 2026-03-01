@@ -107,16 +107,16 @@
     "crashErrorSubtitle": "Atsirado problemų, atvaizduojant šį puslapį.",
     "errorPagePrimaryAction": "Bandyti dar kartą",
     "serverNotFoundTitle": "Serveris nerastas",
-    "serverNotFoundSubtitle": "Min nepavyko rasti šios internetinės svetainės.",
+    "serverNotFoundSubtitle": "Ouro nepavyko rasti šios internetinės svetainės.",
     "archiveSearchAction": "Ieškoti ties archive.org",
     "sslErrorTitle": "Ši internetinė svetainė yra neprieinama",
-    "sslErrorMessage": "Min nepavyko saugiai prisijungti prie šios internetinės svetainės.",
+    "sslErrorMessage": "Ouro nepavyko saugiai prisijungti prie šios internetinės svetainės.",
     "dnsErrorTitle": "Internetinė svetainė nerasta",
     "dnsErrorMessage": "Įvyko DNS klaida.",
     "offlineErrorTitle": "Jūs esate atsijungę",
     "offlineErrorMessage": "Iš naujo prisijunkite prie interneto ir bandykite dar kartą.",
-    "genericConnectionFail": "Min nepavyko prisijungti prie internetinės svetainės.",
-    "sslTimeErrorMessage": "Min nepavyko saugiai prisijungti prie šios internetinės svetainės. Įsitikinkite, kad jūsų kompiuterio laikrodis yra nustatytas teisingai.",
+    "genericConnectionFail": "Ouro nepavyko prisijungti prie internetinės svetainės.",
+    "sslTimeErrorMessage": "Ouro nepavyko saugiai prisijungti prie šios internetinės svetainės. Įsitikinkite, kad jūsų kompiuterio laikrodis yra nustatytas teisingai.",
     "addressInvalidTitle": "Šis adresas yra neteisingas.",
     "genericError": "Įvyko klaida",
     /* pages/phishing/index.html */
@@ -125,13 +125,13 @@
     "phishingErrorVisitAnyway": "Vis tiek apsilankyti svetainėje",
     "phishingErrorLeave": "Išeiti iš šios svetainės",
     /* multiple instances alert */
-    "multipleInstancesErrorMessage": "Įvyko klaida. Užverkite bet kokius kitus atvertus egzempliorius ir paleiskite Min iš naujo.",
+    "multipleInstancesErrorMessage": "Įvyko klaida. Užverkite bet kokius kitus atvertus egzempliorius ir paleiskite Ouro iš naujo.",
     /* pages/sessionRestoreError/index.html */
     "sessionRestoreErrorTitle": "Įvyko klaida",
     "sessionRestoreErrorExplanation": "Nepavyko teisingai atkurti jūsų įrašytų kortelių.",
     "sessionRestoreErrorBackupInfo": "Įrašėme atsarginę jūsų duomenų kopiją šioje vietoje: %l.", //%l will be replaced with a path to a file
     "sessionRestoreErrorLinkInfo": {
-      "unsafeHTML": "Jei ši klaida atsiranda ir toliau, tuomet praneškite apie problemą <a href=\"https://github.com/minbrowser/min\" target=\"_blank\">čia</a>."
+      "unsafeHTML": "Jei ši klaida atsiranda ir toliau, tuomet praneškite apie problemą <a href=\"https://github.com/neogamerz1216/Ouro\" target=\"_blank\">čia</a>."
     },
     /* pages/settings/index.html */
     "settingsPreferencesHeading": "Nuostatos",
@@ -167,7 +167,7 @@
     "settingsAutoplayToggle": null, //missing translation 
     "settingsOpenTabsInForegroundToggle": null, //missing translation
     "settingsUserscriptsExplanation": {
-      "unsafeHTML": "Naudotojo scenarijai leidžia jums modifikuoti internetinių svetainių elgseną - <a href=\"https://github.com/minbrowser/min/wiki/userscripts\">sužinokite daugiau</a>."
+      "unsafeHTML": "Naudotojo scenarijai leidžia jums modifikuoti internetinių svetainių elgseną - <a href=\"https://github.com/neogamerz1216/Ouro/wiki/userscripts\">sužinokite daugiau</a>."
     },
     "settingsUserscriptShowDirectory": null, //missing translation,
     "settingsUserAgentToggle": null, //missing translation
@@ -263,7 +263,7 @@
     "downloadStateCompleted": "Užbaigtas",
     "downloadStateFailed": "Nepavyko",
     /* Update Notifications */
-    "updateNotificationTitle": "Yra prieinama nauja Min versija",
+    "updateNotificationTitle": "Yra prieinama nauja Ouro versija",
     /* Autofill settings */
     "settingsPasswordAutoFillHeadline": null, //missing translation
     "settingsSelectPasswordManager": null, //missing translation

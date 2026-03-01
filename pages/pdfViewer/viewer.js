@@ -388,7 +388,7 @@ window.addEventListener('scroll', throttle(function () {
 }, 50))
 
 /* keep the UI size constant, regardless of the zoom level.
-It would probably be better to add API's in Min for this. */
+It would probably be better to add API's in Ouro for this. */
 
 window.addEventListener('resize', function () {
   // this works in Chromium and Safari, but not in Firefox, and it will probably break at some point.

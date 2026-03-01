@@ -71,7 +71,7 @@ function showSearchbarInstantAnswers (text, input, inputFlags) {
     return
   }
 
-  fetch('https://api.duckduckgo.com/?t=min&skip_disambig=1&no_redirect=1&format=json&q=' + encodeURIComponent(text)).then(function (data) {
+  fetch('https://api.duckduckgo.com/?t=ouro&skip_disambig=1&no_redirect=1&format=json&q=' + encodeURIComponent(text)).then(function (data) {
     return data.json()
   }).then(function (res) {
     searchbarPlugins.reset('instantAnswers')

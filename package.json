@@ -1,9 +1,9 @@
 {
-  "name": "min",
-  "productName": "Min",
-  "author": "PalmerAL",
-  "version": "1.35.3",
-  "description": "A fast, minimal browser that protects your privacy",
+  "name": "ouro",
+  "productName": "Ouro",
+  "author": "Pavan",
+  "version": "1.0.0",
+  "description": "A fast, minimal browser that protects your privacy, and is developed by Pavan from Team Ouro",
   "electronVersion": "40.0.0",
   "main": "main.build.js",
   "standard": {
@@ -51,20 +51,20 @@
     "concurrently": "^5.2.0",
     "decomment": "^0.9.0",
     "electron": "40.0.0",
-    "electron-builder": "^24.13.3",
+    "electron-builder": "^26.8.1",
     "electron-installer-windows": "^3.0.0",
     "electron-renderify": "0.0.2",
     "prebuild-install": "^7.0.1",
     "prettier": "^2.2.1",
     "snazzy": "^9.0.0",
-    "standard": "^14.3.4"
+    "standard": "^17.1.2"
   },
   "license": "Apache-2.0",
   "scripts": {
     "postinstall": "node ./scripts/setupDevEnv.js",
     "test": "standard --verbose js/**/*.js main/*.js",
     "watch": "node ./scripts/watch.js",
-    "startElectron": "electron . --development-mode",
+    "startElectron": "node ./scripts/startElectron.js",
     "start": "npm run build && concurrently \"npm run watch\" \"npm run startElectron\"",
     "buildMain": "node ./scripts/buildMain.js",
     "buildBrowser": "node ./scripts/buildBrowser.js",
@@ -85,6 +85,31 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/minbrowser/min.git"
+    "url": "https://github.com/neogamerz1216/Ouro.git"
+  },
+  "build": {
+    "appId": "com.pavan.ouro",
+    "productName": "Ouro",
+    "directories": {
+      "output": "dist/installer"
+    },
+    "win": {
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64"
+          ]
+        }
+      ],
+      "icon": "icons/icon256.ico",
+      "signAndEditExecutable": false
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "artifactName": "ouro-setup.exe",
+      "uninstallDisplayName": "Ouro Browser"
+    }
   }
 }

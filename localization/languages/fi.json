@@ -107,16 +107,16 @@
     "crashErrorSubtitle": "Sivun näyttämisessä on tapahtunut virhe.",
     "errorPagePrimaryAction": "Yritä uudelleen",
     "serverNotFoundTitle": "Palvelinta ei löydy",
-    "serverNotFoundSubtitle": "Min ei löytänyt tätä sivua.",
+    "serverNotFoundSubtitle": "Ouro ei löytänyt tätä sivua.",
     "archiveSearchAction": "Etsi sivustolta archive.org",
     "sslErrorTitle": "Sivusto ei ole saatavilla",
-    "sslErrorMessage": "Min ei voinut luoda suojattua yhteyttä sivustoon.",
+    "sslErrorMessage": "Ouro ei voinut luoda suojattua yhteyttä sivustoon.",
     "dnsErrorTitle": "Sivustoa ei löydy",
     "dnsErrorMessage": "DNS-virhe.",
     "offlineErrorTitle": "Verkkoyhteyttä ei löydy",
     "offlineErrorMessage": "Yhdistä verkkoon ja yritä uudelleen.",
-    "genericConnectionFail": "Min ei voinut yhdistää sivustoon.",
-    "sslTimeErrorMessage": "Min ei voinut luoda suojattua yhteyttä sivustoon. Varmista, että tietokoneesi kello on oikeassa ajassa.",
+    "genericConnectionFail": "Ouro ei voinut yhdistää sivustoon.",
+    "sslTimeErrorMessage": "Ouro ei voinut luoda suojattua yhteyttä sivustoon. Varmista, että tietokoneesi kello on oikeassa ajassa.",
     "addressInvalidTitle": "Osoite on virheellinen.",
     "genericError": "Tapahtui virhe",
     /* pages/phishing/index.html */
@@ -125,13 +125,13 @@
     "phishingErrorVisitAnyway": "Vieraile sivustolla silti",
     "phishingErrorLeave": "Poistu sivustolta",
     /* multiple instances alert */
-    "multipleInstancesErrorMessage": "Virhe. Sulje muut käynnissä olevat ikkunat ja käynnistä Min uudelleen.",
+    "multipleInstancesErrorMessage": "Virhe. Sulje muut käynnissä olevat ikkunat ja käynnistä Ouro uudelleen.",
     /* pages/sessionRestoreError/index.html */
     "sessionRestoreErrorTitle": "Tapahtui virhe",
     "sessionRestoreErrorExplanation": "Tallennettuja välilehtiä ei saatu palautettua.",
     "sessionRestoreErrorBackupInfo": "Varmuuskopio tiedoistasi tallennettiin sijaintiin: %l.", //%l will be replaced with a path to a file
     "sessionRestoreErrorLinkInfo": {
-      "unsafeHTML": "Jos tämä virhe tapahtuu uudelleen, ilmoita ongelmasta: <a href=\"https://github.com/minbrowser/min\" target=\"_blank\">here</a>."
+      "unsafeHTML": "Jos tämä virhe tapahtuu uudelleen, ilmoita ongelmasta: <a href=\"https://github.com/neogamerz1216/Ouro\" target=\"_blank\">here</a>."
     },
     /* pages/settings/index.html */
     "settingsPreferencesHeading": "Asetukset",
@@ -144,7 +144,7 @@
     "settingsBlockScriptsToggle": "Estä komentosarjat",
     "settingsBlockImagesToggle": "Estä kuvat",
     "settingsBlockedRequestCount": {
-      "unsafeHTML": "Tähän mennessä Min on estänyt <strong></strong> mainosta ja seurainta."
+      "unsafeHTML": "Tähän mennessä Ouro on estänyt <strong></strong> mainosta ja seurainta."
     },
     "settingsCustomBangs": null, // Missing translation
     "settingsCustomBangsAdd": null, // Missing translation
@@ -167,15 +167,15 @@
     "settingsAutoplayToggle": "Toista automaattisesti",
     "settingsOpenTabsInForegroundToggle": "Avaa uudet välilehdet etualalla",
     "settingsUserscriptsExplanation": {
-      "unsafeHTML": "Komentosarjat mahdollistavat sivustojen käyttäytymisen mukauttamisen - <a href=\"https://github.com/minbrowser/min/wiki/userscripts\">lisätietoja</a>."
+      "unsafeHTML": "Komentosarjat mahdollistavat sivustojen käyttäytymisen mukauttamisen - <a href=\"https://github.com/neogamerz1216/Ouro/wiki/userscripts\">lisätietoja</a>."
     },
     "settingsUserscriptShowDirectory": null, //missing translation,
     "settingsUserAgentToggle": "Käytä mukautettua käyttäjäagenttia",
     "settingsUpdateNotificationsToggle": "Tarkista päivitykset automaattisesti",
     "settingsUsageStatisticsToggle": {
-      "unsafeHTML": "Lähetä käyttötilastoja (<a href=\"https://github.com/minbrowser/min/blob/master/docs/statistics.md\">Lisätiedot</a>)"
+      "unsafeHTML": "Lähetä käyttötilastoja (<a href=\"https://github.com/neogamerz1216/Ouro/blob/master/docs/statistics.md\">Lisätiedot</a>)"
     },
-    "settingsStartupOptions": "Kun Min käynnistyy: ",
+    "settingsStartupOptions": "Kun Ouro käynnistyy: ",
     "settingsStartupCreateTask": "Avaa uudelleen edelliset välilehdet",
     "settingsStartupNewTaskandBackground": "Siirrä edelliset välilehdet tehtävään taustalle",
     "settingsStartupNewTaskOnly": "Avaa tyhjä tehtävä",
@@ -284,7 +284,7 @@
     "passwordManagerSetupDragBox": "Vedä työkalu tähän",
     "passwordManagerSetupInstalling": "Asennetaan...",
     "passwordManagerBitwardenSignIn": "Yhdistääksesi Bitwarden-tilisi, mene osoitteeseen vault.bitwarden.com/#/settings/account, vieritä alas asti ja valitse \"View API Key\". Liitä sitten arvot alla oleviin kenttiin.",
-    "passwordManagerSetupSignIn": "Kirjaudu salasananhallintaohjelmaasi automaattisen täytön käyttämiseksi. Tietojasi ei tallenneta Min-selaimen sisälle.",
+    "passwordManagerSetupSignIn": "Kirjaudu salasananhallintaohjelmaasi automaattisen täytön käyttämiseksi. Tietojasi ei tallenneta Ouro-selaimen sisälle.",
     "disableAutofill": "Sammuta automaattinen täyttö",
     "passwordManagerSetupUnlockError": "Salasanasäilön avaaminen epäonnistui: ",
     "passwordManagerSetupRetry": "Tarkista, että käytät oikeaa tiedostoa ja salasanaa. Voit yrittää uudelleen vetämällä työkalun tähän uudestaan.",

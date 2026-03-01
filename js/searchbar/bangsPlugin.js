@@ -141,7 +141,7 @@ function getBangSearchResults (text, input, inputFlags) {
 
   // get results from DuckDuckGo if it is a search engine, and the current tab is not a private tab
   if (searchEngine.getCurrent().name === 'DuckDuckGo' && !tabs.get(tabs.getSelected()).private) {
-    resultsPromise = fetch('https://ac.duckduckgo.com/ac/?t=min&q=' + encodeURIComponent(text), {
+    resultsPromise = fetch('https://ac.duckduckgo.com/ac/?t=ouro&q=' + encodeURIComponent(text), {
       cache: 'force-cache'
     })
       .then(function (response) {

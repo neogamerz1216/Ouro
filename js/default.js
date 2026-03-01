@@ -1,4 +1,5 @@
 window.globalArgs = {}
+const startupLoaderStartTime = Date.now()
 
 process.argv.forEach(function (arg) {
   if (arg.startsWith('--')) {
@@ -103,6 +104,26 @@ window.empty = function (node) {
   }
 }
 
+function finishStartupLoadingState () {
+  const loader = document.getElementById('startup-loader')
+  if (!loader) {
+    return
+  }
+
+  const elapsed = Date.now() - startupLoaderStartTime
+  const remaining = Math.max(5000 - elapsed, 0)
+
+  // keep the loader visible for at least 5 seconds, then fade it out
+  setTimeout(function () {
+    requestAnimationFrame(function () {
+      document.body.classList.add('app-ready')
+      setTimeout(function () {
+        loader.remove()
+      }, 420)
+    })
+  }, remaining)
+}
+
 /* prevent a click event from firing after dragging the window */
 
 window.addEventListener('load', function () {
@@ -186,3 +207,4 @@ require('searchbar/calculatorPlugin.js').initialize()
 
 // once everything's loaded, start the session
 require('sessionRestore.js').restore()
+finishStartupLoadingState()

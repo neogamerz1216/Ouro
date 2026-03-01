@@ -107,16 +107,16 @@
     "crashErrorSubtitle": "Došlo je do problema prilikom prikazivanja ove stranice.",
     "errorPagePrimaryAction": "Pokušajte ponovo",
     "serverNotFoundTitle": "Poslužitelj nije pronađen",
-    "serverNotFoundSubtitle": "Min nije mogao pronaći ovo web mjesto.",
+    "serverNotFoundSubtitle": "Ouro nije mogao pronaći ovo web mjesto.",
     "archiveSearchAction": "Pretraži na archive.org",
     "sslErrorTitle": "Ova web stranica nije dostupna",
-    "sslErrorMessage": "Min se nije mogao sigurno povezati s ovom web stranicom.",
+    "sslErrorMessage": "Ouro se nije mogao sigurno povezati s ovom web stranicom.",
     "dnsErrorTitle": "Web stranica nije pronađena",
     "dnsErrorMessage": "Došlo je do DNS greške.",
     "offlineErrorTitle": "Niste spojeni na mrežu",
     "offlineErrorMessage": "Ponovno se spojite na internet i pokušajte ponovo.",
-    "genericConnectionFail": "Min se nije mogao povezati s web stranicom.",
-    "sslTimeErrorMessage": "Min se nije mogao sigurno povezati s ovom web stranicom. Molimo provjerite je li sat vašeg računala pravilno postavljen.",
+    "genericConnectionFail": "Ouro se nije mogao povezati s web stranicom.",
+    "sslTimeErrorMessage": "Ouro se nije mogao sigurno povezati s ovom web stranicom. Molimo provjerite je li sat vašeg računala pravilno postavljen.",
     "addressInvalidTitle": "Ova adresa nije valjana.",
     "genericError": "Došlo je do greške",
     /* pages/phishing/index.html */
@@ -125,13 +125,13 @@
     "phishingErrorVisitAnyway": "Svejedno posjeti stranicu",
     "phishingErrorLeave": "Napusti ovu stranicu",
     /* multiple instances alert */
-    "multipleInstancesErrorMessage": "Došlo je do greške. Zatvorite sve otvorene instance i ponovo pokrenite Min.",
+    "multipleInstancesErrorMessage": "Došlo je do greške. Zatvorite sve otvorene instance i ponovo pokrenite Ouro.",
     /* pages/sessionRestoreError/index.html */
     "sessionRestoreErrorTitle": "Došlo je do greške",
     "sessionRestoreErrorExplanation": "Spremljene kartice nisu se mogle ispravno vratiti.",
     "sessionRestoreErrorBackupInfo": "Sigurnosnu kopiju vaših podataka smo spremili na ovom mjestu: %l.", //%l will be replaced with a path to a file
     "sessionRestoreErrorLinkInfo": {
-      "unsafeHTML": "Ako se ova greška i dalje događa, prijavite novi problem <a href=\"https://github.com/minbrowser/min\" target=\"_blank\">ovdje</a>."
+      "unsafeHTML": "Ako se ova greška i dalje događa, prijavite novi problem <a href=\"https://github.com/neogamerz1216/Ouro\" target=\"_blank\">ovdje</a>."
     },
     /* pages/settings/index.html */
     "settingsPreferencesHeading": "Postavke",
@@ -144,7 +144,7 @@
     "settingsBlockScriptsToggle": "Blokiraj skripte",
     "settingsBlockImagesToggle": "Blokiraj slike",
     "settingsBlockedRequestCount": {
-      "unsafeHTML": "Do sada je Min blokirao <strong></strong> oglasa i praćenja."
+      "unsafeHTML": "Do sada je Ouro blokirao <strong></strong> oglasa i praćenja."
     },
     "settingsCustomBangs": "Korisničke naredbe",
     "settingsCustomBangsAdd": "Dodaj novu naredbu",
@@ -167,15 +167,15 @@
     "settingsAutoplayToggle": "Omogući automatsku reprodukciju",
     "settingsOpenTabsInForegroundToggle": "Otvori nove kartice u prvom planu",
     "settingsUserscriptsExplanation": {
-      "unsafeHTML": "Korisničke skripte omogućuju vam izmjenu ponašanja web stranica - <a href=\"https://github.com/minbrowser/min/wiki/userscripts\">Saznajte više</a>."
+      "unsafeHTML": "Korisničke skripte omogućuju vam izmjenu ponašanja web stranica - <a href=\"https://github.com/neogamerz1216/Ouro/wiki/userscripts\">Saznajte više</a>."
     },
     "settingsUserscriptShowDirectory": "Prikaži mapu sa skriptama",
     "settingsUserAgentToggle": "Upotrijebite prilagođeni korisnički agent",
     "settingsUpdateNotificationsToggle": "Automatski provjeri ima li ažuriranja",
     "settingsUsageStatisticsToggle": {
-      "unsafeHTML": "Pošaljite statistiku upotrebe (<a href=\"https://github.com/minbrowser/min/blob/master/docs/statistics.md\">Više informacija</a>)"
+      "unsafeHTML": "Pošaljite statistiku upotrebe (<a href=\"https://github.com/neogamerz1216/Ouro/blob/master/docs/statistics.md\">Više informacija</a>)"
     },
-    "settingsStartupOptions": "Kada se Min pokrene:", 
+    "settingsStartupOptions": "Kada se Ouro pokrene:", 
     "settingsStartupCreateTask": "Ponovno otvori prethodne kartice", 
     "settingsStartupNewTaskandBackground": "Premjesti prethodne kartice u pozadinski zadatak", 
     "settingsStartupNewTaskOnly": "Otvori novi prazni zadatak", 

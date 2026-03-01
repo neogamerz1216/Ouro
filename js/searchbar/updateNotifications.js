@@ -1,9 +1,15 @@
-const UPDATE_URL = 'https://minbrowser.org/min/updates/latestVersion.json'
+const UPDATE_URL = 'https://ourobrowser.org/ouro/updates/latestVersion.json'
 
 var settings = require('util/settings/settings.js')
+var urlParser = require('util/urlParser.js')
 
 var searchbarPlugins = require('searchbar/searchbarPlugins.js')
 var compareVersions = require('util/compareVersions.js')
+const NEW_TAB_URL = urlParser.parse('ouro://newtab')
+
+function isEmptyTabURL (url) {
+  return !url || url === 'ouro://newtab' || url === NEW_TAB_URL
+}
 
 function getUpdateRandomNum () {
   /* the update JSON might indicate that the update is only available to a % of clients, in order to avoid notifying everyone to update to a new version until there's time to report bugs.
@@ -68,7 +74,7 @@ function showUpdateNotification (text, input, inputFlags) {
       }
     } else {
       /* after 3 weeks, start showing a notification on all new tabs */
-      if (!tabs.get(tabs.getSelected()).url) {
+      if (isEmptyTabURL(tabs.get(tabs.getSelected()).url)) {
         displayUpdateNotification()
       }
     }

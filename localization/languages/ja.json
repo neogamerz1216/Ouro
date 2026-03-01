@@ -131,7 +131,7 @@
     "sessionRestoreErrorExplanation": "保存したタブを正しく復元できませんでした。",
     "sessionRestoreErrorBackupInfo": "次の場所にデータのバックアップを保存しました: %l", //%l will be replaced with a path to a file
     "sessionRestoreErrorLinkInfo": {
-      "unsafeHTML": "もしこのエラーが立て続けに発生する場合は、<a href=\"https://github.com/minbrowser/min\" target=\"_blank\">こちら</a>から新しいissueを開いてください。"
+      "unsafeHTML": "もしこのエラーが立て続けに発生する場合は、<a href=\"https://github.com/neogamerz1216/Ouro\" target=\"_blank\">こちら</a>から新しいissueを開いてください。"
     },
     /* pages/settings/index.html */
     "settingsPreferencesHeading": "環境設定",
@@ -167,13 +167,13 @@
     "settingsAutoplayToggle": "自動再生を有効にする",
     "settingsOpenTabsInForegroundToggle": "フォアグラウンドで新しいタブを開く",
     "settingsUserscriptsExplanation": {
-      "unsafeHTML": "ユーザースクリプトを使用して、Webサイトの動作を変更できます -  <a href=\"https://github.com/minbrowser/min/wiki/userscripts\">詳細</a>。"
+      "unsafeHTML": "ユーザースクリプトを使用して、Webサイトの動作を変更できます -  <a href=\"https://github.com/neogamerz1216/Ouro/wiki/userscripts\">詳細</a>。"
     },
     "settingsUserscriptShowDirectory": null, //missing translation,
     "settingsUserAgentToggle": "カスタムユーザーエージェントを使用する",
     "settingsUpdateNotificationsToggle": "アップデートを自動的に確認する",
     "settingsUsageStatisticsToggle": {
-      "unsafeHTML": "使用統計を送信する (<a href=\"https://github.com/minbrowser/min/blob/master/docs/statistics.md\">より詳しい情報</a>)"
+      "unsafeHTML": "使用統計を送信する (<a href=\"https://github.com/neogamerz1216/Ouro/blob/master/docs/statistics.md\">より詳しい情報</a>)"
     },
     "settingsStartupOptions": null, //missing translation
     "settingsStartupCreateTask": null, //missing translation

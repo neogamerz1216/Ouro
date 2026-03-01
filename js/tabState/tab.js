@@ -1,6 +1,21 @@
+const urlParser = require('util/urlParser.js')
+
+const NEW_TAB_URL = urlParser.parse('ouro://newtab')
+
+function isEmptyTabURL (url) {
+  return !url || url === 'ouro://newtab' || url === NEW_TAB_URL
+}
+
 class TabList {
   constructor (tabs, parentTaskList) {
-    this.tabs = tabs || []
+    this.tabs = (tabs || []).map(tab => {
+      if (tab && typeof tab === 'object') {
+        return Object.assign({}, tab, {
+          url: isEmptyTabURL(tab.url) ? NEW_TAB_URL : tab.url
+        })
+      }
+      return tab
+    })
     this.parentTaskList = parentTaskList
   }
 
@@ -12,7 +27,7 @@ class TabList {
     var tabId = String(tab.id || Math.round(Math.random() * 100000000000000000)) // you can pass an id that will be used, or a random one will be generated.
 
     var newTab = {
-      url: tab.url || '',
+      url: isEmptyTabURL(tab.url) ? NEW_TAB_URL : tab.url,
       title: tab.title || '',
       id: tabId,
       lastActivity: tab.lastActivity || Date.now(),
@@ -175,7 +190,7 @@ class TabList {
       return true
     }
 
-    if (this.tabs.length === 1 && !this.tabs[0].url) {
+    if (this.tabs.length === 1 && isEmptyTabURL(this.tabs[0].url)) {
       return true
     }
 

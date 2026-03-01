@@ -19,14 +19,16 @@ const {
   WebContentsView
 } = electron
 
-crashReporter.start({
-  submitURL: 'https://minbrowser.org/',
-  uploadToServer: false,
-  compress: true
-})
+if (crashReporter && typeof crashReporter.start === 'function') {
+  crashReporter.start({
+    submitURL: 'https://ourobrowser.org/',
+    uploadToServer: false,
+    compress: true
+  })
+}
 
 if (process.argv.some(arg => arg === '-v' || arg === '--version')) {
-  console.log('Min: ' + app.getVersion())
+  console.log('Ouro: ' + app.getVersion())
   console.log('Chromium: ' + process.versions.chrome)
   process.exit()
 }
@@ -71,7 +73,7 @@ if (settings.get('userSelectedLanguage')) {
   app.commandLine.appendSwitch('lang', settings.get('userSelectedLanguage'))
 }
 
-const browserPage = 'min://app/index.html'
+const browserPage = 'ouro://app/index.html'
 
 var mainMenu = null
 var secondaryMenu = null
@@ -174,8 +176,8 @@ function createWindow (customArgs = {}) {
   }
 
   // make the bounds fit inside a currently-active screen
-  // (since the screen Min was previously open on could have been removed)
-  // see: https://github.com/minbrowser/min/issues/904
+  // (since the screen Ouro was previously open on could have been removed)
+  // see: https://github.com/neogamerz1216/Ouro/issues/904
   var containingRect = electron.screen.getDisplayMatching(bounds).workArea
 
   bounds = {
@@ -306,7 +308,7 @@ function createWindowWithBounds (bounds, customArgs) {
 
   newWin.on('leave-full-screen', function () {
     sendIPCToWindow(newWin, 'leave-full-screen')
-    // https://github.com/minbrowser/min/issues/1093
+    // https://github.com/neogamerz1216/Ouro/issues/1093
     newWin.setMenuBarVisibility(false)
   })
 
@@ -316,7 +318,7 @@ function createWindowWithBounds (bounds, customArgs) {
 
   newWin.on('leave-html-full-screen', function () {
     sendIPCToWindow(newWin, 'leave-html-full-screen')
-    // https://github.com/minbrowser/min/issues/952
+    // https://github.com/neogamerz1216/Ouro/issues/952
     newWin.setMenuBarVisibility(false)
   })
 
@@ -371,7 +373,7 @@ app.on('ready', function () {
   const newWin = createWindow()
 
   getWindowWebContents(newWin).on('did-finish-load', function () {
-    // if a URL was passed as a command line argument (probably because Min is set as the default browser on Linux), open it.
+    // if a URL was passed as a command line argument (probably because Ouro is set as the default browser on Linux), open it.
     handleCommandLineArguments(process.argv)
 
     // there is a URL from an "open-url" event (on Mac)
@@ -424,7 +426,7 @@ app.on('second-instance', function (e, argv, workingDir) {
  * Emitted when the application is activated, which usually happens when clicks on the applications's dock icon
  * https://github.com/electron/electron/blob/master/docs/api/app.md#event-activate-os-x
  *
- * Opens a new tab when all tabs are closed, and min is still open by clicking on the application dock icon
+ * Opens a new tab when all tabs are closed, and Ouro is still open by clicking on the application dock icon
  */
 app.on('activate', function (/* e, hasVisibleWindows */) {
   if (!windows.getCurrent() && appIsReady) { // sometimes, the event will be triggered before the app is ready, and creating new windows will fail
@@ -514,7 +516,7 @@ function getWindowWebContents (win) {
 
 /* translate service */
 
-const translatePage = 'min://app/pages/translateService/index.html'
+const translatePage = 'ouro://app/pages/translateService/index.html'
 const translatePreload = __dirname + '/pages/translateService/translateServicePreload.js'
 
 app.on('ready', function() {

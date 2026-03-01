@@ -1,11 +1,12 @@
 const TouchBar = require('electron').TouchBar
 const nativeImage = require('electron').nativeImage
-const { TouchBarLabel, TouchBarButton, TouchBarSpacer } = TouchBar
 
 function buildTouchBar () {
-  if (process.platform !== 'darwin') {
+  if (process.platform !== 'darwin' || !TouchBar) {
     return null
   }
+
+  const { TouchBarButton, TouchBarSpacer } = TouchBar
 
   function getTouchBarIcon (name) {
     // the icons created by nativeImage are too big by default, shrink them to the correct size for the touchbar

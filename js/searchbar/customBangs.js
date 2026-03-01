@@ -101,7 +101,7 @@ function initialize () {
     icon: 'carbon:settings',
     isAction: true,
     fn: function (text) {
-      webviews.update(tabs.getSelected(), 'min://settings')
+      webviews.update(tabs.getSelected(), 'ouro://settings')
     }
   })
 

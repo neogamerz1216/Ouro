@@ -1,6 +1,7 @@
 var statistics = require('js/statistics.js')
 var searchEngine = require('js/util/searchEngine.js')
 var urlParser = require('js/util/urlParser.js')
+const NEW_TAB_URL = urlParser.parse('ouro://newtab')
 
 /* common actions that affect different parts of the UI (webviews, tabstrip, etc) */
 
@@ -10,6 +11,10 @@ var focusMode = require('focusMode.js')
 var tabBar = require('navbar/tabBar.js')
 var tabEditor = require('navbar/tabEditor.js')
 var searchbar = require('searchbar/searchbar.js')
+
+function isEmptyTabURL (url) {
+  return !url || url === 'ouro://newtab' || url === NEW_TAB_URL
+}
 
 /* creates a new task */
 
@@ -39,7 +44,13 @@ function addTab (tabId = tabs.add(), options = {}) {
   * The current tab is empty, and the new tab has a URL
   */
 
-  if (!options.openInBackground && !tabs.get(tabs.getSelected()).url && ((!tabs.get(tabs.getSelected()).private && tabs.get(tabId).private) || tabs.get(tabId).url)) {
+  const currentTab = tabs.get(tabs.getSelected())
+  const newTabData = tabs.get(tabId)
+
+  if (!options.openInBackground &&
+      currentTab &&
+      isEmptyTabURL(currentTab.url) &&
+      ((!currentTab.private && newTabData.private) || !isEmptyTabURL(newTabData.url))) {
     destroyTab(tabs.getSelected())
   }
 
@@ -157,7 +168,7 @@ function setWindowTitle () {
   const title = [
     truncateString(tab.title || '', 100),
     truncateString(task.name || '', 100),
-    'Min'
+    'Ouro'
   ].filter(str => !!str).join(' | ')
 
   if (document.title !== title) {

@@ -1,12 +1,12 @@
 ---
 name: Bug report
-about: Report unexpected behavior in Min
+about: Report unexpected behavior in Ouro
 title: ""
 labels: bug
 assignees: ""
 ---
 
-- **Min Version:**
+- **Ouro Version:**
 - **Operating system:**
 <!-- e.g. "Windows 10", "macOS 10.14" -->
 

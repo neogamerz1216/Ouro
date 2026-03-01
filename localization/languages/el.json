@@ -107,16 +107,16 @@
       "crashErrorSubtitle": "Παρουσιάστηκε πρόβλημα κατά την εμφάνιση αυτής της σελίδας.",
       "errorPagePrimaryAction": "Προσπαθήστε ξανά",
       "serverNotFoundTitle": "Δεν βρέθηκε διακομιστής",
-      "serverNotFoundSubtitle": "Το Min δεν μπόρεσε να βρεί αυτήν την ιστοσελίδα.",
+      "serverNotFoundSubtitle": "Το Ouro δεν μπόρεσε να βρεί αυτήν την ιστοσελίδα.",
       "archiveSearchAction": "Αναζήτηση στο archive.org",
       "sslErrorTitle": "Αυτή η ιστοσελίδα δεν είναι διαθέσιμη",
-      "sslErrorMessage": "Το Min δεν μπόρεσε να συνδεθεί με ασφάλεια σε αυτήν την ιστοσελίδα.",
+      "sslErrorMessage": "Το Ouro δεν μπόρεσε να συνδεθεί με ασφάλεια σε αυτήν την ιστοσελίδα.",
       "dnsErrorTitle": "Η ιστοσελίδα δεν βρέθηκε",
       "dnsErrorMessage": "Προέκυψε ένα σφάλμα DNS.",
       "offlineErrorTitle": "Δεν υπάρχει σύνδεση στο διαδίκτυο",
       "offlineErrorMessage": "Επανασυνδεθείτε στο διαδίκτυο και δοκιμάστε ξανά.",
-      "genericConnectionFail": "Το Min δεν μπόρεσε να συνδεθεί στην ιστοσελίδα.",
-      "sslTimeErrorMessage": "Το Min δεν μπόρεσε να συνδεθεί με ασφάλεια σε αυτήν την ιστοσελίδα. Σιγουρευτείτε ότι το ρολόι του συστήματος είναι ρυθμισμένο σωστά.",
+      "genericConnectionFail": "Το Ouro δεν μπόρεσε να συνδεθεί στην ιστοσελίδα.",
+      "sslTimeErrorMessage": "Το Ouro δεν μπόρεσε να συνδεθεί με ασφάλεια σε αυτήν την ιστοσελίδα. Σιγουρευτείτε ότι το ρολόι του συστήματος είναι ρυθμισμένο σωστά.",
       "addressInvalidTitle": "Αυτή η διεύθυνση είναι μη έγκυρη.",
       "genericError": "Παρουσιάστηκε σφάλμα",
       /* pages/phishing/index.html */
@@ -125,13 +125,13 @@
       "phishingErrorVisitAnyway": "Επίσκεψη ιστοσελίδας παρ' όλα αυτά",
       "phishingErrorLeave": "Αποχώριση απο την ιστοσελίδα",
       /* multiple instances alert */
-      "multipleInstancesErrorMessage": "Παρουσιάστηκε σφάλμα. Κλείστε τυχόν άλλα ανοιχτά παράθυρα και επανεκκινήστε το Min.",
+      "multipleInstancesErrorMessage": "Παρουσιάστηκε σφάλμα. Κλείστε τυχόν άλλα ανοιχτά παράθυρα και επανεκκινήστε το Ouro.",
       /* pages/sessionRestoreError/index.html */
       "sessionRestoreErrorTitle": "Παρουσιάστηκε σφάλμα",
       "sessionRestoreErrorExplanation": "Δεν ήταν δυνατή η σωστή επαναφορά των αποθηκευμένων καρτελών.",
       "sessionRestoreErrorBackupInfo": "Έχουμε αποθηκεύσει αντίγραφο ασφαλείας των δεδομένων σας στην διεύθυνση: %l.", //%l will be replaced with a path to a file
       "sessionRestoreErrorLinkInfo": {
-        "unsafeHTML": "Εάν αυτό το σφάλμα συνεχίζει να προκύπτει, παρακαλούμε ανοίξτε ένα νέο ζήτημα <a href=\"https://github.com/minbrowser/min\" target=\"_blank\">here</a>."
+        "unsafeHTML": "Εάν αυτό το σφάλμα συνεχίζει να προκύπτει, παρακαλούμε ανοίξτε ένα νέο ζήτημα <a href=\"https://github.com/neogamerz1216/Ouro\" target=\"_blank\">here</a>."
       },
       /* pages/settings/index.html */
       "settingsPreferencesHeading": "Προτιμήσεις",
@@ -144,7 +144,7 @@
       "settingsBlockScriptsToggle": "Αποκλεισμός των scripts",
       "settingsBlockImagesToggle": "Αποκλεισμός εικόνων",
       "settingsBlockedRequestCount": {
-        "unsafeHTML": "Μέχρι στιγμής, το Min έχει αποκλέισει <strong></strong> διαφημίσει και trackers."
+        "unsafeHTML": "Μέχρι στιγμής, το Ouro έχει αποκλέισει <strong></strong> διαφημίσει και trackers."
       },
       "settingsCustomBangs": null, // Missing translation
       "settingsCustomBangsAdd": null, // Missing translation
@@ -167,13 +167,13 @@
       "settingsAutoplayToggle": "Ενεργοποίηση αυτοαναπαραγωγής",
       "settingsOpenTabsInForegroundToggle": "Άνοιγμα νέας καρτέλας στο προσκήνιο",
       "settingsUserscriptsExplanation": {
-        "unsafeHTML": "Τα scripts χρηστών σας επιτρέπουν να τροποποιήσετε την συμπεριφορά των ιστοσελίδων - <a href=\"https://github.com/minbrowser/min/wiki/userscripts\">μάθετε περισσότερα</a>."
+        "unsafeHTML": "Τα scripts χρηστών σας επιτρέπουν να τροποποιήσετε την συμπεριφορά των ιστοσελίδων - <a href=\"https://github.com/neogamerz1216/Ouro/wiki/userscripts\">μάθετε περισσότερα</a>."
       },
       "settingsUserscriptShowDirectory": null, //missing translation,
     "settingsUserAgentToggle": "Χρήση προσαρμοσμένου χρήστη agent",
       "settingsUpdateNotificationsToggle": "Αυτόματος έλεγχος για ενημερώσεις",
       "settingsUsageStatisticsToggle": {
-        "unsafeHTML": "Αποστολή στατιστικών χρήσης (<a href=\"https://github.com/minbrowser/min/blob/master/docs/statistics.md\">Παραπάνω πληροφορίες</a>)"
+        "unsafeHTML": "Αποστολή στατιστικών χρήσης (<a href=\"https://github.com/neogamerz1216/Ouro/blob/master/docs/statistics.md\">Παραπάνω πληροφορίες</a>)"
       },
       "settingsStartupOptions": null, //missing translation
     "settingsStartupCreateTask": null, //missing translation
@@ -265,7 +265,7 @@
       "downloadStateCompleted": "Ολοκληρώθηκε",
       "downloadStateFailed": "Απέτυχε",
       /* Update Notifications */
-      "updateNotificationTitle": "Μια καινούργια έκδοση του Min είναι διαθέσιμη",
+      "updateNotificationTitle": "Μια καινούργια έκδοση του Ouro είναι διαθέσιμη",
       /* Autofill settings */
       "settingsPasswordAutoFillHeadline": "Αυτόματη συμπλήρωση κωδικού πρόσβασης",
       "settingsSelectPasswordManager": "Επίλέξτε έναν απο τους υποστηριζόμενους διαχειριστές κωδικών πρόσβασης:",
@@ -284,7 +284,7 @@
       "passwordManagerSetupDragBox": "Σείρετε το εργαλείο εδώ",
       "passwordManagerSetupInstalling": "Εγκατάσταση...",
       "passwordManagerBitwardenSignIn": "Για να συνδεθείτε στο λογαριασμο Bitwarden, επισκεφτείτε το vault.bitwarden.com/#/settings/account, πηγένετε στο τέλος της σελίδας, και επιλέξτε \"View API Key\". Στην συνέχεια επικολλήστε τις τιμές στα παρακάτω πεδία.",
-      "passwordManagerSetupSignIn": "Συνδεθείτε στον διαχειριστή κωδικών πρόσβασης για να ξεκινήσετε να χρησιμοποιείτε την αυτόματη συμπλήρωση. Τα διαπιστευτήριά σας δεν θα αποθηκευτούν πουθενά μέσα στο Min.",
+      "passwordManagerSetupSignIn": "Συνδεθείτε στον διαχειριστή κωδικών πρόσβασης για να ξεκινήσετε να χρησιμοποιείτε την αυτόματη συμπλήρωση. Τα διαπιστευτήριά σας δεν θα αποθηκευτούν πουθενά μέσα στο Ouro.",
       "disableAutofill": "Απενεργοποίηση αυτόματης συμπλήρωσης",
       "passwordManagerSetupUnlockError": "Αποτυχία ξεκλειδώματος του χώρου αποθήκευσης κωδικών πρόσβασης:",
       "passwordManagerSetupRetry": "Επιβεβαιώστε ότι χρησιμοποιείτε το σωστό αρχείο και ότι εισάγετε το σωστό κωδικό πρόσβασης. Μπορείτε να ξαναδοκιμάσετε σέρνοντας το εργαλείο ξανά εδώ.",
