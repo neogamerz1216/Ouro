@@ -21,7 +21,6 @@
 
 If you want to build Ouro from source:
 
-*DEVELOPMENT*
 
 # Clone the repo
 git clone [https://github.com/neogamerz1216/Ouro.git](https://github.com/neogamerz1216/Ouro.git)
