@@ -30,7 +30,6 @@
       line-height: 1.6;
     }
 
-    /* Navigation */
     nav {
       display: flex;
       justify-content: space-between;
@@ -52,9 +51,6 @@
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-clip: text;
-      display: flex;
-      align-items: center;
-      gap: 8px;
     }
 
     .nav-links {
@@ -84,7 +80,6 @@
       font-size: 14px;
       font-weight: 600;
       transition: all 0.3s;
-      text-decoration: none;
     }
 
     .cta-button:hover {
@@ -93,7 +88,6 @@
       box-shadow: 0 8px 16px rgba(0, 102, 255, 0.3);
     }
 
-    /* Hero Section */
     .hero {
       text-align: center;
       padding: 120px 40px 80px;
@@ -146,24 +140,6 @@
       box-shadow: 0 12px 24px rgba(0, 102, 255, 0.4);
     }
 
-    .btn-secondary {
-      background: transparent;
-      color: var(--light);
-      padding: 16px 32px;
-      border-radius: 8px;
-      border: 2px solid var(--primary);
-      cursor: pointer;
-      font-size: 16px;
-      font-weight: 600;
-      transition: all 0.3s;
-    }
-
-    .btn-secondary:hover {
-      background: var(--primary);
-      transform: translateY(-4px);
-    }
-
-    /* Features Grid */
     .features {
       padding: 100px 60px;
       max-width: 1200px;
@@ -213,89 +189,6 @@
       font-size: 14px;
     }
 
-    /* Performance Table */
-    .performance {
-      padding: 100px 60px;
-      max-width: 1200px;
-      margin: 0 auto;
-      background: rgba(255, 255, 255, 0.02);
-      border-radius: 16px;
-      margin-top: 80px;
-    }
-
-    .performance h2 {
-      font-size: 48px;
-      text-align: center;
-      margin-bottom: 60px;
-    }
-
-    .performance-table {
-      width: 100%;
-      border-collapse: collapse;
-    }
-
-    .performance-table th,
-    .performance-table td {
-      padding: 16px;
-      text-align: left;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    }
-
-    .performance-table th {
-      background: rgba(0, 102, 255, 0.1);
-      font-weight: 600;
-    }
-
-    .performance-table tr:hover {
-      background: rgba(255, 255, 255, 0.05);
-    }
-
-    .badge {
-      display: inline-block;
-      padding: 4px 12px;
-      border-radius: 20px;
-      font-size: 12px;
-      font-weight: 600;
-    }
-
-    .badge-success {
-      background: rgba(16, 185, 129, 0.2);
-      color: var(--success);
-    }
-
-    .badge-warning {
-      background: rgba(245, 158, 11, 0.2);
-      color: var(--warning);
-    }
-
-    /* CTA Section */
-    .cta-section {
-      padding: 100px 60px;
-      text-align: center;
-      max-width: 1000px;
-      margin: 0 auto;
-    }
-
-    .cta-section h2 {
-      font-size: 48px;
-      margin-bottom: 20px;
-    }
-
-    .cta-section p {
-      font-size: 20px;
-      color: var(--gray);
-      margin-bottom: 40px;
-    }
-
-    /* Footer */
-    footer {
-      padding: 40px 60px;
-      border-top: 1px solid rgba(255, 255, 255, 0.1);
-      text-align: center;
-      color: var(--gray);
-    }
-
-    /* Animations */
     @keyframes fadeInUp {
       from {
         opacity: 0;
@@ -307,12 +200,6 @@
       }
     }
 
-    @keyframes glow {
-      0%, 100% { box-shadow: 0 0 20px rgba(0, 102, 255, 0.2); }
-      50% { box-shadow: 0 0 40px rgba(0, 102, 255, 0.4); }
-    }
-
-    /* Responsive */
     @media (max-width: 768px) {
       nav {
         padding: 16px 20px;
@@ -330,14 +217,6 @@
         font-size: 40px;
       }
 
-      .hero p {
-        font-size: 16px;
-      }
-
-      .hero-buttons {
-        flex-direction: column;
-      }
-
       .features {
         padding: 60px 20px;
       }
@@ -345,48 +224,27 @@
       .features-grid {
         grid-template-columns: 1fr;
       }
-
-      .performance {
-        padding: 60px 20px;
-      }
-
-      .cta-section {
-        padding: 60px 20px;
-      }
-
-      .cta-section h2 {
-        font-size: 32px;
-      }
-
-      footer {
-        padding: 30px 20px;
-      }
     }
   </style>
 </head>
 <body>
-  <!-- Navigation -->
   <nav>
     <div class="logo">🚀 Ouro</div>
     <ul class="nav-links">
       <li><a href="#features">Features</a></li>
-      <li><a href="#performance">Performance</a></li>
       <li><a href="https://github.com/neogamerz1216/Ouro" target="_blank">GitHub</a></li>
     </ul>
     <button class="cta-button">Download Now</button>
   </nav>
 
-  <!-- Hero Section -->
   <section class="hero">
     <h1>The Browser That <span class="hero-gradient">Ditches Chrome's Bloat</span></h1>
     <p>Lightning fast, privacy-first, and open source. Experience browsing the way it should be.</p>
     <div class="hero-buttons">
       <button class="btn-primary">⬇️ Download for Windows</button>
-      <button class="btn-secondary">📖 Learn More</button>
     </div>
   </section>
 
-  <!-- Features Section -->
   <section class="features" id="features">
     <h2>Why Choose Ouro?</h2>
     <div class="features-grid">
@@ -428,83 +286,7 @@
     </div>
   </section>
 
-  <!-- Performance Section -->
-  <section class="performance" id="performance">
-    <h2>Performance Comparison</h2>
-    <table class="performance-table">
-      <thead>
-        <tr>
-          <th>Metric</th>
-          <th>Ouro</th>
-          <th>Chrome</th>
-          <th>Improvement</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Cold Startup</td>
-          <td><span class="badge badge-success">1.8s</span></td>
-          <td>4.2s</td>
-          <td><span class="badge badge-success">57% faster ⚡</span></td>
-        </tr>
-        <tr>
-          <td>Warm Startup</td>
-          <td><span class="badge badge-success">0.4s</span></td>
-          <td>1.5s</td>
-          <td><span class="badge badge-success">73% faster ⚡</span></td>
-        </tr>
-        <tr>
-          <td>Tab Switch</td>
-          <td><span class="badge badge-success">50ms</span></td>
-          <td>200ms</td>
-          <td><span class="badge badge-success">75% faster ⚡</span></td>
-        </tr>
-        <tr>
-          <td>Memory (idle)</td>
-          <td><span class="badge badge-success">300MB</span></td>
-          <td>450MB</td>
-          <td><span class="badge badge-success">33% less ↓</span></td>
-        </tr>
-        <tr>
-          <td>Bundle Size</td>
-          <td><span class="badge badge-success">180KB</span></td>
-          <td>2.5MB</td>
-          <td><span class="badge badge-success">92% smaller ↓</span></td>
-        </tr>
-        <tr>
-          <td>Lighthouse Score</td>
-          <td><span class="badge badge-success">95+</span></td>
-          <td>72</td>
-          <td><span class="badge badge-success">+23 points ⚡</span></td>
-        </tr>
-      </tbody>
-    </table>
-  </section>
-
-  <!-- CTA Section -->
-  <section class="cta-section">
-    <h2>Ready to Experience True Speed?</h2>
-    <p>Join thousands of users ditching Chrome for Ouro's lightning-fast performance and privacy.</p>
-    <button class="btn-primary">⬇️ Download Ouro Now</button>
-  </section>
-
-  <!-- Footer -->
-  <footer>
-    <p>Made with ❤️ by Pavan Tej Munagala | <a href="https://github.com/neogamerz1216/Ouro" style="color: var(--primary); text-decoration: none;">GitHub</a> | <a href="https://ouro-pavan.netlify.app" style="color: var(--primary); text-decoration: none;">Visit Site</a></p>
-  </footer>
-
   <script>
-    // Smooth scroll
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-          behavior: 'smooth'
-        });
-      });
-    });
-
-    // Download button
     document.querySelectorAll('.btn-primary, .cta-button').forEach(btn => {
       btn.addEventListener('click', () => {
         window.open('https://github.com/neogamerz1216/Ouro/releases', '_blank');
