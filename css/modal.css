@@ -1,84 +1,97 @@
-#overlay {
-  display: none;
-}
+/* ================================================================
+   OURO — MODALS & OVERLAY  (v2)
+   ================================================================ */
 
-/* show the overlay when the searchbar is open or a dialog is visible */
+#overlay { display: none; }
+
 body.is-edit-mode #overlay,
 body.is-modal-mode #overlay {
   display: block;
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background: rgba(255, 255, 255, 0.5);
+  inset: 0;
+  background: rgba(32, 33, 36, 0.35);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
   z-index: 1;
   pointer-events: none;
+  animation: overlay-in 0.15s ease;
 }
-body.is-edit-mode.is-ntp.ntp-has-background #overlay {
-  opacity: 0.33;
-}
-
+body.is-edit-mode.is-ntp.ntp-has-background #overlay { opacity: 0.28; }
 body.is-modal-mode #overlay {
-  /* In modal mode, the tab bar should be disabled */
   z-index: 5;
   pointer-events: all;
 }
-body.dark-mode #overlay {
-  background: rgba(33, 37, 43, 0.4);
+
+@keyframes overlay-in {
+  from { opacity: 0; }
+  to   { opacity: 1; }
 }
 
+/* ── modal card ── */
+
 .modal {
-  width: 100vw;
-  max-width: 700px;
-  position: absolute;
+  width: min(680px, calc(100vw - 32px));
+  position: fixed;
   top: 50%;
   left: 50%;
   z-index: 9;
   transform: translate(-50%, -50%);
-  padding: 1em 1.25em;
-  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
-  border-radius: 8px;
+  padding: 28px 28px 24px;
+  border-radius: 16px;
   background: #fff;
-  animation: modal-appear 0.2s;
+  border: 1px solid rgba(0,0,0,0.08);
+  box-shadow:
+    0 8px 32px rgba(0,0,0,0.14),
+    0 2px 8px  rgba(0,0,0,0.08);
+  animation: modal-in 0.18s cubic-bezier(0.34,1.28,0.64,1);
 }
 
-@keyframes modal-appear {
-  0% {
-    opacity: 0;
-    transform: translate(-50%, -50%) scale(0.85);
-  }
-  100% {
-    opacity: 1;
-  }
+@keyframes modal-in {
+  from { opacity: 0; transform: translate(-50%, calc(-50% + 12px)) scale(0.96); }
+  to   { opacity: 1; transform: translate(-50%, -50%) scale(1); }
 }
 
 .dark-mode .modal {
-  background-color: rgb(33, 37, 43);
+  background: #2d2e31;
+  border-color: rgba(255,255,255,0.08);
+  box-shadow:
+    0 8px 32px rgba(0,0,0,0.4),
+    0 2px 8px  rgba(0,0,0,0.3);
 }
 
 .modal-close-button {
   position: absolute;
-  top: 0.66em;
-  right: 0.66em;
-  font-size: 1.66em !important;
-  opacity: 0.75;
+  top: 14px;
+  right: 14px;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25em !important;
   border-radius: 50%;
-  padding: 0.05em;
+  color: #5f6368;
+  transition: background 0.1s, color 0.1s;
 }
-
 .modal-close-button:hover {
-  opacity: 1;
-  background: rgba(0, 0, 0, 0.075);
+  background: rgba(0,0,0,0.07);
+  color: #202124;
 }
-
+.dark-mode .modal-close-button {
+  color: #9aa0a6;
+}
 .dark-mode .modal-close-button:hover {
-  background: rgba(255, 255, 255, 0.15);
+  background: rgba(255,255,255,0.1);
+  color: #e8eaed;
 }
 
 .modal-title {
-  font-size: 1.5em;
-  margin-top: 0;
-  margin-bottom: 1em;
-  max-width: 90%;
+  font-size: 18px;
+  font-weight: 600;
+  color: #202124;
+  letter-spacing: -0.01em;
+  margin: 0 0 20px 0;
+  max-width: calc(100% - 40px);
+  line-height: 1.3;
 }
+.dark-mode .modal-title { color: #e8eaed; }
