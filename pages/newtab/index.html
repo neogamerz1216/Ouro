@@ -1,169 +1,399 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>New Tab | Ouro</title>
+  <title>New Tab</title>
   <style>
+    /* ── variables ── */
     :root {
-      --bg-a: #f4f8ff;
-      --bg-b: #e3efe7;
-      --bg-c: #fdf8ef;
-      --card-bg: rgba(255, 255, 255, 0.84);
-      --card-border: rgba(27, 51, 80, 0.12);
-      --text-main: #17243a;
-      --text-muted: #4e5d73;
-      --accent: #0f7a8a;
-      --accent-soft: rgba(15, 122, 138, 0.15);
+      --bg: #ffffff;
+      --surface: #f1f3f4;
+      --surface-hover: #e8eaed;
+      --border: #dadce0;
+      --text: #202124;
+      --text-secondary: #5f6368;
+      --accent: #1a73e8;
+      --accent-hover: #1557b0;
+      --shortcut-bg: #ffffff;
+      --shortcut-hover: #f1f3f4;
+      --shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.08);
+      --shadow-hover: 0 4px 12px rgba(0,0,0,0.15);
+      --search-shadow: 0 2px 6px rgba(0,0,0,0.12), 0 0 0 1px rgba(0,0,0,0.06);
+      --search-shadow-focus: 0 4px 16px rgba(26,115,232,0.2), 0 0 0 2px rgba(26,115,232,0.25);
     }
 
     @media (prefers-color-scheme: dark) {
       :root {
-        --bg-a: #0f1724;
-        --bg-b: #111d20;
-        --bg-c: #1a1426;
-        --card-bg: rgba(11, 16, 24, 0.74);
-        --card-border: rgba(173, 210, 255, 0.12);
-        --text-main: #e8edf6;
-        --text-muted: #a6b3c7;
-        --accent: #63d8e8;
-        --accent-soft: rgba(99, 216, 232, 0.2);
+        --bg: #202124;
+        --surface: #303134;
+        --surface-hover: #3c4043;
+        --border: #5f6368;
+        --text: #e8eaed;
+        --text-secondary: #9aa0a6;
+        --accent: #8ab4f8;
+        --accent-hover: #aecbfa;
+        --shortcut-bg: #303134;
+        --shortcut-hover: #3c4043;
+        --shadow: 0 1px 3px rgba(0,0,0,0.4), 0 1px 2px rgba(0,0,0,0.3);
+        --shadow-hover: 0 4px 12px rgba(0,0,0,0.5);
+        --search-shadow: 0 2px 6px rgba(0,0,0,0.4), 0 0 0 1px rgba(255,255,255,0.08);
+        --search-shadow-focus: 0 4px 16px rgba(138,180,248,0.25), 0 0 0 2px rgba(138,180,248,0.3);
       }
     }
 
-    * {
-      box-sizing: border-box;
-    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
 
     html, body {
       height: 100%;
-      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: "Google Sans", "Segoe UI", Roboto, Arial, sans-serif;
+      overflow: hidden;
+      -webkit-user-select: none;
     }
 
-    body {
-      font-family: "Avenir Next", "Segoe UI", sans-serif;
-      color: var(--text-main);
-      background:
-        radial-gradient(1500px 900px at -10% -10%, var(--bg-c), transparent 70%),
-        radial-gradient(1400px 700px at 100% 120%, var(--bg-b), transparent 60%),
-        linear-gradient(130deg, var(--bg-a), #f4f7fb 55%, var(--bg-b));
+    /* ── layout ── */
+    .page {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100%;
+      padding: 20px;
+      gap: 32px;
+    }
+
+    /* ── clock & greeting ── */
+    .clock-section {
+      text-align: center;
+    }
+    .clock {
+      font-size: 72px;
+      font-weight: 300;
+      letter-spacing: -2px;
+      color: var(--text);
+      line-height: 1;
+      font-variant-numeric: tabular-nums;
+    }
+    .date-label {
+      margin-top: 6px;
+      font-size: 14px;
+      color: var(--text-secondary);
+      letter-spacing: 0.01em;
+    }
+
+    /* ── search bar ── */
+    .search-box {
+      width: min(560px, calc(100vw - 40px));
+      position: relative;
+    }
+
+    .search-form {
+      display: flex;
+      align-items: center;
+      background: var(--bg);
+      border-radius: 24px;
+      box-shadow: var(--search-shadow);
+      padding: 0 16px;
+      height: 48px;
+      transition: box-shadow 0.2s;
+      border: 1px solid var(--border);
+    }
+
+    .search-form:focus-within {
+      box-shadow: var(--search-shadow-focus);
+      border-color: transparent;
+    }
+
+    .search-icon {
+      flex-shrink: 0;
+      color: var(--text-secondary);
+      margin-right: 12px;
+      display: flex;
+      align-items: center;
+    }
+
+    .search-icon svg {
+      width: 20px;
+      height: 20px;
+    }
+
+    .search-input {
+      flex: 1;
+      border: none;
+      outline: none;
+      background: transparent;
+      font-size: 16px;
+      color: var(--text);
+      -webkit-user-select: text;
+      caret-color: var(--accent);
+    }
+
+    .search-input::placeholder {
+      color: var(--text-secondary);
+    }
+
+    .search-engine-badge {
+      flex-shrink: 0;
+      font-size: 11px;
+      color: var(--text-secondary);
+      padding: 3px 8px;
+      border-radius: 12px;
+      background: var(--surface);
+      letter-spacing: 0.02em;
+      margin-left: 8px;
+    }
+
+    /* ── shortcuts grid ── */
+    .shortcuts-section {
+      width: min(560px, calc(100vw - 40px));
+    }
+
+    .shortcuts-grid {
       display: grid;
-      place-items: center;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 12px;
+      justify-items: center;
+    }
+
+    .shortcut {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+      text-decoration: none;
+      color: var(--text);
+      padding: 12px 8px;
+      border-radius: 12px;
+      width: 90px;
+      transition: background 0.15s;
+      cursor: pointer;
+    }
+
+    .shortcut:hover {
+      background: var(--surface-hover);
+    }
+
+    .shortcut-icon {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background: var(--shortcut-bg);
+      box-shadow: var(--shadow);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 22px;
+      transition: box-shadow 0.15s;
       overflow: hidden;
     }
 
-    .orb {
-      position: absolute;
-      width: 36vmin;
-      height: 36vmin;
-      border-radius: 50%;
-      filter: blur(2px);
-      opacity: 0.45;
-      pointer-events: none;
+    .shortcut:hover .shortcut-icon {
+      box-shadow: var(--shadow-hover);
     }
 
-    .orb.a {
-      background: radial-gradient(circle at 30% 30%, #9ae6ff, transparent 65%);
-      top: -8vmin;
-      left: -6vmin;
+    .shortcut-icon img {
+      width: 28px;
+      height: 28px;
+      object-fit: contain;
     }
 
-    .orb.b {
-      background: radial-gradient(circle at 60% 40%, #ffe4a3, transparent 65%);
-      bottom: -14vmin;
-      right: -8vmin;
+    .shortcut-label {
+      font-size: 12px;
+      color: var(--text-secondary);
+      text-align: center;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      max-width: 80px;
     }
 
-    .panel {
-      width: min(760px, calc(100vw - 40px));
-      border: 1px solid var(--card-border);
-      background: var(--card-bg);
-      backdrop-filter: blur(12px);
-      border-radius: 22px;
-      box-shadow: 0 18px 48px rgba(10, 17, 27, 0.18);
-      padding: clamp(24px, 4vw, 40px);
+    /* add shortcut button */
+    .shortcut-add .shortcut-icon {
+      background: var(--surface);
+      box-shadow: none;
+      border: 2px dashed var(--border);
+      color: var(--text-secondary);
+      font-size: 20px;
+    }
+    .shortcut-add:hover .shortcut-icon {
+      box-shadow: none;
+      background: var(--surface-hover);
     }
 
-    .badge {
-      display: inline-flex;
+    /* ── branding ── */
+    .branding {
+      display: flex;
       align-items: center;
       gap: 8px;
       font-size: 12px;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      color: var(--text-muted);
-      padding: 6px 10px;
-      border-radius: 999px;
-      background: var(--accent-soft);
+      color: var(--text-secondary);
+      position: absolute;
+      bottom: 20px;
     }
 
-    .dot {
-      width: 7px;
-      height: 7px;
+    .branding-dot {
+      width: 6px;
+      height: 6px;
       border-radius: 50%;
       background: var(--accent);
     }
 
-    h1 {
-      margin: 16px 0 8px;
-      font-size: clamp(36px, 6vw, 56px);
-      line-height: 1.02;
-      letter-spacing: -0.03em;
-    }
-
-    p {
-      margin: 0;
-      max-width: 56ch;
-      color: var(--text-muted);
-      line-height: 1.55;
-      font-size: 16px;
-    }
-
-    .tip-grid {
-      margin-top: 22px;
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 10px;
-    }
-
-    .tip {
-      border-radius: 12px;
-      border: 1px solid var(--card-border);
-      background: rgba(255, 255, 255, 0.28);
-      padding: 12px 14px;
-      font-size: 13px;
-      color: var(--text-muted);
-    }
-
-    kbd {
-      padding: 1px 6px;
-      border-radius: 6px;
-      border: 1px solid var(--card-border);
-      font-family: ui-monospace, "SF Mono", Menlo, monospace;
-      font-size: 11px;
-    }
-
-    @media (max-width: 640px) {
-      .tip-grid {
-        grid-template-columns: minmax(0, 1fr);
-      }
+    /* ── responsive ── */
+    @media (max-width: 500px) {
+      .clock { font-size: 52px; }
+      .shortcuts-grid { grid-template-columns: repeat(4, 1fr); }
+      .shortcut { width: 72px; }
     }
   </style>
 </head>
 <body>
-  <div class="orb a"></div>
-  <div class="orb b"></div>
+  <div class="page">
 
-  <main class="panel">
-    <div class="badge">
-      <span class="dot"></span>
-      Ouro Browser
+    <!-- Clock -->
+    <div class="clock-section">
+      <div class="clock" id="ntp-clock">00:00</div>
+      <div class="date-label" id="ntp-date"></div>
     </div>
-    <h1>New Tab</h1>
-    <p>Start by typing in the address bar above. Search anything, open a URL, or use shortcuts to move faster.</p>
-    <div class="tip-grid">
-      <div class="tip"><strong>Quick focus:</strong> press <kbd>Ctrl</kbd> + <kbd>L</kbd> to jump to the URL bar.</div>
-      <div class="tip"><strong>Stay organized:</strong> use tasks to group tabs by topic.</div>
+
+    <!-- Search bar -->
+    <div class="search-box">
+      <form class="search-form" id="ntp-search-form" autocomplete="off">
+        <span class="search-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"/>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+          </svg>
+        </span>
+        <input
+          class="search-input"
+          id="ntp-search-input"
+          type="text"
+          placeholder="Search with DuckDuckGo or enter address"
+          autofocus
+        />
+        <span class="search-engine-badge">DDG</span>
+      </form>
     </div>
-  </main>
+
+    <!-- Shortcuts -->
+    <div class="shortcuts-section">
+      <div class="shortcuts-grid" id="ntp-shortcuts">
+
+        <a class="shortcut" href="https://www.google.com" title="Google">
+          <div class="shortcut-icon">
+            <img src="https://www.google.com/favicon.ico" alt="Google" onerror="this.parentNode.textContent='G'"/>
+          </div>
+          <span class="shortcut-label">Google</span>
+        </a>
+
+        <a class="shortcut" href="https://www.youtube.com" title="YouTube">
+          <div class="shortcut-icon">
+            <img src="https://www.youtube.com/favicon.ico" alt="YouTube" onerror="this.parentNode.textContent='▶'"/>
+          </div>
+          <span class="shortcut-label">YouTube</span>
+        </a>
+
+        <a class="shortcut" href="https://www.github.com" title="GitHub">
+          <div class="shortcut-icon">
+            <img src="https://github.com/favicon.ico" alt="GitHub" onerror="this.parentNode.textContent='GH'"/>
+          </div>
+          <span class="shortcut-label">GitHub</span>
+        </a>
+
+        <a class="shortcut" href="https://www.reddit.com" title="Reddit">
+          <div class="shortcut-icon">
+            <img src="https://www.reddit.com/favicon.ico" alt="Reddit" onerror="this.parentNode.textContent='R'"/>
+          </div>
+          <span class="shortcut-label">Reddit</span>
+        </a>
+
+        <a class="shortcut" href="https://www.twitter.com" title="X / Twitter">
+          <div class="shortcut-icon">
+            <img src="https://abs.twimg.com/favicons/twitter.3.ico" alt="X" onerror="this.parentNode.textContent='X'"/>
+          </div>
+          <span class="shortcut-label">Twitter</span>
+        </a>
+
+        <a class="shortcut" href="https://mail.google.com" title="Gmail">
+          <div class="shortcut-icon">
+            <img src="https://mail.google.com/favicon.ico" alt="Gmail" onerror="this.parentNode.textContent='M'"/>
+          </div>
+          <span class="shortcut-label">Gmail</span>
+        </a>
+
+        <a class="shortcut" href="https://www.wikipedia.org" title="Wikipedia">
+          <div class="shortcut-icon">
+            <img src="https://www.wikipedia.org/favicon.ico" alt="Wikipedia" onerror="this.parentNode.textContent='W'"/>
+          </div>
+          <span class="shortcut-label">Wikipedia</span>
+        </a>
+
+        <a class="shortcut" href="https://news.ycombinator.com" title="Hacker News">
+          <div class="shortcut-icon">
+            <img src="https://news.ycombinator.com/favicon.ico" alt="HN" onerror="this.parentNode.textContent='HN'"/>
+          </div>
+          <span class="shortcut-label">HN</span>
+        </a>
+
+        <a class="shortcut" href="https://www.linkedin.com" title="LinkedIn">
+          <div class="shortcut-icon">
+            <img src="https://www.linkedin.com/favicon.ico" alt="LinkedIn" onerror="this.parentNode.textContent='in'"/>
+          </div>
+          <span class="shortcut-label">LinkedIn</span>
+        </a>
+
+        <button class="shortcut shortcut-add" id="ntp-add-shortcut" title="Add shortcut">
+          <div class="shortcut-icon">＋</div>
+          <span class="shortcut-label">Add shortcut</span>
+        </button>
+
+      </div>
+    </div>
+
+    <!-- Branding -->
+    <div class="branding">
+      <div class="branding-dot"></div>
+      <span>Ouro Browser — Fast &amp; Private</span>
+    </div>
+
+  </div>
+
+  <script>
+    // ── Clock ──
+    function updateClock() {
+      const now = new Date();
+      const h = now.getHours().toString().padStart(2, '0');
+      const m = now.getMinutes().toString().padStart(2, '0');
+      document.getElementById('ntp-clock').textContent = h + ':' + m;
+
+      const days = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+      const months = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+      document.getElementById('ntp-date').textContent =
+        days[now.getDay()] + ', ' + months[now.getMonth()] + ' ' + now.getDate();
+    }
+    updateClock();
+    setInterval(updateClock, 10000);
+
+    // ── Search ──
+    document.getElementById('ntp-search-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const q = document.getElementById('ntp-search-input').value.trim();
+      if (!q) return;
+      // If it looks like a URL, navigate directly; otherwise search DDG
+      const urlLike = /^(https?:\/\/|www\.)/.test(q) || /^[a-zA-Z0-9-]+\.[a-zA-Z]{2,}/.test(q);
+      window.location.href = urlLike
+        ? (q.startsWith('http') ? q : 'https://' + q)
+        : 'https://duckduckgo.com/?q=' + encodeURIComponent(q);
+    });
+
+    // ── Shortcut links (open in same tab / navigate) ──
+    document.querySelectorAll('.shortcut[href]').forEach(function(a) {
+      a.addEventListener('click', function(e) {
+        e.preventDefault();
+        window.location.href = a.href;
+      });
+    });
+  </script>
 </body>
 </html>
